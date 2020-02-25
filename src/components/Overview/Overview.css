@@ -1,0 +1,89 @@
+.main__wrapper {
+    display: grid;
+    position: relative;
+    transition: 0.6s;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 0px;
+    width: 100%;
+    margin-top: 2vw;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+    .main__wrapper .box-container{
+        background-color: #f7f7f7;
+        border-right: 1px solid #e0dfdf;
+        padding: 1em;
+        position: relative;
+    }
+        .main__wrapper .box-container:last-child{
+            border-right: none;
+        }
+        .box-inside {
+            border-bottom: 1px solid #e0dfdf;
+            padding: 1rem;
+        }
+.box-container .box-title{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    font-size: .75rem;
+    color: #676767;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+    .box-container .box-title.with-icon{
+        background-image: url('../../assets/images/info-icon.png');
+        background-position: right;
+        background-size: 12px;
+        background-repeat: no-repeat;
+    }
+    .box-container .box-title.side{
+        text-align: left;
+    }
+.box-container .box-value{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 500;
+    text-transform: none;
+}
+.main__wrapper__second {
+    display: grid;
+    position: relative;
+    transition: 0.6s;
+    grid-template-columns: 20% 30% 50%;
+    grid-gap: 0px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 2vw;
+    align-items: center;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    align-items: normal;
+}
+    .main__wrapper__second .box-container{
+        background-color: #f7f7f7;
+        padding: 0;
+        border-right: 1px solid #e0dfdf;
+        position: relative;
+    }
+        .main__wrapper__second .box-container:last-child{
+            border-right: none;
+        }
+        .main__wrapper__second .box-container.with-padding{
+            padding: 1rem;
+        }
+
+.rating-value{
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: right;
+    color: #4f4e4e;
+}

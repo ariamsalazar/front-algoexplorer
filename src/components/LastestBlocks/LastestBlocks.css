@@ -1,0 +1,81 @@
+.title__container{
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #f7f7f7;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+}
+    .title__container .title-list{
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #000;
+        text-align: left;
+        display: inline-block;
+    }
+    .title__container .btn__more{
+        position: absolute !important;
+        top: 20px !important;
+        right: 20px !important;
+        cursor: pointer;
+        color: #676767 !important;
+        font-size: .75rem !important;
+        text-transform: none !important;
+        border-radius: 5px !important;
+        padding: 5px 20px !important;
+        /* background-color: red !important; */
+        border: 1px solid #676767 !important;
+    }
+.list__container{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+    .list__container .list__scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 60vh;
+    }
+    .list__container .list__scroll .list__item{
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #c3c3c3;
+    }
+
+        .list__item .picture__container{
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            display: inline-block;
+        }
+        .list__item .picture__container .picture_circular{
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            display: inline-block;
+            background-color: #e8e8e8;
+        }
+        .list__item .picture__container .time{
+            font-size: .7rem;
+            font-weight: 500;
+            color: #403f3f;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .list__item .field{
+            color: #000;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .list__item .value{
+            color: #676767;
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
