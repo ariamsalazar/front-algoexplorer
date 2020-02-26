@@ -1,6 +1,9 @@
 import React from 'react';
 import './Overview.css';
 import { makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1
@@ -10,10 +13,42 @@ const useStyles = makeStyles(theme => ({
         height: '2vh',
         padding: theme.spacing(5),
     }
-  }));
+}));
+
+/*DATA TEST*/
+const data = [
+    {
+      date: 'Dec 10', uv: 250000, pv: 2400, amt: 2400,
+    },
+    {
+      date: 'Jan 8', uv: 220000, pv: 1398, amt: 2210,
+    },
+    {
+      date: 'Jan 15', uv: 835000, pv: 9800, amt: 2290,
+    },
+    {
+      date: 'Feb  15', uv: 616000, pv: 3908, amt: 2000,
+    },
+    {
+      date: 'Feb 30', uv: 1100000, pv: 4800, amt: 2181,
+    }
+  ];
   
   export default function Overview() {  
         const classes = useStyles();
+
+        /*Line Chart*/ 
+        const renderLineChart = (
+            <ResponsiveContainer width="100%" height={180}>
+                <LineChart width={600} height="100%" data={data} margin={{ top: 15, right: 20, bottom: 5, left: 20 }}>
+                    <Line type="monotone" dataKey="uv" dot={false} stroke="#999"  strokeWidth="2"/>
+                    <CartesianGrid stroke={false} strokeDasharray="5 5" />
+                    <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>
+                    <YAxis stroke="transparent" tick={{ fill: '#333' }} />
+                    <Tooltip />
+                </LineChart>
+            </ResponsiveContainer>
+        );
         return (
             <div className={classes.root}>
                {/* First component */}
@@ -56,6 +91,10 @@ const useStyles = makeStyles(theme => ({
                     </div>
                     <div className="box-container with-padding">
                         <span className="box-title side">Algo daily transactions</span>
+                        <Link className="link__open">Open Chart</Link>
+                        <div className="chart__container">
+                            {renderLineChart}
+                        </div>
                     </div>
                </div>
             </div>

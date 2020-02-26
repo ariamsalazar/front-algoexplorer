@@ -17,12 +17,12 @@ const useStyles = makeStyles(theme => ({
       color: '#fff'
     },
     paper: {
-        padding: theme.spacing(0),
+        padding: theme.spacing(1),
         textAlign: 'left',
         background: 'white',
         border: 'none',
         boxShadow: 'none',
-        height: '2rem'
+        height: '3em'
     }
   }));
   
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
                 <AppBar position="static" className="app__bar">
                     <Toolbar>
                         <Grid container spacing={2}>
-                            <Grid item xs={2}>
+                            <Grid item xs={2} >
                                 <div className="logo__main"></div>
                             </Grid>
                             <Grid item xs={5}>
