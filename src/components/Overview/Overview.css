@@ -101,5 +101,7 @@
     width: 100%;
     margin-top: 10px;
     height: 90%;
+    text-align: center;
     display: inline-block;
+    /* background-color:red; */
 }

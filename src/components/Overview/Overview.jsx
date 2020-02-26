@@ -3,6 +3,7 @@ import './Overview.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import ReactSpeedometer from "react-d3-speedometer";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -49,6 +50,27 @@ const data = [
                 </LineChart>
             </ResponsiveContainer>
         );
+        const renderSpeedChart = (
+            <ReactSpeedometer
+                maxSegmentLabels={0}
+                segments={30}
+                maxValue={10}
+                minValue={0}
+                value={2.5}
+                startColor="#999"
+                endColor="#999"
+                needleColor="#333"
+                height={180}
+                width={300}
+                needleHeightRatio={0.6}
+                needleTransitionDuration={4000} 
+                needleTransition="easeElastic"
+                currentValueText="${value} Sec"
+                valueTextFontSize="25px"
+                textColor="#000"
+                ringWidth={15}
+            />
+        );
         return (
             <div className={classes.root}>
                {/* First component */}
@@ -88,6 +110,9 @@ const data = [
                     </div>
                     <div className="box-container with-padding">
                         <span className="box-title">Block transactions speed</span>
+                        <div className="chart__container">
+                           {renderSpeedChart}
+                        </div>
                     </div>
                     <div className="box-container with-padding">
                         <span className="box-title side">Algo daily transactions</span>
