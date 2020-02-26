@@ -116,21 +116,21 @@ const data = [
                         </div>
                     </div>
                     <div className="box-container with-padding">
-                        <span className="box-title side">Algo daily transactions</span>
-                        <Link className="link__open">Open Chart</Link>
-                        <div className="filters__container">
-                            <Link className="filter-c">1H</Link>
-                            <Link className="filter-c">2D</Link>
-                            <Link className="filter-c">3D</Link>
-                            <Link className="filter-c">1W</Link>
-                            <Link className="filter-c">3M</Link>
-                            <Link className="filter-c">6M</Link>
-                            <Link className="filter-c">1Y</Link>
-                            <Link className="filter-c">All</Link>
-                        </div>
-                        <div className="chart__container">
-                            {renderLineChart}
-                        </div>
+                        <   span className="box-title side">Algo daily transactions</span>
+                            <Link className="link__open">Open Chart</Link>
+                            <div className="filters__container">
+                                <Link className="filter-c">1H</Link>
+                                <Link className="filter-c">2D</Link>
+                                <Link className="filter-c">3D</Link>
+                                <Link className="filter-c">1W</Link>
+                                <Link className="filter-c">3M</Link>
+                                <Link className="filter-c">6M</Link>
+                                <Link className="filter-c">1Y</Link>
+                                <Link className="filter-c">All</Link>
+                            </div>
+                            <div className="chart__container">
+                                {renderLineChart}
+                            </div>
                     </div>
                </div>
             </div>

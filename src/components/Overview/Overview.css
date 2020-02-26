@@ -153,3 +153,10 @@
     display: inline-block;
     /* background-color:red; */
 }
+.speedo-segment {
+    fill: transparent;
+    stroke: #999;
+    stroke-dasharray: 0,48,45,0;
+    stroke-width: 1.5px;
+    border: none;
+}
