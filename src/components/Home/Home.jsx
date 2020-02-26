@@ -7,6 +7,7 @@ import Overeview from './../Overview/Overview';
 import LastestTransactions from './../LastestTransactions/LastestTransactions';
 import LastestBlocks from './../LastestBlocks/LastestBlocks';
 import Button from '@material-ui/core/Button';
+
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
@@ -18,9 +19,9 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none',
         borderRadius: '4px'
     }
-  }));
+}));
   
-  export default function Home() {  
+export default function Home() {  
         const classes = useStyles();
         return (
             <div className={classes.root}>
