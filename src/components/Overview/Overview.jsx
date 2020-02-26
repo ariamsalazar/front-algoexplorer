@@ -19,19 +19,19 @@ const useStyles = makeStyles(theme => ({
 /*DATA TEST*/
 const data = [
     {
-      date: 'Dec 10', uv: 250000, pv: 2400, amt: 2400,
+      date: 'Dec 10', uv: 250.000, pv: 2400, amt: 2400,
     },
     {
-      date: 'Jan 8', uv: 220000, pv: 1398, amt: 2210,
+      date: 'Jan 8', uv: 220.000, pv: 1398, amt: 2210,
     },
     {
-      date: 'Jan 15', uv: 835000, pv: 9800, amt: 2290,
+      date: 'Jan 15', uv: 835.000, pv: 9800, amt: 2290,
     },
     {
-      date: 'Feb  15', uv: 616000, pv: 3908, amt: 2000,
+      date: 'Feb  15', uv: 616.000, pv: 3908, amt: 2000,
     },
     {
-      date: 'Feb 30', uv: 1100000, pv: 4800, amt: 2181,
+      date: 'Feb 30', uv: 990.000, pv: 4800, amt: 2181,
     }
   ];
   
@@ -110,13 +110,13 @@ const data = [
                         </div>
                     </div>
                     <div className="box-container with-padding">
-                        <span className="box-title">Block transactions speed</span>
+                        <span className="box-title">Block transaction speed</span>
                         <div className="chart__container">
                            {renderSpeedChart}
                         </div>
                     </div>
                     <div className="box-container with-padding">
-                        <   span className="box-title side">Algo daily transactions</span>
+                        <   span className="box-title side">Daily transactions</span>
                             <Link className="link__open">Open Chart</Link>
                             <div className="filters__container">
                                 <Link className="filter-c">1H</Link>
