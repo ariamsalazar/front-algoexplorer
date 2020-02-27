@@ -159,3 +159,8 @@
         letter-spacing: .5px;
         cursor: pointer;
     }
+
+.MuiAppBar-positionStatic {
+    position: fixed;
+    transform: translateZ(0);
+}
