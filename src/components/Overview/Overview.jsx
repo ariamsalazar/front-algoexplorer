@@ -77,22 +77,22 @@ const data = [
                <div className="main__wrapper">
                     <div className="box-container">
                         <span className="box-title">Algo price</span>
-                        <div className="box-value">$0.76 <span className="rating-value">0.7 %</span></div>
+                        <div className="box-value">$ 0.76 <span className="rating-value">0.7 %</span></div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Circulating supply</span>
-                        <div className="box-value">$605,978,371 </div>
+                        <div className="box-value with-algo">605,978,371 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Tradable supply</span>
-                        <div className="box-value">$2,605,978,371 </div>
+                        <div className="box-value with-algo">2,605,978,371 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Online Stake</span>
-                        <div className="box-value">1,622,972,252 </div>
+                        <div className="box-value with-algo">1,622,972,252 </div>
                     </div>
                     <div className="box-container">
-                        <span className="box-title with-icon">Rewards Per block Per</span>
+                        <span className="box-title with-icon">Rewards per Block per Algo</span>
                         <div className="box-value">0,002 Algos </div>
                         <div className="calculator-icon"></div>
                     </div>

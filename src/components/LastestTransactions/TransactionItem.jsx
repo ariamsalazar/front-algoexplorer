@@ -2,7 +2,7 @@ import React from 'react';
 import './LastestTransactions.css';
 import Grid from '@material-ui/core/Grid';
 import './../../App.css';
-
+import algoLogo from '../../assets/images/algo.png';
 export default function TransactionItem() {  
         return (
             <div className="list__item">
@@ -27,9 +27,9 @@ export default function TransactionItem() {
                     </Grid>
                     <Grid item xs={3.5}>
                         <span className="field">Amount: </span>
-                        <span className="value">8,445,455 Algos</span><br/>
+                        <span className="value"><img className="logoAlgo" src={algoLogo} width="25"/> 8,445,455</span><br/>
                         <span className="field">Fee: </span>
-                        <span className="value">000.2 Algos</span>
+                        <span className="value"><img className="logoAlgo" src={algoLogo} width="25"/> 000.2</span>
                     </Grid>
                 </Grid>
             </div>
