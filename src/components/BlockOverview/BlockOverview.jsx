@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none',
         borderRadius: '4px',
         backgroundColor:'blue',
-        margin: '3% 0 3% 0'
+        margin: '2% 0 2% 0'
     },
     paperIntern: {
         padding: "30px "+theme.spacing(3)+"px",
@@ -31,7 +31,8 @@ const useStyles = makeStyles(theme => ({
         padding: 0,
         border: 'none',
         boxShadow: 'none',
-        borderRadius: '4px'
+        borderRadius: '4px',
+        backgroundColor: 'green'
     }
 }));
 export default function BlockOverview() {  
@@ -46,8 +47,8 @@ export default function BlockOverview() {
                     </Paper>
                 </Grid>
             </Grid>
-             {/* Block Details Overview 2 components*/}
-             <Grid container spacing={3}>
+            {/* Block Details Overview 2 components*/}
+            <Grid container spacing={3}>
                 <Grid item xs={4} >
                     <Paper className={classes.paperIntern}>
                         A
@@ -63,17 +64,24 @@ export default function BlockOverview() {
                        A
                     </Paper>
                 </Grid>
-            </Grid>
-            {/* Component Title */}
-            <Grid container>
+                {/* Component Title */}
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <span className="title__main">Block Details</span>
                     </Paper>
                 </Grid>
-            </Grid>
-            {/* Block Details Overview 2 components*/}
-            <Grid container spacing={3}>
+                {/* Block Details Overview 2 components*/}
+                <Grid item xs={6} >
+                    <Paper className={classes.paperIntern}>
+                        A
+                    </Paper>
+                </Grid>
+                <Grid item xs={6} >
+                    <Paper className={classes.paperIntern}>
+                       A
+                    </Paper>
+                </Grid>
+                {/* Block Details Overview 2 components */}
                 <Grid item xs={6} >
                     <Paper className={classes.paperIntern}>
                         A
@@ -85,29 +93,17 @@ export default function BlockOverview() {
                     </Paper>
                 </Grid>
             </Grid>
-            {/* Block Details Overview 2 components */}
-            <Grid container spacing={3}>
-                <Grid item xs={6} >
-                    <Paper className={classes.paperIntern}>
-                        A
-                    </Paper>
-                </Grid>
-                <Grid item xs={6} >
-                    <Paper className={classes.paperIntern}>
-                       A
-                    </Paper>
-                </Grid>
-            </Grid>
-             {/* Component Title */}
-             <Grid container>
+            {/* Transactions List */}
+            <Grid container>
+                {/* Component Title */}
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
-                        <span className="title__main">Transaction</span>
+                        <span className="title__main">Transactions</span>
                     </Paper>
                 </Grid>
                 <Grid item xs={12}>
                     <Paper className={classes.paperList}>
-                        List of blocks
+                        List of transactions
                     </Paper>
                 </Grid>
             </Grid>

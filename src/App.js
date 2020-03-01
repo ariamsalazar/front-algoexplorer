@@ -7,6 +7,8 @@ import Transactions from './components/Transactions/Transactions';
 import Blocks from './components/Blocks/Blocks';
 import TransactionOverview from './components/TransactionOverview/TransactionOverview';
 import BlockOverview from './components/BlockOverview/BlockOverview';
+import AddressOverview from './components/AddressOverview/AddressOverview';
+import Assets from './components/Assets/Assets';
 import Contact from './components/Contact/Contact';
 import {
   Switch,
@@ -40,6 +42,12 @@ class App extends React.Component {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/addressOverview">
+              <AddressOverview />
+            </Route>
+            <Route path="/assets">
+              <Assets />
             </Route>
         </Switch>
         {/* Footer */}

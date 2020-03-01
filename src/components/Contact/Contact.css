@@ -1,0 +1,21 @@
+/***********************************************/
+/*Styles Contact*/
+/***********************************************/
+.title__big {
+  width: 100%;
+  height: auto;
+  background-color: #c3e8ec;
+  text-align: center;
+  padding: 2% 0;
+  font-size: 2rem;
+  letter-spacing: normal;
+  font-weight: 600;
+  font-family: "Lato"; }
+
+.form__contact {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 3% 0; }

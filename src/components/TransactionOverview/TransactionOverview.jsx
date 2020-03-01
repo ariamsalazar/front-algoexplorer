@@ -52,9 +52,6 @@ export default function TransactionOverview() {
                        A
                     </Paper>
                 </Grid>
-            </Grid>
-            {/* Transactions Overview 2 components */}
-            <Grid container spacing={3}>
                 <Grid item xs={6} >
                     <Paper className={classes.paperIntern}>
                         A
@@ -65,9 +62,7 @@ export default function TransactionOverview() {
                        A
                     </Paper>
                 </Grid>
-            </Grid>
-            {/* Transactions Overview 4 components */}
-            <Grid container spacing={3}>
+                {/* Transactions Overview 4 components */}
                 <Grid item xs={3} >
                     <Paper className={classes.paperIntern}>
                         A
