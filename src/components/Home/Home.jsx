@@ -11,7 +11,8 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
-      position: 'relative'
+      position: 'relative',
+      marginTop: '64px'
     },
     paper: {
         padding: theme.spacing(5),

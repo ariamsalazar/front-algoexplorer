@@ -1,6 +1,7 @@
 /***********************************************/
 /*Styles Header*/
 /***********************************************/
+$font-main: 'Lato';
 .app__bar{
     
     background-color: #adadad !important;
@@ -42,10 +43,11 @@
             padding: 0;
             padding-left: 10px;
             color: #676767;
-            font-weight: 300;
-            font-size: .8rem;
+            font-weight: 400;
+            font-size: .85rem;
+            letter-spacing: normal;
             outline:none;
-            font-family: 'Cabin' !important;
+            font-family: $font-main !important;
             letter-spacing: .5px;
         }
         .btn__submitt {
@@ -58,8 +60,8 @@
             border-bottom-right-radius: 4px;
             padding-left: 1.5rem !important;
             color: #fff !important;
-            font-family: 'Cabin' !important;
-            font-weight: 300 !important;
+            font-family: $font-main !important;
+            font-weight: 400 !important;
             text-transform: none !important;
             background-image: url('../../assets/images/search.png');
             background-repeat: no-repeat;
@@ -74,7 +76,7 @@
             transition: 0.5s;
         }
         .btn__submit{
-            font-family: 'Cabin' !important;
+            font-family: $font-main !important;
             background-color: #676767 !important;
             color: #fff !important;
             font-weight: 200 !important;
@@ -115,6 +117,7 @@
             background-position: right;
             background-repeat: no-repeat;
             padding-right: .7rem;
+            letter-spacing: normal;
         }
         .link__main.last{
             background-image: url('../../assets/images/down-arrow.png'), url('../../assets/images/wallet-white.png');
@@ -155,7 +158,7 @@
     background-color: transparent;
     color: #fff;
     border: 1px solid rgba(255,255,255, 0.5);
-    font-family: 'Cabin' !important;
+    font-family: $font-main !important;
     padding: 5px;
     border-radius: 4px;
     text-align: center;

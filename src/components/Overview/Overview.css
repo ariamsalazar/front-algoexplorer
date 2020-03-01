@@ -23,9 +23,11 @@
       display: inline-block;
       height: auto;
       text-align: center;
-      font-size: .85rem;
+      font-size: .8rem;
       color: #676767;
-      font-weight: 100;
+      text-align: left;
+      font-weight: 400;
+      letter-spacing: normal;
       text-transform: uppercase; }
     .main__wrapper .box-container .box-title.with-icon {
       background-image: url("../../assets/images/info-icon.png");
@@ -96,9 +98,11 @@
       display: inline-block;
       height: auto;
       text-align: center;
-      font-size: .85rem;
+      font-size: .8rem;
       color: #676767;
-      font-weight: 100;
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: normal;
       text-transform: uppercase; }
     .main__wrapper__second .box-container .box-title.side {
       text-align: left; }
@@ -116,7 +120,7 @@
       position: absolute;
       top: 1rem;
       right: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #777;
       cursor: pointer; }
     .main__wrapper__second .box-container .chart__container {
@@ -141,7 +145,7 @@
       .main__wrapper__second .box-container .filters__container .filter-c {
         height: auto;
         padding: 5px 10px;
-        font-weight: 200;
+        font-weight: 400;
         border-right: 1px solid #b3b3b3;
         background-color: #e4e4e4;
         text-align: center;

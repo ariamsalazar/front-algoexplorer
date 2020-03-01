@@ -1,18 +1,18 @@
 $color-white: #fff;
 $color-gray: #cecece;
-
+$font-main : 'Lato';
 * {
-    font-family: 'Cabin' !important;
+    font-family: $font-main !important ;
 }
 body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: 'Cabin' !important;
+    font-family: $font-main !important ;
 }
 .App {
-    font-family: 'Cabin' !important;
+    font-family: $font-main !important ;
 }
   
 ::-webkit-scrollbar {

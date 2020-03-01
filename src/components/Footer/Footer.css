@@ -35,13 +35,13 @@
   padding: 20px 0;
   font-size: 1rem;
   letter-spacing: .5px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff; }
 
 .dark-font {
   color: #3a3a3a;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .5px;
   text-decoration: underline; }
 
@@ -54,7 +54,7 @@
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    font-weight: 300;
+    font-weight: 400;
     display: inline-block;
     vertical-align: middle;
     border-right: 1px solid rgba(255, 255, 255, 0.7);

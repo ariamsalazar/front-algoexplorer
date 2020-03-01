@@ -35,10 +35,11 @@
       padding: 0;
       padding-left: 10px;
       color: #676767;
-      font-weight: 300;
-      font-size: .8rem;
+      font-weight: 400;
+      font-size: .85rem;
+      letter-spacing: normal;
       outline: none;
-      font-family: 'Cabin' !important;
+      font-family: "Lato" !important;
       letter-spacing: .5px; }
     .app__bar .form__search .btn__submitt {
       background-color: #676767 !important;
@@ -50,8 +51,8 @@
       border-bottom-right-radius: 4px;
       padding-left: 1.5rem !important;
       color: #fff !important;
-      font-family: 'Cabin' !important;
-      font-weight: 300 !important;
+      font-family: "Lato" !important;
+      font-weight: 400 !important;
       text-transform: none !important;
       background-image: url("../../assets/images/search.png");
       background-repeat: no-repeat;
@@ -64,7 +65,7 @@
       opacity: 0.5 !important;
       transition: 0.5s; }
     .app__bar .form__search .btn__submit {
-      font-family: 'Cabin' !important;
+      font-family: "Lato" !important;
       background-color: #676767 !important;
       color: #fff !important;
       font-weight: 200 !important;
@@ -100,7 +101,8 @@
       background-size: 5px;
       background-position: right;
       background-repeat: no-repeat;
-      padding-right: .7rem; }
+      padding-right: .7rem;
+      letter-spacing: normal; }
     .app__bar .container__link__header .link__main.last {
       background-image: url("../../assets/images/down-arrow.png"), url("../../assets/images/wallet-white.png");
       background-position: right, left;
@@ -132,7 +134,7 @@
   background-color: transparent;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-family: 'Cabin' !important;
+  font-family: "Lato" !important;
   padding: 5px;
   border-radius: 4px;
   text-align: center;

@@ -24,7 +24,8 @@
         right: 20px !important;
         cursor: pointer;
         color: #676767 !important;
-        font-size: .75rem !important;
+        font-weight: 400 !important;
+        font-size: .8rem !important;
         text-transform: none !important;
         border-radius: 5px !important;
         padding: 5px 20px !important;
@@ -73,13 +74,13 @@
             }
             .field{
                 color: #000;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: .9rem;
             }
     
             .value{
                 color: #676767;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 0.8rem;
 
                 .logoAlgo{

@@ -76,15 +76,15 @@ const data = [
                {/* First component */}
                <div className="main__wrapper">
                     <div className="box-container">
-                        <span className="box-title">Algo price</span>
+                        <span className="box-title">Algo</span>
                         <div className="box-value">$ 0.76 <span className="rating-value">0.7 %</span></div>
                     </div>
                     <div className="box-container">
-                        <span className="box-title with-icon">Circulating supply</span>
+                        <span className="box-title with-icon">Circulating</span>
                         <div className="box-value with-algo">605,978,371 </div>
                     </div>
                     <div className="box-container">
-                        <span className="box-title with-icon">Tradable supply</span>
+                        <span className="box-title with-icon">Tradable</span>
                         <div className="box-value with-algo">2,605,978,371 </div>
                     </div>
                     <div className="box-container">
@@ -105,7 +105,7 @@ const data = [
                             <div className="box-value">$2,245,564</div>
                         </div>
                         <div className="box-inside">
-                            <span className="box-title">Lastest blocks</span>
+                            <span className="box-title">Lastest</span>
                             <div className="box-value">3345454</div>
                         </div>
                     </div>

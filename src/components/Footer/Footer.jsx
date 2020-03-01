@@ -32,14 +32,14 @@ export default function Footer() {
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <span className="copy__footer">© 2020. <span className="dark-font">RandLabs.</span>. All Rights are Reserved</span>
+                            <span className="copy__footer">© 2020. <span className="dark-font">RandLabs</span>. All Rights Reserved</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
                             <div className="link__footer">
                                 <Link className="link">Contact us </Link>
-                                <Link className="link icon">Follow us </Link>
+                                <Link className="link icon">Follow </Link>
                             </div>
                         </Paper>
                     </Grid>

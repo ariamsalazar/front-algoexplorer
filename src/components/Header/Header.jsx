@@ -48,13 +48,13 @@ const useStyles = makeStyles(theme => ({
                                         Assets
                                     </Link>
                                      <Link href="#" onClick={preventDefault} className="link__main">
-                                        Top Accounts
+                                        Statistics
                                     </Link>
                                     <Link href="#" onClick={preventDefault} className="link__main">
                                         Tools
                                     </Link>
                                     <Link href="#" onClick={preventDefault} className="link__main last">
-                                        Wallet
+                                        Wallets
                                     </Link>
                                     <select className="select__network">
                                         <option value="grapefruit">Betanet</option>
