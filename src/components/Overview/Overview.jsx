@@ -41,7 +41,7 @@ const data = [
         /*Line Chart*/ 
         const renderLineChart = (
             <ResponsiveContainer width="100%" height={180}>
-                <LineChart width={600} height="100%" data={data} margin={{ top: 15, right: 20, bottom: 5, left: 20 }}>
+                <LineChart width={500} height="90%" data={data} margin={{ top: 5, right: 20, bottom: 5, left: 20 }}>
                     <Line type="monotone" dataKey="uv" dot={false} stroke="#999"  strokeWidth="2"/>
                     <CartesianGrid stroke={false} strokeDasharray="5 5" />
                     <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>

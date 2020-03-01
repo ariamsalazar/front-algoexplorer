@@ -7,3 +7,43 @@
   font-size: 1.2rem;
   display: inline-block;
   font-family: "Lato" !important; }
+
+.header__list {
+  width: 100%;
+  height: auto;
+  background-color: pink;
+  padding: 10px;
+  font-size: 0.85rem;
+  font-weight: 600; }
+
+.table__head {
+  background-color: #bbbb;
+  padding: 2px 0; }
+  .table__head .row_head {
+    padding: 2px 16px !important; }
+
+.MuiTableCell-head {
+  color: #000 !important;
+  font-weight: 600 !important;
+  line-height: 1.5rem !important;
+  padding: 3px 20px !important;
+  letter-spacing: normal; }
+
+.MuiTableCell-body {
+  color: #000 !important;
+  font-weight: 600;
+  letter-spacing: normal; }
+  .MuiTableCell-body .logoAlgo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -2px;
+    margin-left: -2px; }
+  .MuiTableCell-body .logoTx {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -2px;
+    margin-left: 2px; }
+
+.font-active {
+  color: #2196F3 !important;
+  font-weight: 500 !important; }

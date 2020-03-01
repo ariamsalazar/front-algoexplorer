@@ -9,3 +9,48 @@ $font-main: 'Lato';
     display: inline-block;
     font-family: $font-main !important;
 }
+.header__list{
+    width: 100%;
+    height: auto;
+    background-color: pink;
+    padding: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.table__head{
+    background-color:#bbbb;
+    padding: 2px 0;
+    
+    .row_head{
+        padding: 2px 16px !important;
+    }
+}
+.MuiTableCell-head {
+    color: #000 !important;
+    font-weight: 600 !important;
+    line-height: 1.5rem !important;
+    padding: 3px 20px !important;
+    letter-spacing: normal;
+}
+.MuiTableCell-body {
+    color: #000 !important;
+    font-weight: 600;
+    letter-spacing: normal;
+
+    .logoAlgo{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: -2px;
+        margin-left: -2px;
+    }
+    .logoTx{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: -2px;
+        margin-left: 2px;
+    }
+}
+.font-active{
+    color: #2196F3 !important;
+    font-weight: 500 !important;
+}
