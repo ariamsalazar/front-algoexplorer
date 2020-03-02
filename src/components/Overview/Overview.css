@@ -129,8 +129,7 @@
       margin-top: 10px;
       height: 90%;
       text-align: center;
-      display: inline-block;
-      /* background-color:red; */ }
+      display: inline-block; }
     .main__wrapper__second .box-container .speedo-segment {
       fill: transparent;
       stroke: #999;

@@ -9,6 +9,7 @@ import TransactionOverview from './components/TransactionOverview/TransactionOve
 import BlockOverview from './components/BlockOverview/BlockOverview';
 import AddressOverview from './components/AddressOverview/AddressOverview';
 import Assets from './components/Assets/Assets';
+import BalanceHistory from './components/BalanceHistory/BalanceHistory';
 import Contact from './components/Contact/Contact';
 import {
   Switch,
@@ -48,6 +49,9 @@ class App extends React.Component {
             </Route>
             <Route path="/assets">
               <Assets />
+            </Route>
+            <Route path="/balanceHistory">
+              <BalanceHistory />
             </Route>
         </Switch>
         {/* Footer */}
