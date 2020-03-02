@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import './BalanceHistory.css';
+import './CirculatingSupply.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -68,7 +68,7 @@ const data = [
         date: 'December', algos: 125.000, pv: 4800, amt: 2181,
     }
 ];
-export default function BalanceHistory() {  
+export default function CirculatingSupply() {  
     const classes = useStyles();
     /*Line Chart*/ 
     const renderLineChart = (

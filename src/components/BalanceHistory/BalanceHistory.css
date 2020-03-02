@@ -13,8 +13,7 @@
   margin-top: 60px;
   height: 100%;
   text-align: center;
-  display: inline-block;
-  background-color: pink; }
+  display: inline-block; }
 
 .filters__container {
   position: absolute;
