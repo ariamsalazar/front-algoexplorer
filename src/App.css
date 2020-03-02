@@ -12,7 +12,8 @@ body {
   font-family: "Lato" !important; }
 
 ::-webkit-scrollbar {
-  width: 4px; }
+  width: 4px;
+  height: 2px; }
 
 /* Track */
 ::-webkit-scrollbar-track {

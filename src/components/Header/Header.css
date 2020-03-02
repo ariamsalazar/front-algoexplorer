@@ -133,14 +133,23 @@
 .select__network {
   background-color: transparent;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
   font-family: "Lato" !important;
-  padding: 5px;
+  padding: 5px 4% 5px 3%;
   border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .5px;
-  cursor: pointer; }
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background: url("../../assets/images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-position: 95% center; }
 
 .MuiAppBar-positionStatic {
   position: fixed !important;
