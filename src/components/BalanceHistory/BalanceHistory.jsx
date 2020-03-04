@@ -1,12 +1,12 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import './BalanceHistory.css';
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
       flexGrow: 1,
       position: 'relative',
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none',
         position: 'relative'
     }
-}));
+});
 
 /*DATA TEST*/
 const data = [
@@ -68,53 +68,57 @@ const data = [
         date: 'December', algos: 125.000, pv: 4800, amt: 2181,
     }
 ];
-export default function BalanceHistory() {  
-    const classes = useStyles();
-    /*Line Chart*/ 
-    const renderLineChart = (
-        <ResponsiveContainer width="100%" height={400}>
-            <LineChart width={500} height="90%" data={data} margin={{ top: 5, right: 20, bottom: 5, left: 20 }}>
-                <Line type="monotone" dataKey="algos" dot={false} stroke="#999"  strokeWidth="2"/>
-                <CartesianGrid strokeDasharray="5 5" />
-                <XAxis dataKey="date" stroke="#bbb" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>
-                <YAxis stroke="#bbb" tick={{ fill: '#333' }} />
-                <Tooltip />
-                <Legend stroke="red" strokeWidth="5"/>
-            </LineChart>
-        </ResponsiveContainer>
-    );
-    return (
-        <div className={classes.root}>
-            {/* Component Title */}
-            <Grid container>
-                <Grid item xs={12}>
-                    <Paper className={classes.paper}>
-                        <span className="title__main">Balance History</span>
-                    </Paper>
+
+class BalanceHistory extends React.Component {
+    render() {
+        const {classes} = this.props;
+        /*Line Chart*/ 
+        const renderLineChart = (
+            <ResponsiveContainer width="100%" height={400}>
+                <LineChart width={500} height="90%" data={data} margin={{ top: 5, right: 20, bottom: 5, left: 20 }}>
+                    <Line type="monotone" dataKey="algos" dot={false} stroke="#999"  strokeWidth="2"/>
+                    <CartesianGrid strokeDasharray="5 5" />
+                    <XAxis dataKey="date" stroke="#bbb" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>
+                    <YAxis stroke="#bbb" tick={{ fill: '#333' }} />
+                    <Tooltip />
+                    <Legend stroke="red" strokeWidth="5"/>
+                </LineChart>
+            </ResponsiveContainer>
+        );
+        return (
+            <div className={classes.root}>
+                {/* Component Title */}
+                <Grid container>
+                    <Grid item xs={12}>
+                        <Paper className={classes.paper}>
+                            <span className="title__main">Balance History</span>
+                        </Paper>
+                    </Grid>
+                    {/* Transactions List */}
+                    <Grid item xs={12}>
+                        <Paper className={classes.paperIntern}>
+                            <div className="filter__main">
+                                <span className="name-filter">From</span><input className="input-filter" placeholder="Jun 01, 2020"></input>
+                                <span className="name-filter">To</span><input className="input-filter" placeholder="Jun 01, 2020"></input>
+                            </div>
+                            <div className="filters__container">
+                                    <Link className="filter-c">1H</Link>
+                                    <Link className="filter-c">2D</Link>
+                                    <Link className="filter-c">3D</Link>
+                                    <Link className="filter-c">1W</Link>
+                                    <Link className="filter-c">3M</Link>
+                                    <Link className="filter-c">6M</Link>
+                                    <Link className="filter-c">1Y</Link>
+                                    <Link className="filter-c">All</Link>
+                            </div>
+                            <div className="chart__container">
+                                {renderLineChart}
+                            </div>
+                        </Paper>
+                    </Grid>
                 </Grid>
-                {/* Transactions List */}
-                <Grid item xs={12}>
-                    <Paper className={classes.paperIntern}>
-                        <div className="filter__main">
-                            <span className="name-filter">From</span><input className="input-filter" placeholder="Jun 01, 2020"></input>
-                            <span className="name-filter">To</span><input className="input-filter" placeholder="Jun 01, 2020"></input>
-                        </div>
-                        <div className="filters__container">
-                                <Link className="filter-c">1H</Link>
-                                <Link className="filter-c">2D</Link>
-                                <Link className="filter-c">3D</Link>
-                                <Link className="filter-c">1W</Link>
-                                <Link className="filter-c">3M</Link>
-                                <Link className="filter-c">6M</Link>
-                                <Link className="filter-c">1Y</Link>
-                                <Link className="filter-c">All</Link>
-                        </div>
-                        <div className="chart__container">
-                            {renderLineChart}
-                        </div>
-                    </Paper>
-                </Grid>
-            </Grid>
-        </div>
-    ); 
+            </div>
+        ); 
+    }
 }
+export default withStyles(styles)(BalanceHistory);

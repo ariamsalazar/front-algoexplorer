@@ -1,20 +1,20 @@
 import React from 'react';
 import './Header.css';
-import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
+import { withStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
-      flexGrow: 1,
-      display: 'flex'
+        flexGrow: 1,
+        display: 'flex',
     },
     title: {
-      flexGrow: 1,
-      color: '#fff'
+        flexGrow: 1,
+        color: '#fff'
     },
     paper: {
         padding: theme.spacing(1),
@@ -24,10 +24,11 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none',
         height: '3em'
     }
-  }));
-  
-  export default function Header() {  
-        const classes = useStyles();
+});  
+
+class Header extends React.Component {
+    render(){
+        const { classes } = this.props;
         const preventDefault = event => event.preventDefault();
         return (
             <div className={classes.root}>
@@ -43,11 +44,11 @@ const useStyles = makeStyles(theme => ({
                                 </form>
                             </Grid>
                             <Grid item xs={5}>
-                               <div className="container__link__header">
+                            <div className="container__link__header">
                                     <Link href="#" onClick={preventDefault} className="link__main">
                                         Assets
                                     </Link>
-                                     <Link href="#" onClick={preventDefault} className="link__main">
+                                    <Link href="#" onClick={preventDefault} className="link__main">
                                         Statistics
                                     </Link>
                                     <Link href="#" onClick={preventDefault} className="link__main">
@@ -61,12 +62,13 @@ const useStyles = makeStyles(theme => ({
                                         <option value="lime">Testnet</option>
                                         <option selected value="coconut">Mainnet</option>
                                     </select>
-                               </div>
+                            </div>
                             </Grid>
                         </Grid>
                     </Toolbar>
                 </AppBar>
             </div>
         ); 
+    }
 }
-
+export default withStyles(styles)(Header);

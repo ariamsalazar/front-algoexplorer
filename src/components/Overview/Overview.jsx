@@ -1,12 +1,12 @@
 import React from 'react';
 import './Overview.css';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import ReactSpeedometer from "react-d3-speedometer";
 import algoLogo from '../../assets/images/algo.png';
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
       flexGrow: 1
     },
@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         height: '2vh',
         padding: theme.spacing(5),
     }
-}));
+});
 
 /*DATA TEST*/
 const data = [
@@ -34,10 +34,11 @@ const data = [
     {
       date: 'Feb 30', uv: 990.000, pv: 4800, amt: 2181,
     }
-  ];
+];
   
-  export default function Overview() {  
-        const classes = useStyles();
+class Overview extends React.Component {  
+    render(){
+        const {classes} = this.props;
 
         /*Line Chart*/ 
         const renderLineChart = (
@@ -136,5 +137,6 @@ const data = [
                </div>
             </div>
         ); 
+    }
 }
-
+export default withStyles(styles)(Overview);

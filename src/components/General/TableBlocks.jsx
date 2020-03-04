@@ -7,7 +7,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import './Blocks.css';
+import './TableBlocks.css';
 import algoLogo from '../../assets/images/algo.png';
 import txLogo from '../../assets/images/tx.png';
 

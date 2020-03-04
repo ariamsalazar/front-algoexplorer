@@ -3,7 +3,8 @@ import './LastestTransactions.css';
 import TransactionItem from './TransactionItem';
 import Button from '@material-ui/core/Button';
 
-export default function LastestTransactions() {  
+class LastestTransactions extends React.Component {
+    render(){
         return (
             <div className="list__container">
                 <div className="title__container">
@@ -20,5 +21,7 @@ export default function LastestTransactions() {
                 </div>
             </div>
         ); 
+    }
 }
+export default LastestTransactions;
 

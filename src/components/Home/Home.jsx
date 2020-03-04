@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Overeview from './../Overview/Overview';
@@ -8,7 +8,7 @@ import LastestTransactions from './../LastestTransactions/LastestTransactions';
 import LastestBlocks from './../LastestBlocks/LastestBlocks';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
       flexGrow: 1,
       position: 'relative',
@@ -20,10 +20,11 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none',
         borderRadius: '4px'
     }
-}));
+});
   
-export default function Home() {  
-        const classes = useStyles();
+class Home extends React.Component {
+    render(){
+        const {classes} = this.props;
         return (
             <div className={classes.root}>
                 {/* Overview component */}
@@ -51,5 +52,6 @@ export default function Home() {
                 </Grid>
             </div>
         ); 
+    }
 }
-
+export default withStyles(styles)(Home);

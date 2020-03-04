@@ -2,14 +2,13 @@
   "name": "front-algoexplorer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ariamsalazar.github.io/front-algoexplorer/",
+  "homepage": "http://ariamsalazar.github.io/front-algoexplorer/",
   "dependencies": {
     "@material-ui/core": "^4.9.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
-    "gh-pages": "^2.2.0",
     "node-sass-chokidar": "^1.4.0",
     "npm-run-all": "^4.1.5",
     "react": "^16.12.0",
@@ -19,6 +18,7 @@
     "react-native-speedometer-chart": "^0.7.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "reactstrap": "^8.4.1",
     "recharts": "^2.0.0-beta.1"
   },
   "scripts": {
@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "css-loader": "^3.4.2",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3"

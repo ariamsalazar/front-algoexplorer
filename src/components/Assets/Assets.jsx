@@ -1,12 +1,14 @@
 import React from 'react';
 import './Assets.css';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Tab, Tabs } from 'react-bootstrap';
-import Filters from './../Transactions/Filters';
-import TableTransactions from './../Transactions/TableTransactions';
-const useStyles = makeStyles(theme => ({
+import Filters from './../General/Filters';
+import TableTransactions from './../General/TableTransactions';
+
+const styles = theme => ({
+
     root: {
       flexGrow: 1,
       position: 'relative',
@@ -37,10 +39,11 @@ const useStyles = makeStyles(theme => ({
         borderRadius: '4px',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)'
     }
-}));
-  
-export default function Assets() {  
-        const classes = useStyles();
+});
+
+class Assets extends React.Component {
+    render(){
+        const {classes} = this.props;
         return (
             <div>
                 {/* Title Asset */}
@@ -186,5 +189,6 @@ export default function Assets() {
                 </div>
             </div>
         ); 
+    }
 }
-
+export default withStyles(styles)(Assets);

@@ -1,14 +1,14 @@
 import React from 'react';
 import './AddressOverview.css';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import algoLogo from '../../assets/images/algo.png';
-import Filters from './../Transactions/Filters';
-import TableTransactions from './../Transactions/TableTransactions';
+import Filters from './../General/Filters';
+import TableTransactions from './../General/TableTransactions';
+import { withStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
         flexGrow: 1,
         position: 'relative',
@@ -63,10 +63,11 @@ const useStyles = makeStyles(theme => ({
         boxSizing: 'border-box',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)'
     }
-}));
-  
-export default function AddressOverview() {  
-        const classes = useStyles();
+}); 
+
+class AddressOverview extends React.Component {
+    render(){
+        const { classes } = this.props;
         return (
             <div className={classes.root}>
                 {/* Component Title */}
@@ -133,5 +134,6 @@ export default function AddressOverview() {
                 </Grid>
             </div>
         ); 
+    }
 }
-
+export default withStyles(styles)(AddressOverview);

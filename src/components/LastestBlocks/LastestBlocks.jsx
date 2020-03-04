@@ -3,7 +3,8 @@ import './LastestBlocks.css';
 import BlockItem from './BlockItem';
 import Button from '@material-ui/core/Button';
 
-export default function LastestBlocks() {  
+class LastestBlocks extends React.Component {
+    render(){
         return (
             <div className="list__container">
                 <div className="title__container">
@@ -20,5 +21,7 @@ export default function LastestBlocks() {
                 </div>
             </div>
         ); 
+    }
 }
+export default LastestBlocks;
 

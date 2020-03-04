@@ -1,11 +1,11 @@
 import React from 'react';
 import './Contact.css';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
       flexGrow: 1,
       position: 'relative',
@@ -18,10 +18,11 @@ const useStyles = makeStyles(theme => ({
         boxShadow: 'none',
         borderRadius: '4px'
     }
-}));
+});
   
-export default function Contact() {  
-        const classes = useStyles();
+class Contact extends React.Component {
+    render(){
+        const {classes} = this.props;
         return (
             <div className={classes.root}>
                 {/* Component Title */}
@@ -33,7 +34,7 @@ export default function Contact() {
                     </Grid>
                 </Grid>
                 <Grid container className="form__contact" spacing={4}  justify="center">
-                   
+                    
                         <Grid item xs={4}>
                             <Paper className={classes.paper}>
                                 <span className="title__input">Name * </span>
@@ -73,5 +74,7 @@ export default function Contact() {
                 
             </div>
         ); 
+    }
 }
+export default withStyles(styles)(Contact);
 

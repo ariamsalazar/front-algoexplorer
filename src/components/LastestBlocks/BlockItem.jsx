@@ -3,7 +3,9 @@ import './LastestBlocks.css';
 import Grid from '@material-ui/core/Grid';
 import './../../App.css';
 import algoLogo from '../../assets/images/algo.png';
-export default function BlockItem() {  
+
+class BlockItem extends React.Component {
+    render(){
         return (
             <div className="list__item">
                 <Grid container spacing={1}>
@@ -28,5 +30,7 @@ export default function BlockItem() {
                 </Grid>
             </div>
         ); 
+    }
 }
+export default BlockItem;
 

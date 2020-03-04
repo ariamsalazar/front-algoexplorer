@@ -1,6 +1,6 @@
 import React from 'react';
-import './Transactions.css';
-import { makeStyles } from '@material-ui/core/styles';
+import './TableTransactions.css';
+import { withStyles } from "@material-ui/core/styles";
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -10,7 +10,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import algoLogo from '../../assets/images/algo.png';
 import txLogo from '../../assets/images/tx.png';
-const useStyles = makeStyles(theme => ({
+
+const styles = theme => ({
     root: {
       flexGrow: 1,
       position: 'relative',
@@ -33,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     table: {
         minWidth: 650,
     }
-}));
+});
 // Data get function
 function createData(txid, block, age, amount, from, to, txfee, type) {
     return { txid, block, age, amount, from, to, txfee, type };
@@ -50,8 +51,10 @@ const rows = [
     createData('53843u4Agyiu8879878uig', 511113, '36 secs ago', '3.900', '53843u4Agyiu8879878uig', '53843u4Agyiu8879878uig', '0.001', 'Transfer'),
     createData('53843u4Agyiu8879878uig', 511113, '36 secs ago', '3.900', '53843u4Agyiu8879878uig', '53843u4Agyiu8879878uig', '0.001', 'Transfer')
 ];
-export default function TableTransactions() {  
-        const classes = useStyles();
+
+class TableTransactions extends React.Component {
+    render() {
+        const {classes} = this.props;
         return (
             <TableContainer component={Paper}>
                 <Table className={classes.table} aria-label="simple table">
@@ -95,5 +98,8 @@ export default function TableTransactions() {
                 </Table>
             </TableContainer> 
         ); 
+    }
 }
+export default withStyles(styles)(TableTransactions);
+
 
