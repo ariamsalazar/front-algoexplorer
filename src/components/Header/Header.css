@@ -151,6 +151,13 @@
   background-size: 8px;
   background-position: 95% center; }
 
+.select__network option {
+  background-color: #676767;
+  color: #fff;
+  font-size: .9rem;
+  letter-spacing: normal;
+  padding: 2px 0; }
+
 .MuiAppBar-positionStatic {
   position: fixed !important;
   transform: translateZ(0); }

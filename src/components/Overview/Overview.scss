@@ -49,6 +49,15 @@ $font-main: 'Lato';
             color: #000;
             font-weight: 500;
             text-transform: none;
+
+            .logoAlgo{
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 0px;
+                margin-left: -15px;
+                width: 38px;
+                margin-right: -8px;
+            }
         }
             .box-value.with-algo {
                 background-image: url('../../assets/images/algo.png');

@@ -144,7 +144,7 @@ export default function Assets() {
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Date of creation</span>
-                                                    <span className="detail__value">312788</span>
+                                                    <span className="detail__value">2019-12-12</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={12}>

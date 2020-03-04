@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import ReactSpeedometer from "react-d3-speedometer";
+import algoLogo from '../../assets/images/algo.png';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -81,15 +82,15 @@ const data = [
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Circulating</span>
-                        <div className="box-value with-algo">605,978,371 </div>
+                        <div className="box-value"> <img className="logoAlgo" src={algoLogo} width="38"/> 605,978,371 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Tradable</span>
-                        <div className="box-value with-algo">2,605,978,371 </div>
+                        <div className="box-value"><img className="logoAlgo" src={algoLogo} width="38"/>2,605,978,371 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Online Stake</span>
-                        <div className="box-value with-algo">1,622,972,252 </div>
+                        <div className="box-value "><img className="logoAlgo" src={algoLogo} width="38"/> 1,622,972,252 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Rewards per Block per Algo</span>
@@ -105,7 +106,7 @@ const data = [
                             <div className="box-value">$2,245,564</div>
                         </div>
                         <div className="box-inside">
-                            <span className="box-title">Lastest</span>
+                            <span className="box-title">Lastest Blocks</span>
                             <div className="box-value">3345454</div>
                         </div>
                     </div>
