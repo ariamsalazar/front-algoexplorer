@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import { withStyles } from "@material-ui/core/styles";
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 const styles = theme => ({
     root: {
@@ -27,9 +28,30 @@ const styles = theme => ({
 });  
 
 class Header extends React.Component {
+    
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.onMouseEnter = this.onMouseEnter.bind(this);
+        this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.state = {
+        dropdownOpen: false
+        };
+    }
+    toggle() {
+        this.setState(prevState => ({
+        dropdownOpen: !prevState.dropdownOpen
+        }));
+    }
+    onMouseEnter() {
+        this.setState({dropdownOpen: true});
+    }
+    onMouseLeave() {
+        this.setState({dropdownOpen: false});
+    }
     render(){
         const { classes } = this.props;
-        const preventDefault = event => event.preventDefault();
+        // const preventDefault = event => event.preventDefault();
         return (
             <div className={classes.root}>
                 <AppBar position="static" className="app__bar">
@@ -45,18 +67,15 @@ class Header extends React.Component {
                             </Grid>
                             <Grid item xs={5}>
                             <div className="container__link__header">
-                                    <Link href="#" onClick={preventDefault} className="link__main">
-                                        Assets
-                                    </Link>
-                                    <Link href="#" onClick={preventDefault} className="link__main">
-                                        Statistics
-                                    </Link>
-                                    <Link href="#" onClick={preventDefault} className="link__main">
-                                        Tools
-                                    </Link>
-                                    <Link href="#" onClick={preventDefault} className="link__main last">
-                                        Wallets
-                                    </Link>
+                                    <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                                        <DropdownToggle caret className="drop__link">
+                                            Assets
+                                        </DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem>Standar</DropdownItem>
+                                            <DropdownItem>Non-Fungible ASA</DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
                                     <select className="select__network">
                                         <option value="grapefruit">Betanet</option>
                                         <option value="lime">Testnet</option>

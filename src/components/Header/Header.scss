@@ -126,6 +126,38 @@ $font-main: 'Lato';
             background-repeat: no-repeat, no-repeat;
             padding-left: 22px;
         }
+        .drop__link{
+            height: auto;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: .5px;
+            cursor: pointer;
+            background-image: none;
+            background-image: url('../../assets/images/down-arrow.png');
+            background-size: 8px;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-right: .75rem;
+            letter-spacing: normal;
+            background-color: transparent;
+            border-radius: 0;
+            border:none;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        .dropdown-toggle::after{
+            display: none !important;
+        }
+        .dropdown-menu {
+            background-color: #f3f2f2;
+            background-clip: padding-box;
+            border: none;
+            border-radius: 4px;
+            font-size: .9rem;
+            margin-top: 0;
+            left: -100% !important;
+        }
     }
        
 }
