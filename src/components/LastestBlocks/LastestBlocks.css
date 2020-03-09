@@ -53,7 +53,6 @@
         .list__container .list__scroll .list__item .picture__container .picture_circular {
           height: 40px;
           width: 40px;
-          border-radius: 100%;
           display: inline-block;
           background-image: url("../../assets/images/bllogo-green.png");
           background-position: left center;

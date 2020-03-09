@@ -9,7 +9,7 @@ const styles = theme => ({
     root: {
         flexGrow: 1,
         position: 'relative',
-        backgroundColor: '#a2a2a2',
+        backgroundImage: 'linear-gradient(to bottom, #324964, #1e2a38)',
         marginTop: '100px'
       },
     paper: {
@@ -34,7 +34,7 @@ class Footer extends React.Component {
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <span className="copy__footer">© 2020. <span className="dark-font">RandLabs</span>. All Rights Reserved</span>
+                            <span className="copy__footer">© 2020. RandLabs. All Rights Reserved</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4}>
