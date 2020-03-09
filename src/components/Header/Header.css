@@ -113,7 +113,7 @@
       background-image: none;
       background-image: url("../../assets/images/down-blue.png");
       background-size: 7px;
-      background-position: right;
+      background-position: 100% 9px;
       background-repeat: no-repeat;
       padding-right: .8rem;
       letter-spacing: normal;
@@ -174,7 +174,8 @@
       background-position: left, right !important;
       background-repeat: no-repeat, no-repeat !important;
       background-size: 16px, 8px !important;
-      padding-left: 4.5%; }
+      padding-left: 4.5%;
+      padding-right: 3% !important; }
     .app__bar .container__link__header .dropdown-toggle::after {
       display: none !important; }
     .app__bar .container__link__header .dropdown-menu {

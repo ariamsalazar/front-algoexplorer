@@ -2,7 +2,7 @@
 /*Styles Table Blocks*/
 /***********************************************/
 .table__head {
-  background-color: #bbbb;
+  background-color: #324964;
   padding: 2px 0; }
   .table__head .row_head {
     padding: 2px 16px !important; }
@@ -13,8 +13,8 @@
   border-radius: 0 !important; }
 
 .MuiTableCell-head {
-  color: #000 !important;
-  font-weight: 600 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
   line-height: 1.5rem !important;
   padding: 3px 20px !important;
   letter-spacing: normal; }

@@ -2,7 +2,7 @@
 /*Styles Table Transactions*/
 /***********************************************/
 .table__head {
-  background-color: #bbbb;
+  background-color: #324964;
   padding: 2px 0; }
   .table__head .row_head {
     padding: 2px 16px !important; }
@@ -13,11 +13,23 @@
   border-radius: 0 !important; }
 
 .MuiTableCell-head {
-  color: #000 !important;
-  font-weight: 600 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
   line-height: 1.5rem !important;
   padding: 3px 20px !important;
   letter-spacing: normal; }
+
+.MuiTableCell-root {
+  display: table-cell;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Lato" !important;
+  font-weight: 600 !important;
+  line-height: 1.43;
+  border-bottom: 1px solid #e0e0e0;
+  letter-spacing: 0.01071em;
+  vertical-align: inherit; }
 
 .MuiTableCell-body {
   color: #000 !important;
@@ -35,5 +47,24 @@
     margin-left: 0; }
 
 .font-active {
-  color: #2196F3 !important;
+  color: #197ce8 !important;
   font-weight: 500 !important; }
+
+.value-import {
+  background-color: #324964;
+  color: #fff;
+  font-weight: 500;
+  height: auto;
+  padding-left: 5%;
+  background-image: url("../../assets/images/algo-white.png");
+  background-color: #324964;
+  color: #fff;
+  font-weight: 500;
+  height: auto;
+  /* padding-left: 25%; */
+  /* padding-right: 10%; */
+  border-radius: 4px;
+  padding: 3px 10px 3px 25px;
+  background-position: 7px 6px;
+  background-repeat: no-repeat;
+  background-size: 12px; }

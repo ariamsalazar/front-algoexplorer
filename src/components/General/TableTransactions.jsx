@@ -65,7 +65,7 @@ class TableTransactions extends React.Component {
                             <TableCell align="left"className="row__head">Age</TableCell>
                             <TableCell align="left"className="row__head">Amount</TableCell>
                             <TableCell align="left"className="row__head">From</TableCell>
-                            <TableCell align="left"className="row__head">.</TableCell>
+                            <TableCell align="left"className="row__head"></TableCell>
                             <TableCell align="left"className="row__head">To</TableCell>
                             <TableCell align="left"className="row__head">TxFee</TableCell>
                             <TableCell align="left"className="row__head">Type</TableCell>
@@ -77,9 +77,9 @@ class TableTransactions extends React.Component {
                                 <TableCell align="left" className="font-active"><a href="transaction">{row.txid}</a></TableCell>
                                 <TableCell align="left">{row.block}</TableCell>
                                 <TableCell align="left">{row.age}</TableCell>
-                                <TableCell align="left">
-                                    <img className="logoAlgo" src={algoLogo} width="25"/> 
-                                    {row.amount}</TableCell>
+                                <TableCell align="left" >
+                                    {/* <img className="logoAlgo" src={algoLogo} width="25"/>  */}
+                                    <span className="value-import">{row.amount}</span></TableCell>
                                 <TableCell align="left" className="font-active">
                                     {row.from}
                                 </TableCell>

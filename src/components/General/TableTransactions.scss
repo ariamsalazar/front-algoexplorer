@@ -1,8 +1,15 @@
 /***********************************************/
 /*Styles Table Transactions*/
 /***********************************************/
+$font-main: 'Lato';
+$blue-gray-dark:#324964;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #197ce8;
+$blue-middle: #005cc0;
+
 .table__head{
-    background-color:#bbbb;
+    background-color:$blue-gray-dark;
     padding: 2px 0;
     
     .row_head{
@@ -15,11 +22,23 @@
     border-radius: 0 !important;
 }
 .MuiTableCell-head {
-    color: #000 !important;
-    font-weight: 600 !important;
+    color: $white !important;
+    font-weight: 500 !important;
     line-height: 1.5rem !important;
     padding: 3px 20px !important;
     letter-spacing: normal;
+}
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: $font-main !important;
+    font-weight: 600 !important;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
 }
 .MuiTableCell-body {
     color: #000 !important;
@@ -40,6 +59,25 @@
     }
 }
 .font-active{
-    color: #2196F3 !important;
+    color: $blue-light !important;
     font-weight: 500 !important;
+}
+.value-import{
+    background-color: $blue-gray-dark;
+    color: $white;
+    font-weight: 500;
+    height: auto;
+    padding-left: 5%;
+    background-image: url('../../assets/images/algo-white.png');
+    background-color: #324964;
+    color: #fff;
+    font-weight: 500;
+    height: auto;
+    /* padding-left: 25%; */
+    /* padding-right: 10%; */
+    border-radius: 4px;
+    padding: 3px 10px 3px 25px;
+    background-position: 7px 6px;
+    background-repeat: no-repeat;
+    background-size: 12px;
 }

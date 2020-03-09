@@ -138,7 +138,7 @@ $blue-middle: #005cc0;
             background-image: none;
             background-image: url('../../assets/images/down-blue.png');
             background-size: 7px;
-            background-position: right;
+            background-position: 100% 9px;
             background-repeat: no-repeat;
             padding-right: .8rem;
             letter-spacing: normal;
@@ -210,6 +210,7 @@ $blue-middle: #005cc0;
             background-repeat: no-repeat, no-repeat !important;
             background-size: 16px, 8px !important;
             padding-left: 4.5%;
+            padding-right: 3% !important;
         }
         .dropdown-toggle::after{
             display: none !important;

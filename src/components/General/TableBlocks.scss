@@ -1,8 +1,14 @@
 /***********************************************/
 /*Styles Table Blocks*/
 /***********************************************/
+$font-main: 'Lato';
+$blue-gray-dark:#324964;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
 .table__head{
-    background-color:#bbbb;
+    background-color:$blue-gray-dark;
     padding: 2px 0;
     
     .row_head{
@@ -15,8 +21,8 @@
     border-radius: 0 !important;
 }
 .MuiTableCell-head {
-    color: #000 !important;
-    font-weight: 600 !important;
+    color: $white !important;
+    font-weight: 500 !important;
     line-height: 1.5rem !important;
     padding: 3px 20px !important;
     letter-spacing: normal;
