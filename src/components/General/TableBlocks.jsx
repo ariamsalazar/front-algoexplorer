@@ -40,7 +40,10 @@ function createData(block, proposer, transactions, age, block_reward) {
     return { block, proposer, transactions, age, block_reward };
 }
 const rows = [
-    createData(511113, '3456SIDSDYSSDJKSSF87382234234387KIU', 0, '5 secs ago', '3,900.99')
+    createData(511113, 'CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4', 0, '5 secs ago', '3,900.99'),
+    createData(511113, 'CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4', 0, '5 secs ago', '3,900.99'),createData(511113, 'CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4', 0, '5 secs ago', '3,900.99'),
+    createData(511113, 'CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4', 0, '5 secs ago', '3,900.99'),
+    createData(511113, 'CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4', 0, '5 secs ago', '3,900.99')
 ];
 class TableBlocks extends React.Component {
     render(){
@@ -65,7 +68,6 @@ class TableBlocks extends React.Component {
                                 <TableCell align="left">{row.transactions}</TableCell>
                                 <TableCell align="left">{row.age}</TableCell>
                                 <TableCell align="left">
-                                    <img className="logoAlgo" src={algoLogo} width="25"/> 
                                     {row.block_reward}
                                 </TableCell>
                             </TableRow>
