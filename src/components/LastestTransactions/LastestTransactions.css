@@ -21,14 +21,14 @@
     top: 20px !important;
     right: 20px !important;
     cursor: pointer;
-    color: #676767 !important;
-    font-weight: 400 !important;
+    color: #197ce8 !important;
+    font-weight: 600 !important;
     font-size: .8rem !important;
     text-transform: none !important;
     border-radius: 5px !important;
     padding: 5px 20px !important;
     /* background-color: red !important; */
-    border: 1px solid #676767 !important; }
+    border: 1px solid #197ce8 !important; }
 
 .list__container {
   width: 100%;
@@ -54,23 +54,48 @@
           height: 40px;
           width: 40px;
           display: inline-block;
-          background-color: #e8e8e8; }
+          background-image: url("../../assets/images/txlogo-blue.png");
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: 70%; }
+        .list__container .list__scroll .list__item .picture__container .picture.red {
+          background-image: url("../../assets/images/txlogo-red.png"); }
         .list__container .list__scroll .list__item .picture__container .time {
           font-size: .7rem;
-          font-weight: 500;
-          color: #403f3f;
+          font-weight: 700;
+          color: #197ce8;
           width: 100%;
           display: inline-block; }
       .list__container .list__scroll .list__item .field {
-        color: #000;
-        font-weight: 500;
+        color: #676767;
+        font-weight: 600;
         font-size: .9rem; }
       .list__container .list__scroll .list__item .value {
-        color: #676767;
-        font-weight: 400;
+        color: #324964;
+        font-weight: 600;
         font-size: 0.8rem; }
         .list__container .list__scroll .list__item .value .logoAlgo {
           display: inline-block;
           vertical-align: top;
           margin-top: -2px;
           margin-left: -2px; }
+        .list__container .list__scroll .list__item .value .logoAlgo.white {
+          margin-top: 0 !important;
+          margin-right: 2px;
+          vertical-align: middle;
+          margin-left: 2px; }
+      .list__container .list__scroll .list__item .value.blue {
+        color: #005cc0;
+        font-weight: 700; }
+      .list__container .list__scroll .list__item .value.black {
+        color: #000;
+        font-weight: 700; }
+      .list__container .list__scroll .list__item .value.import {
+        background-color: #324964;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 4px;
+        padding: 2px 3px; }
+
+.picture:nth-child(even) {
+  background-color: red; }

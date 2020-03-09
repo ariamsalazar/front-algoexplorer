@@ -7,26 +7,31 @@ import './RangeDate.css';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    padding: '10px 20px',
+    padding: '0px 20px',
   },
   margin: {
     height: theme.spacing(3),
   },
+  markLabel: {
+    '&[data-index="1"]': {
+      left: '10%',
+    }
+  }
 }));
 
 const marks = [
   {
     value: 0,
-    label: 'Weekly',
+    label: 'Weekly'
   },
   {
     value: 50,
-    label: 'Monthly',
+    label: 'Monthly'
   },
   {
     value: 100,
-    label: 'Yearly',
-  },
+    label: 'Yearly'
+  }
 ];
 
 function valuetext(value) {
@@ -51,6 +56,7 @@ export default function RangeDate() {
             valueLabelDisplay="auto"
             marks={marks}
         />
+        <div class="mark-input">0.001 Algos</div><div class="mark-input">0.001 Algos</div><div class="mark-input">0.001 Algos</div>
     </div>
   );
 }

@@ -1,6 +1,13 @@
 /***********************************************/
 /*Styles Lastest Transactions*/
 /***********************************************/
+$font-main: 'Lato';
+$blue-gray-dark:#324964;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #197ce8;
+$blue-middle: #005cc0;
+
 .title__container{
     width: 100%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -23,14 +30,14 @@
         top: 20px !important;
         right: 20px !important;
         cursor: pointer;
-        color: #676767 !important;
-        font-weight: 400 !important;
+        color: $blue-light !important;
+        font-weight: 600 !important;
         font-size: .8rem !important;
         text-transform: none !important;
         border-radius: 5px !important;
         padding: 5px 20px !important;
         /* background-color: red !important; */
-        border: 1px solid #676767 !important;
+        border: 1px solid $blue-light !important;
     }
 }
 
@@ -62,25 +69,31 @@
                     height: 40px;
                     width: 40px;
                     display: inline-block;
-                    background-color: #e8e8e8;
+                    background-image: url('../../assets/images/txlogo-blue.png');
+                    background-position: left center;
+                    background-repeat: no-repeat;
+                    background-size: 70%;
+                }
+                .picture.red{
+                    background-image: url('../../assets/images/txlogo-red.png');
                 }
                 .time{
                     font-size: .7rem;
-                    font-weight: 500;
-                    color: #403f3f;
+                    font-weight: 700;
+                    color: $blue-light;
                     width: 100%;
                     display: inline-block;
                 }
             }
             .field{
-                color: #000;
-                font-weight: 500;
+                color: #676767;
+                font-weight: 600;
                 font-size: .9rem;
             }
     
             .value{
-                color: #676767;
-                font-weight: 400;
+                color: $blue-gray-dark;
+                font-weight: 600;
                 font-size: 0.8rem;
 
                 .logoAlgo{
@@ -89,8 +102,33 @@
                     margin-top: -2px;
                     margin-left: -2px;
                 }
+                .logoAlgo.white{
+                    margin-top: 0 !important;
+                    margin-right: 2px;
+                    vertical-align: middle;
+                    margin-left: 2px;
+                }
+            }
+            .value.blue{
+                color: $blue-middle;
+                font-weight: 700;
+            }
+            .value.black{
+                color: #000;
+                font-weight: 700;
+            }
+            .value.import{
+                background-color: $blue-gray-dark;
+                color: #fff;
+                font-weight: 500;
+                border-radius: 4px;
+                padding: 2px 3px;
             }
         }
     }
+}
+
+.picture:nth-child(even) {
+    background-color: red;
 }
   

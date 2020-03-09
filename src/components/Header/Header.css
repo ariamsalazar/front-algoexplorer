@@ -11,7 +11,7 @@
     height: 100%;
     background-image: url("../../assets/images/logo-black.png");
     background-size: contain;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat; }
   .app__bar .form__search {
     width: 100%;
@@ -83,7 +83,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
     .app__bar .container__link__header .link__main {
       height: auto;
       color: #fff;
@@ -120,7 +120,7 @@
       background-color: transparent;
       border-radius: 0;
       border: none;
-      font-size: 1rem;
+      font-size: .9rem;
       letter-spacing: 1px;
       list-style: none;
       position: relative;
@@ -169,6 +169,12 @@
     .app__bar .container__link__header #drop__link:hover {
       transition: 0.6s;
       color: #008ff9; }
+    .app__bar .container__link__header .wallet-list {
+      background-image: url("../../assets/images/wallet-blue.png"), url("../../assets/images/down-blue.png") !important;
+      background-position: left, right !important;
+      background-repeat: no-repeat, no-repeat !important;
+      background-size: 16px, 8px !important;
+      padding-left: 4.5%; }
     .app__bar .container__link__header .dropdown-toggle::after {
       display: none !important; }
     .app__bar .container__link__header .dropdown-menu {
@@ -205,8 +211,9 @@
   color: #59d8a1;
   border: 1px solid #59d8a1 !important;
   font-family: "Lato" !important;
-  padding: 5px 4% 5px 2%;
+  padding: 2px 4% 2px 2%;
   border-radius: 4px;
+  font-size: .85rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .5px;

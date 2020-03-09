@@ -6,26 +6,27 @@ import algoLogo from '../../assets/images/algo.png';
 
 class BlockItem extends React.Component {
     render(){
+        console.log(this.props.iconColorB);
         return (
             <div className="list__item">
                 <Grid container spacing={1}>
-                    <Grid item xs={1.5}>
+                    <Grid item xs={2}>
                         <div className="picture__container">
-                            <div className="picture_circular"></div>
+                            <div className={ "picture_circular " + ( this.props.iconColorB || "")}></div>
                             <span className="time">05 secs ago</span>
                         </div>
                     </Grid>
-                    <Grid item xs={3.5}>
+                    <Grid item xs={3}>
                         <span className="field">Round: </span>
-                        <span className="value">R3483573H8IHUe...</span><br/>
+                        <span className="value blue" style={{textDecoration: 'underline'}}>543535</span><br/>
                     </Grid>
-                    <Grid item xs={3.5}>
+                    <Grid item xs={4}>
                         <span className="field">Proposer: </span>
                         <span className="value">R3483573H8IHUe...</span><br/>
                     </Grid>
-                    <Grid item xs={3.5}>
+                    <Grid item xs={3}>
                         <span className="field">Txs: </span>
-                        <span className="value"><img className="logoAlgo" src={algoLogo} width="25"/> 8,445,455</span><br/>
+                        <span className="value">757575</span><br/>
                     </Grid>
                 </Grid>
             </div>

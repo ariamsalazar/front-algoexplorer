@@ -5,6 +5,9 @@ $font-main: 'Lato';
 $blue-light: #008ff9;
 $blue-middle: #005cc0;
 $black: #000;
+$green-light: #59d8a1;
+$gray-dark: #676767;
+$blue-gray-dark:#324964;
 .main__wrapper {
     display: grid;
     position: relative;
@@ -30,9 +33,9 @@ $black: #000;
             height: auto;
             text-align: center;
             font-size: .8rem;
-            color: #676767;
+            color: $gray-dark;
             text-align: left;
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: normal;
             text-transform: uppercase;
         }
@@ -132,11 +135,16 @@ $black: #000;
             height: auto;
             text-align: center;
             font-size: .8rem;
-            color: #676767;
-            font-weight: 400;
+            color: $gray-dark;
+            font-weight: 500;
             text-align: left;
             letter-spacing: normal;
             text-transform: uppercase;
+            
+            .t-blue{
+                color: $blue-light;
+                font-weight: 600;
+            }
         }
         .box-title.side{
             text-align: left;
@@ -162,9 +170,11 @@ $black: #000;
             position: absolute;
             top: 1rem;
             right: 1rem;
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             color: #777;
             cursor: pointer;
+            text-decoration: underline;
+            color: $blue-light;
         }
         .container__filter__main{
             height: auto;
@@ -208,6 +218,10 @@ $black: #000;
             display: inline-block;
             // background-color: pink;
         }
+        .recharts-text tspan{
+            color: $gray-dark !important;
+            font-size: 0.9rem !important;
+        }
         .speedo-segment {
             fill: transparent;
             stroke: $blue-middle !important;
@@ -216,13 +230,13 @@ $black: #000;
             border: none;
         }
         .current-value{
-            font-weight: 500 !important;
+            font-weight: 400 !important;
 
         }
         .filters__container{
             position: absolute;
             top: 1rem;
-            right: 20%;
+            right: 15%;
             height: auto;
             border-radius: 4px;
 
@@ -235,7 +249,7 @@ $black: #000;
                 text-align: center;
                 display: inline-block;
                 vertical-align: top;
-                font-size: .75rem;
+                font-size: .7rem;
                 cursor: pointer;
                 color: #777;
                 transition: 0.6s;
@@ -246,7 +260,11 @@ $black: #000;
             }
             .filter-c:hover{
                 transition: 0.6s;
-                background-color: #000;
+                background-color: #197ce8;
+                color: #fff;
+            }
+            .filter-c.active{
+                background-color: #197ce8;
                 color: #fff;
             }
         }
@@ -257,17 +275,32 @@ $black: #000;
         .box-container.with-padding{
             padding: 1rem;
         }
-}
 
+        .mark-input{
+            display: inline-block;
+            vertical-align: top;
+            width: 33.3%;
+            font-size: .85rem;
+            color: $black;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+            height: auto;
+            text-align: center;
+        }
+}
+.pointer{
+    fill: $blue-gray-dark;
+}
 .rating-value{
     display: inline-block;
     font-size: .8rem;
     font-weight: bold;
     letter-spacing: normal;
     text-align: right;
-    color: #4f4e4e;
+    color: $green-light;
     padding-left: 15px;
-    background-image: url('../../assets/images/up-arrow.png');
+    background-image: url('../../assets/images/up-green.png');
     background-position: left;
     background-repeat: no-repeat;
     background-size: 10px;

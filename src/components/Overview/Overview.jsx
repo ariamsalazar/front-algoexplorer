@@ -45,10 +45,10 @@ class Overview extends React.Component {
         const renderLineChart = (
             <ResponsiveContainer width="100%" height={150}>
                 <LineChart width={500} height="90%" data={data} margin={{ top: 10, right: 15, bottom: 5, left: 0 }}>
-                    <Line type="monotone" dataKey="uv" dot={false} stroke="#999"  strokeWidth="2"/>
+                    <Line type="monotone" dataKey="uv" dot={false} stroke="#324964"  strokeWidth="2"/>
                     <CartesianGrid stroke={false} strokeDasharray="5 5" />
-                    <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>
-                    <YAxis stroke="transparent" tick={{ fill: '#333' }} />
+                    <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#676767' }} padding={{ left: 40, right: 40 }}/>
+                    <YAxis stroke="transparent" tick={{ fill: '#676767' }} />
                     <Tooltip />
                 </LineChart>
             </ResponsiveContainer>
@@ -75,8 +75,6 @@ class Overview extends React.Component {
                     ringWidth={15}
                 />
             </ResponsiveContainer>
-            
-           
         );
         return (
             <div className={classes.root}>
@@ -112,12 +110,12 @@ class Overview extends React.Component {
                         </div>
                     </div>
                     <div className="box-container with-padding">
-                        <   span className="box-title side">Daily transactions</span>
+                        <span className="box-title side">Algo Daily transactions: <span className="t-blue">24535</span></span>
                             <Link className="link__open">Open Chart</Link>
                             <div className="filters__container">
                                 <Link className="filter-c">1H</Link>
                                 <Link className="filter-c">2D</Link>
-                                <Link className="filter-c">3D</Link>
+                                <Link className="filter-c active">3D</Link>
                                 <Link className="filter-c">1W</Link>
                                 <Link className="filter-c">3M</Link>
                                 <Link className="filter-c">6M</Link>

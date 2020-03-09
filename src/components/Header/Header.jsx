@@ -4,9 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link';
 import { withStyles } from "@material-ui/core/styles";
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import iconSearch from '../../assets/images/search.png';
 const styles = theme => ({
     root: {
@@ -104,6 +102,7 @@ class Header extends React.Component {
                                     <li className="tools-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Tools
                                         {this.state.hoveredEl === "tools-list" &&
                                             <ul className="dropdown__items">
+                                                <div className="triangulo-equilatero-bottom"></div>
                                                 <li className="dropdown-item">Rewards Calculator</li>
                                                 <li className="dropdown-item">2019 Staking Rewards</li>
                                                 <li className="dropdown-item">Algorand Tester Dispenser</li>
@@ -113,6 +112,7 @@ class Header extends React.Component {
                                     <li className="wallet-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Wallets
                                         {this.state.hoveredEl === "wallet-list" &&
                                             <ul className="dropdown__items">
+                                                <div className="triangulo-equilatero-bottom"></div>
                                                 <li className="dropdown-item">My Algo Wallet</li>
                                                 <li className="dropdown-item">Algorand iOS Wallet</li>
                                                 <li className="dropdown-item">Algorand Android Wallet</li>
@@ -120,7 +120,6 @@ class Header extends React.Component {
                                             </ul>
                                         }
                                     </li>
-                                
                                     <select className="select__network">
                                         <option value="grapefruit">Betanet</option>
                                         <option value="lime">Testnet</option>

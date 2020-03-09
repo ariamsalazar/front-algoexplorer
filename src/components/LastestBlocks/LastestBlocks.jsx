@@ -12,12 +12,12 @@ class LastestBlocks extends React.Component {
                     <Button className="btn__more">View all Blocks</Button>
                 </div>
                 <div className="list__scroll">
-                   <BlockItem/>
-                   <BlockItem/>
-                   <BlockItem/>
-                   <BlockItem/>
-                   <BlockItem/>
-                   <BlockItem/>
+                   <BlockItem iconColorB="green"/>
+                   <BlockItem iconColorB="purple"/>
+                   <BlockItem iconColorB="green"/>
+                   <BlockItem iconColorB="purple"/>
+                   <BlockItem iconColorB="green"/>
+                   <BlockItem iconColorB="purple"/>
                 </div>
             </div>
         ); 

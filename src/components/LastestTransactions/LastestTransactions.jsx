@@ -12,12 +12,12 @@ class LastestTransactions extends React.Component {
                     <Button className="btn__more">View all Transactions</Button>
                 </div>
                 <div className="list__scroll">
-                    <TransactionItem />
-                    <TransactionItem />
-                    <TransactionItem />
-                    <TransactionItem />
-                    <TransactionItem />
-                    <TransactionItem />
+                    <TransactionItem iconColor="azul"/>
+                    <TransactionItem iconColor="red"/>
+                    <TransactionItem iconColor="azul"/>
+                    <TransactionItem iconColor="red"/>
+                    <TransactionItem iconColor="blue"/>
+                    <TransactionItem iconColor="red"/>
                 </div>
             </div>
         ); 
