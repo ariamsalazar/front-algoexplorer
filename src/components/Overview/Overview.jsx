@@ -5,6 +5,7 @@ import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import ReactSpeedometer from "react-d3-speedometer";
 import algoLogo from '../../assets/images/algo.png';
+import RangeDate from '../General/RangeDate';
 
 const styles = theme => ({
     root: {
@@ -42,8 +43,8 @@ class Overview extends React.Component {
 
         /*Line Chart*/ 
         const renderLineChart = (
-            <ResponsiveContainer width="100%" height={180}>
-                <LineChart width={500} height="90%" data={data} margin={{ top: 5, right: 20, bottom: 5, left: 20 }}>
+            <ResponsiveContainer width="100%" height={150}>
+                <LineChart width={500} height="90%" data={data} margin={{ top: 10, right: 15, bottom: 5, left: 0 }}>
                     <Line type="monotone" dataKey="uv" dot={false} stroke="#999"  strokeWidth="2"/>
                     <CartesianGrid stroke={false} strokeDasharray="5 5" />
                     <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>
@@ -53,25 +54,29 @@ class Overview extends React.Component {
             </ResponsiveContainer>
         );
         const renderSpeedChart = (
-            <ReactSpeedometer
-                maxSegmentLabels={0}
-                segments={30}
-                maxValue={10}
-                minValue={0}
-                value={2.5}
-                startColor="#999"
-                endColor="#999"
-                needleColor="#333"
-                height={180}
-                width={300}
-                needleHeightRatio={0.6}
-                needleTransitionDuration={4000} 
-                needleTransition="easeElastic"
-                currentValueText="`${value} Sec"
-                valueTextFontSize="25px"
-                textColor="#000"
-                ringWidth={15}
-            />
+            <ResponsiveContainer width="100%" height={200}>
+                <ReactSpeedometer
+                    maxSegmentLabels={0}
+                    segments={30}
+                    maxValue={10}
+                    minValue={0}
+                    value={2.5}
+                    startColor="#999"
+                    endColor="#999"
+                    needleColor="#333"
+                    width={600} 
+                    height="100%"
+                    needleHeightRatio={0.6}
+                    needleTransitionDuration={4000} 
+                    needleTransition="easeElastic"
+                    currentValueText="${value} Sec"
+                    valueTextFontSize="20px"
+                    textColor="#000"
+                    ringWidth={15}
+                />
+            </ResponsiveContainer>
+            
+           
         );
         return (
             <div className={classes.root}>
@@ -101,18 +106,8 @@ class Overview extends React.Component {
                </div>
                {/* Second component */}
                <div className="main__wrapper__second">
-                    <div className="box-container">
-                        <div className="box-inside">
-                            <span className="box-title">Total transactions</span>
-                            <div className="box-value">$2,245,564</div>
-                        </div>
-                        <div className="box-inside">
-                            <span className="box-title">Lastest Blocks</span>
-                            <div className="box-value">3345454</div>
-                        </div>
-                    </div>
                     <div className="box-container with-padding">
-                        <span className="box-title">Block transaction speed</span>
+                        <span className="box-title with-icon">Block transaction speed</span>
                         <div className="chart__container">
                            {renderSpeedChart}
                         </div>
@@ -133,6 +128,13 @@ class Overview extends React.Component {
                             <div className="chart__container">
                                 {renderLineChart}
                             </div>
+                    </div>
+                    <div className="box-container with-padding">
+                        <span className="box-title with-icon">Stacking Rewards Calculator</span>
+                        <div className="container__filter__main">
+                            <input className="input-filter" value="0.00"></input><span className="span-filter">Algos</span>
+                        </div>
+                        <RangeDate />
                     </div>
                </div>
             </div>

@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import { withStyles } from "@material-ui/core/styles";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-
+import iconSearch from '../../assets/images/search.png';
 const styles = theme => ({
     root: {
         flexGrow: 1,
@@ -38,7 +38,8 @@ class Header extends React.Component {
         dropdownOpen: false
         };
     }
-    toggle() {
+    
+    toggle(i) {
         this.setState(prevState => ({
         dropdownOpen: !prevState.dropdownOpen
         }));
@@ -62,11 +63,22 @@ class Header extends React.Component {
                             </Grid>
                             <Grid item xs={5}>
                                 <form className="form__search">
-                                    <input type="text" name="name"  className="form__input" placeholder="Search by Address/ Tx ID / Blocks/ Asset Name/ Asset ID"/><Button variant="outlined" className="btn__submitt">Search</Button>
+                                    <input type="text" name="name"  className="form__input" placeholder="Search by Address/ Tx ID / Blocks/ Asset Name/ Asset ID"/><Button variant="outlined" className="btn__submitt">
+                                        <img className="search-icon" src={iconSearch} width="20"/>
+                                    </Button>
                                 </form>
                             </Grid>
                             <Grid item xs={5}>
                             <div className="container__link__header">
+                                    <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                                        <DropdownToggle caret className="drop__link">
+                                            Assets
+                                        </DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem>Standar</DropdownItem>
+                                            <DropdownItem>Non-Fungible ASA</DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
                                     <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                                         <DropdownToggle caret className="drop__link">
                                             Assets

@@ -2,6 +2,9 @@
 /*Styles Overview*/
 /***********************************************/
 $font-main: 'Lato';
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+$black: #000;
 .main__wrapper {
     display: grid;
     position: relative;
@@ -101,7 +104,7 @@ $font-main: 'Lato';
     display: grid;
     position: relative;
     transition: 0.6s;
-    grid-template-columns: 20% 30% 50%;
+    grid-template-columns: 20% 52% 28%;
     grid-gap: 0px;
     width: 100%;
     border-radius: 4px;
@@ -138,6 +141,12 @@ $font-main: 'Lato';
         .box-title.side{
             text-align: left;
         }
+        .box-title.with-icon{
+            background-image: url('../../assets/images/info-icon.png');
+            background-position: right;
+            background-size: 12px;
+            background-repeat: no-repeat;
+        }
         .box-value{
             width: 100%;
             display: inline-block;
@@ -157,20 +166,58 @@ $font-main: 'Lato';
             color: #777;
             cursor: pointer;
         }
+        .container__filter__main{
+            height: auto;
+            width: 100%;
+            // background-color: yellow;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .input-filter{
+                border: 1px solid #324964;
+                font-size: 1.5rem;
+                color: $black;
+                outline: none;
+                background-color: transparent;
+                font-weight: 500;
+                width: 65%;
+                text-align: center;
+                padding: 0px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 4px;
+            }
+            .span-filter{
+                display: inline-block;
+                vertical-align: middle;
+                height: auto;
+                font-size: 1.2rem;
+                font-weight: 500;
+                width: 35%;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
         .chart__container {
             width: 100%;
             margin-top: 10px;
-            height: 90%;
+            height: 150px;
             text-align: center;
             display: inline-block;
             // background-color: pink;
         }
         .speedo-segment {
             fill: transparent;
-            stroke: #999;
-            stroke-dasharray: 0,48,45,0;
-            stroke-width: 1.5px;
+            stroke: $blue-middle !important;
+            stroke-dasharray: 1,49,50,0;
+            stroke-width: 6.5px;
             border: none;
+        }
+        .current-value{
+            font-weight: 500 !important;
+
         }
         .filters__container{
             position: absolute;

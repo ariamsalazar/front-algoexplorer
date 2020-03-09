@@ -83,7 +83,7 @@
   display: grid;
   position: relative;
   transition: 0.6s;
-  grid-template-columns: 20% 30% 50%;
+  grid-template-columns: 20% 52% 28%;
   grid-gap: 0px;
   width: 100%;
   border-radius: 4px;
@@ -114,6 +114,11 @@
       text-transform: uppercase; }
     .main__wrapper__second .box-container .box-title.side {
       text-align: left; }
+    .main__wrapper__second .box-container .box-title.with-icon {
+      background-image: url("../../assets/images/info-icon.png");
+      background-position: right;
+      background-size: 12px;
+      background-repeat: no-repeat; }
     .main__wrapper__second .box-container .box-value {
       width: 100%;
       display: inline-block;
@@ -131,18 +136,49 @@
       font-size: 1.1rem;
       color: #777;
       cursor: pointer; }
+    .main__wrapper__second .box-container .container__filter__main {
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .main__wrapper__second .box-container .container__filter__main .input-filter {
+        border: 1px solid #324964;
+        font-size: 1.5rem;
+        color: #000;
+        outline: none;
+        background-color: transparent;
+        font-weight: 500;
+        width: 65%;
+        text-align: center;
+        padding: 0px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 4px; }
+      .main__wrapper__second .box-container .container__filter__main .span-filter {
+        display: inline-block;
+        vertical-align: middle;
+        height: auto;
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 35%;
+        text-align: center;
+        text-transform: uppercase; }
     .main__wrapper__second .box-container .chart__container {
       width: 100%;
       margin-top: 10px;
-      height: 90%;
+      height: 150px;
       text-align: center;
       display: inline-block; }
     .main__wrapper__second .box-container .speedo-segment {
       fill: transparent;
-      stroke: #999;
-      stroke-dasharray: 0,48,45,0;
-      stroke-width: 1.5px;
+      stroke: #005cc0 !important;
+      stroke-dasharray: 1,49,50,0;
+      stroke-width: 6.5px;
       border: none; }
+    .main__wrapper__second .box-container .current-value {
+      font-weight: 500 !important; }
     .main__wrapper__second .box-container .filters__container {
       position: absolute;
       top: 1rem;
