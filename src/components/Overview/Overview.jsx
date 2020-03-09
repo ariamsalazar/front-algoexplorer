@@ -99,9 +99,8 @@ class Overview extends React.Component {
                         <div className="box-value "><img className="logoAlgo" src={algoLogo} width="38"/> 1,622,972,252 </div>
                     </div>
                     <div className="box-container">
-                        <span className="box-title with-icon">Rewards per Block per Algo</span>
-                        <div className="box-value">0,002 Algos </div>
-                        <div className="calculator-icon"></div>
+                        <span className="box-title">Lastest Blocks</span>
+                        <div className="box-value">233533</div>
                     </div>
                </div>
                {/* Second component */}

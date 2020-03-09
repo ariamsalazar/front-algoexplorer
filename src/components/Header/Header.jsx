@@ -34,11 +34,24 @@ class Header extends React.Component {
         this.toggle = this.toggle.bind(this);
         this.onMouseEnter = this.onMouseEnter.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.handleMouseOver = this.handleMouseOver.bind(this);
+        this.handleMouseLeave = this.handleMouseLeave.bind(this);
         this.state = {
-        dropdownOpen: false
+            dropdownOpen: false,
+            hoveredEl: -1
         };
     }
-    
+    handleMouseOver(e) {
+        e.stopPropagation();
+        if(e.target.className.indexOf("dropdown") === -1){
+            console.log(e.target.className);
+            this.setState({ hoveredEl: e.target.className });
+        }     
+    }
+    handleMouseLeave(e) {
+        e.preventDefault();
+        this.setState({ hoveredEl: -1 })
+    };
     toggle(i) {
         this.setState(prevState => ({
         dropdownOpen: !prevState.dropdownOpen
@@ -70,24 +83,44 @@ class Header extends React.Component {
                             </Grid>
                             <Grid item xs={5}>
                             <div className="container__link__header">
-                                    <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                                        <DropdownToggle caret className="drop__link">
-                                            Assets
-                                        </DropdownToggle>
-                                        <DropdownMenu>
-                                            <DropdownItem>Standar</DropdownItem>
-                                            <DropdownItem>Non-Fungible ASA</DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
-                                    <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                                        <DropdownToggle caret className="drop__link">
-                                            Assets
-                                        </DropdownToggle>
-                                        <DropdownMenu>
-                                            <DropdownItem>Standar</DropdownItem>
-                                            <DropdownItem>Non-Fungible ASA</DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
+                                    <li className="assets-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Assets
+                                        {this.state.hoveredEl === "assets-list" &&
+                                            <ul className="dropdown__items">
+                                                <div className="triangulo-equilatero-bottom"></div>
+                                                <a href="/" className="dropdown-item">Standard </a>
+                                                <li className="dropdown-item">Non-fungible ASA</li>
+                                            </ul>
+                                        }
+                                    </li>
+                                    <li className="statistics-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Statistics
+                                        {this.state.hoveredEl === "statistics-list" &&
+                                            <ul className="dropdown__items">
+                                                <div className="triangulo-equilatero-bottom"></div>
+                                                <li className="dropdown-item">Top Accounts</li>
+                                                <li className="dropdown-item">Top Statistics</li>
+                                            </ul>
+                                        }
+                                    </li>
+                                    <li className="tools-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Tools
+                                        {this.state.hoveredEl === "tools-list" &&
+                                            <ul className="dropdown__items">
+                                                <li className="dropdown-item">Rewards Calculator</li>
+                                                <li className="dropdown-item">2019 Staking Rewards</li>
+                                                <li className="dropdown-item">Algorand Tester Dispenser</li>
+                                            </ul>
+                                        }
+                                    </li>
+                                    <li className="wallet-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Wallets
+                                        {this.state.hoveredEl === "wallet-list" &&
+                                            <ul className="dropdown__items">
+                                                <li className="dropdown-item">My Algo Wallet</li>
+                                                <li className="dropdown-item">Algorand iOS Wallet</li>
+                                                <li className="dropdown-item">Algorand Android Wallet</li>
+                                                <li className="dropdown-item">Atomic Wallet</li>
+                                            </ul>
+                                        }
+                                    </li>
+                                
                                     <select className="select__network">
                                         <option value="grapefruit">Betanet</option>
                                         <option value="lime">Testnet</option>

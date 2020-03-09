@@ -114,7 +114,7 @@ $blue-middle: #005cc0;
             text-align: center;
             letter-spacing: .5px;
             cursor: pointer;
-            background-image: url('../../assets/images/down-arrow.png');
+            background-image: url('../../assets/images/down-blue.png');
             background-size: 5px;
             background-position: right;
             background-repeat: no-repeat;
@@ -128,25 +128,83 @@ $blue-middle: #005cc0;
             background-repeat: no-repeat, no-repeat;
             padding-left: 22px;
         }
-        .drop__link{
+        #drop__link{
             height: auto;
-            color: #fff;
+            color:$blue-gray-dark;
             font-weight: 400;
             text-align: center;
             letter-spacing: .5px;
             cursor: pointer;
             background-image: none;
-            background-image: url('../../assets/images/down-arrow.png');
-            background-size: 8px;
+            background-image: url('../../assets/images/down-blue.png');
+            background-size: 7px;
             background-position: right;
             background-repeat: no-repeat;
-            padding-right: .75rem;
+            padding-right: .8rem;
             letter-spacing: normal;
             background-color: transparent;
             border-radius: 0;
             border:none;
             font-size: 1rem;
             letter-spacing: 1px;
+            // background-color: red;
+            list-style: none;
+            position: relative;
+            transition: 0.6s;
+
+           
+            
+            .dropdown__items{
+                width: auto;
+                top: 24px;
+                position: absolute;
+                left: 0;
+                background-color: $white;
+                box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+                height: auto;
+                border-radius: 4px;
+                padding: 10px;
+                text-align: center;
+
+                .triangulo-equilatero-bottom {
+                    position: absolute;
+                    bottom: 100%;
+                    left: 38%;
+                    width: 0;
+                    height: 0;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-bottom: 10px solid #ffff;                    
+               }
+
+                .dropdown-item {
+                    display: block;
+                    width: 100%;
+                    padding: 0 !important;
+                    clear: both;
+                    font-size: .85rem;
+                    text-align: left;
+                    font-weight: 500;
+                    color:  #000;
+                    text-align: inherit;
+                    text-align: left;
+                    margin-top: 8px;
+                    font-size: .8rem;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border: 0;
+                    position: relative;
+                    cursor: pointer;
+                }
+                .dropdown-item:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        #drop__link:hover{
+            transition: 0.6s;
+            color: $blue-light;
         }
         .dropdown-toggle::after{
             display: none !important;
@@ -193,7 +251,7 @@ $blue-middle: #005cc0;
     color: $green-light;
     border: 1px solid $green-light !important;
     font-family: $font-main !important;
-    padding: 5px 4% 5px 3%;
+    padding: 5px 4% 5px 2%;
     border-radius: 4px;
     text-align: center;
     text-transform: uppercase;
@@ -204,10 +262,10 @@ $blue-middle: #005cc0;
     -webkit-appearance:none;
     -moz-appearance:none;
     -ms-appearance:none;
-    background:url('../../assets/images/down-arrow.png');
+    background:url('../../assets/images/down-green.png');
     background-repeat:no-repeat;
     background-size: 8px;
-    background-position: 95% center;
+    background-position: 92% center;
 }
 .select__network option{
     background-color: #676767;
