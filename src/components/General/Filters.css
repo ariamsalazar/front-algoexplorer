@@ -14,11 +14,10 @@
   .header__list .select__style {
     position: relative;
     display: inline-block;
-    vertical-align: top;
-    width: 15%;
+    vertical-align: middle;
+    width: 18%;
     border-radius: 4px;
     text-align: center;
-    background-color: #efefef;
     margin-left: 15px; }
     .header__list .select__style .select__filter {
       border: none;
@@ -106,3 +105,84 @@
       background-size: 10px;
       min-width: 40px !important;
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); }
+
+.css-yk16xz-control {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #efefef !important;
+  border-color: transparent !important;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 10px !important;
+  outline: none !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  box-sizing: border-box;
+  vertical-align: middle; }
+
+.css-1hb7zxy-IndicatorsContainer {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  background-color: #324964 !important;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important; }
+
+.css-6q0nyr-Svg {
+  display: inline-block;
+  fill: #fff !important;
+  line-height: 1;
+  stroke: #fff !important;
+  stroke-width: 0; }
+
+.css-1okebmr-indicatorSeparator {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  background-color: transparent !important;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 1px;
+  box-sizing: border-box; }
+
+.css-1wa3eu0-placeholder {
+  color: #000 !important;
+  text-align: center !important;
+  top: 50% !important; }
+
+.css-tlfecz-indicatorContainer {
+  color: #fff !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px !important; }
