@@ -19,7 +19,7 @@ const styles = theme => ({
         border: 'none',
         boxShadow: 'none',
         borderRadius: '4px',
-        margin: '3% 0 3% 0'
+        margin: '2% 0 2% 0'
     },
     paperIntern: {
         padding: "15px "+theme.spacing(3)+"px",
@@ -30,7 +30,7 @@ const styles = theme => ({
         boxSizing: 'border-box',
         wordWrap: 'break-word'
     },
-    paperInternActive: {
+    paperInternActiveDarker: {
         padding: "15px "+theme.spacing(3)+"px",
         border: 'none',
         borderRadius: '4px',
@@ -41,7 +41,7 @@ const styles = theme => ({
         position: 'relative',
         wordWrap: 'break-word'
     },
-    paperInternActiveDarker: {
+    paperInternActive: {
         padding: "15px "+theme.spacing(3)+"px",
         border: 'none',
         borderRadius: '4px',
@@ -86,7 +86,7 @@ class TransactionOverview extends React.Component {
                 {/* Transactions Overview 2 components */}
                 <Grid container spacing={3}>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternActiveDarker}>
+                        <Paper className={classes.paperInternActive}>
                             <div>
                                 <span className="detail__title blue">Transaction ID <Link className="copy-link blue">Copy</Link></span>
                                 <span className="detail__value small-blue">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
@@ -96,17 +96,17 @@ class TransactionOverview extends React.Component {
                     <Grid item xs={6} >
                         <Paper className={classes.paperIntern}>
                             <span className="detail__title">Timestamp </span>
-                            <span className="detail__value small">Friday, Feb 21 , 2020 00:40:25 GMT-0500 (Colombia Standard Time) </span>
+                            <span className="detail__value small-blue">Friday, Feb 21 , 2020 00:40:25 GMT-0500 (Colombia Standard Time) </span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternActive}>
+                        <Paper className={classes.paperInternActiveDarker}>
                             <span className="detail__title green">Sender <Link className="copy-link">Copy</Link></span>
                             <span className="detail__value small-white">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternActive}>
+                        <Paper className={classes.paperInternActiveDarker}>
                             <span className="detail__title green">Receiver <Link className="copy-link">Copy</Link></span>
                             <span className="detail__value small-white">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
                         </Paper>

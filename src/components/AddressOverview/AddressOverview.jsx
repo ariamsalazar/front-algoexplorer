@@ -20,7 +20,7 @@ const styles = theme => ({
         border: 'none',
         boxShadow: 'none',
         borderRadius: '4px',
-        margin: '3% 0 3% 0',
+        margin: '2% 0 2% 0',
         position: 'relative'
     },
     paperIntern: {

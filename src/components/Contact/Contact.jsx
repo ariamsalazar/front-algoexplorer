@@ -28,28 +28,30 @@ class Contact extends React.Component {
                 {/* Component Title */}
                 <Grid container>
                     <Grid item xs={12}>
-                        <div className="title__big">
-                            Contact Us
-                        </div>
+                        <Paper className={classes.paper}>
+                            <div className="title__big">
+                                Contact Us
+                            </div>
+                        </Paper>
                     </Grid>
                 </Grid>
                 <Grid container className="form__contact" spacing={4}  justify="center">
                     
                         <Grid item xs={4}>
                             <Paper className={classes.paper}>
-                                <span className="title__input">Name * </span>
+                                <span className="title__input">Name <span className="input-required">*</span></span>
                                 <input className="box__input" placeholder="Lebron James"></input>
                             </Paper>
                         </Grid>
                         <Grid item xs={4}>
                             <Paper className={classes.paper}>
-                                <span className="title__input">Email * </span>
+                                <span className="title__input">Email <span className="input-required">*</span> </span>
                                 <input className="box__input" placeholder="lebron@gmail.com"></input>
                             </Paper>
                         </Grid>
                         <Grid item xs={8}>
                             <Paper className={classes.paper}>
-                                <span className="title__input">Subject * </span>
+                                <span className="title__input">Subject <span className="input-required">*</span> </span>
                                 <input className="box__input" placeholder="2. Support / Technical Issue"></input>
                             </Paper>
                         </Grid>

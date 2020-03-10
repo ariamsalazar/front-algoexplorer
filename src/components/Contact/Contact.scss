@@ -2,15 +2,23 @@
 /*Styles Contact*/
 /***********************************************/
 $font-main: 'Lato';
+$blue-gray-dark:#324964;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+
 .title__big{
     width: 100%;
     height: auto;
-    background-color: #c3e8ec;
-    text-align: center;
+    background-color: $blue-gray-dark;
+    text-align: left;
     padding: 2% 0;
     font-size: 2rem;
     letter-spacing: normal;
     font-weight: 600;
+    padding-left: 40px;
+    color: $white;
     font-family: $font-main;
 }
 
@@ -32,13 +40,17 @@ $font-main: 'Lato';
         letter-spacing: normal;
         height: auto;
         text-align: left;
+
+        .input-required{
+            color: $blue-light;
+        }
     }
     .box__input{
         width: 100%;
-        border:1px solid rgba(0,0,0,0.65);
+        border:1px solid #bebebe;
         height: 100%;
-        padding: 15px 10px;
-        color: #676767;
+        padding:  15px 13px;
+        color: #a3a3a3;
         font-size: 1rem;
         letter-spacing: normal;
         font-weight: 400;
@@ -48,10 +60,10 @@ $font-main: 'Lato';
     }
     .box__textarea{
         width: 100%;
-        border:1px solid rgba(0,0,0,0.65);
+        border:1px solid #bebebe;
         height: 140px;
-        padding: 15px 10px;
-        color: #676767;
+        padding: 15px 13px;
+        color: #a3a3a3;
         font-size: 1rem;
         letter-spacing: normal;
         font-weight: 400;
@@ -60,9 +72,10 @@ $font-main: 'Lato';
         outline: none;
     }
     .submit__btn{
-        background-color: #676767;
-        color: #fff;
-        font-weight: 400;
+        background-color: #fff;
+        border:1px solid $blue-middle;
+        color: $blue-middle;
+        font-weight: 600;
         text-align: center;
         letter-spacing: normal;
         font-size: 1rem;
@@ -74,6 +87,5 @@ $font-main: 'Lato';
         .submit__btn:hover{
             opacity: 0.8;
             transition: 0.6s;
-            background-color: #676767;
         }
 }

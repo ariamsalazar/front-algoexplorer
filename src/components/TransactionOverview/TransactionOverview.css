@@ -80,7 +80,7 @@
   font-weight: 600; }
 
 .detail__value.small-white {
-  font-size: .95rem;
+  font-size: .95rem !important;
   font-weight: 400;
   color: #fff;
   text-align: left;
@@ -94,7 +94,7 @@
   letter-spacing: 0; }
 
 .detail__value.small {
-  font-size: 1rem;
+  font-size: .95rem !important;
   font-weight: 500;
   color: #324964;
   text-align: left;
