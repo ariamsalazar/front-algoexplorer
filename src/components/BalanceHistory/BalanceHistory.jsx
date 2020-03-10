@@ -20,7 +20,7 @@ const styles = theme => ({
         boxShadow: 'none',
     },
     paperIntern: {
-        padding: "30px "+theme.spacing(3)+"px",
+        padding: "30px "+theme.spacing(0)+"px",
         border: 'none',
         margin: '2% 0', 
         backgroundColor: 'transparent',
@@ -104,7 +104,7 @@ class BalanceHistory extends React.Component {
                             <div className="filters__container">
                                     <Link className="filter-c">1H</Link>
                                     <Link className="filter-c">2D</Link>
-                                    <Link className="filter-c">3D</Link>
+                                    <Link className="filter-c active">3D</Link>
                                     <Link className="filter-c">1W</Link>
                                     <Link className="filter-c">3M</Link>
                                     <Link className="filter-c">6M</Link>

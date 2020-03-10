@@ -1,13 +1,46 @@
 import React from 'react';
 import './Filters.css';
 import Link from '@material-ui/core/Button';
-import Select from "react-select";
+import Select, { components } from "react-select";
+import createClass from "create-react-class";
 
-const options = [
-    { label: "Sent", value: 1 },
-    { label: "Received", value: 2 },
-    { label: "All", value: 3 },
-];
+import { colourOptions, groupedOptions } from "./options";
+const groupStyles = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between"
+};
+const groupBadgeStyles = {
+    backgroundColor: "#EBECF0",
+    borderRadius: "2em",
+    color: 'red',
+    display: "inline-block",
+    fontSize: 10,
+    fontWeight: "normal",
+    lineHeight: "1",
+    minWidth: 1,
+    padding: "0.16666666666667em 0.5em",
+    textAlign: "left"
+};
+
+
+const Option = createClass({
+    render() {
+      return (
+        <div>
+          <components.Option {...this.props}>
+            <input
+              type="checkbox"
+              checked={this.props.isSelected}
+              onChange={e => null}
+            />{" "}
+            <label>{this.props.label} </label>
+          </components.Option>
+        </div>
+      );
+    }
+  });
+  
 class Filters extends React.Component {
 
     constructor(props) {
@@ -17,31 +50,20 @@ class Filters extends React.Component {
           values: []
         };
     }
-    onChangeCheckbox = e => {
-        const isChecked = !this.state.checked;
-        this.setState({
-          checked: isChecked,
-          values: isChecked ? options : this.state.values
-        });
-      };
-      onChange = opt => {
-        const allOptionsSelected = opt.length === options.length;
-        this.setState({
-          checked: allOptionsSelected ? true : false,
-          values: opt
-        });
-    };
     render(){
         return (
             <div className="header__list">
                 Filter: 
                 <form class="select__style">
                     <Select
-                    isMulti
-                    onChange={this.onChange}
-                    options={options}
-                    value={this.state.values}
-                    placeholder="Type of transactions"
+                        closeMenuOnSelect={false}
+                        isMulti
+                        components={{ Option, MultiValue }}
+                        defaultValue={false}
+                        options={colourOptions}               
+                        backspaceRemovesValue={false}
+                        menuIsOpen
+                        placeholder="Type of transactions"
                     />
                     {/* <select className="select__filter">
                         <option value="grapefruit">Type of transactions</option>
@@ -58,6 +80,16 @@ class Filters extends React.Component {
         ); 
     }
 }
+
+const MultiValue = props => {
+    return (
+      <components.MultiValue {...props}>
+        <span>{props.data.label}</span>
+      </components.MultiValue>
+    );
+};
+
+
 export default Filters;
 
 
