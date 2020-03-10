@@ -2,17 +2,24 @@
 /*Styles Address Overview*/
 /***********************************************/
 $font-main: 'Lato';
+$blue-gray-dark:#324964;
+$blue-dark-font: #042753;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+$gray-dark: #676767;
 
 .detail__title{
     width: 100%;
     display: inline-block;
     vertical-align: top;
     height: auto;
-    color: #676767;
+    color: #000 !important;
     font-size: .95rem;
     letter-spacing: normal;
     text-align: left;
-    font-weight: 400;
+    font-weight: 600 !important;
     padding: 5px 0;
     position: relative;
 
@@ -37,10 +44,15 @@ $font-main: 'Lato';
             transition: 0.6s;
         }
 
-            .copy-link:hover{
-                transition: 0.6s;
-                opacity: 0.7;
-            }
+        .copy-link:hover{
+            transition: 0.6s;
+            opacity: 0.7;
+        }
+        .copy-link.blue{
+            border: 1px solid $blue-dark-font;
+            background-image: url('../../assets/images/copy-blue.png');
+            color: $blue-dark-font !important;
+        }
 }
     .detail__title.white{
         color: rgba(255,255,255,1);
@@ -54,23 +66,33 @@ $font-main: 'Lato';
         color: #676767;
         font-size: .9rem;
         font-weight: 400;
-
+    }
+    .detail__title.blue{
+        font-weight: 600;
+        color: $blue-gray-dark !important;
     }
 .detail__value{
     width: 100%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     height: auto;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left !important;
     font-weight: 600;
 }
     .detail__value.small-white{
         font-size: .95rem;
         font-weight: 400;
         color: #fff;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .detail__value.small-blue{
+        font-size: .95rem;
+        font-weight: 500;
+        color: $blue-dark-font;
         text-align: left;
         letter-spacing: 0;
     }
@@ -88,31 +110,33 @@ $font-main: 'Lato';
         text-align: center !important;
         letter-spacing: 0;
     }
-
+    
 .logoAlgo{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    width: 15px;
     margin-top: -2px;
+    margin-right: 5px;
+    margin-left: 0px;
 }
-
 .status{
     position: absolute;
     right: 0;
     top: 0;
     background-color: red;
     border-radius: 4px;
-    background-color: #676767;
+    background-color: $blue-gray-dark;
     color: #fff;
     font-weight: 400;
     font-size: .85rem;
     padding: 0px 0px 0 15px;
-    border: 1px solid #676767;
+    border: 1px solid $blue-gray-dark;
     display: inline-block;
     vertical-align: top;
     
     .status-value{
         font-size: .92rem;
-        color: #000;
+        color: $blue-gray-dark;
         text-align: center;
         padding: 0px 15px;
         margin-left: 10px;
@@ -121,5 +145,10 @@ $font-main: 'Lato';
         display: inline-block;
         vertical-align: top;
         border:none;
+        background-position: 5px;
+        // padding-left: 2%;
+        background-repeat: no-repeat;
+        background-size: 7px;
+        background-image: url('../../assets/images/point-blue.png');
     }
 }

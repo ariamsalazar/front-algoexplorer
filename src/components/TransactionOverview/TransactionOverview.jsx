@@ -114,29 +114,29 @@ class TransactionOverview extends React.Component {
                     {/* Transactions Overview 4 components */}
                     <Grid item xs={3} >
                         <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Amount</span>
+                            <span className="detail__title">Amount</span>
                             <span className="detail__value small center">
-                                <img className="logoAlgo" src={algoLogo} width="25"/>
+                                <img className="logoAlgo" src={algoLogo} />
                                 654.333</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={3} >
                         <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Fee</span>
+                            <span className="detail__title">Fee</span>
                             <span className="detail__value small center">
-                                <img className="logoAlgo" src={algoLogo} width="25"/>
+                                <img className="logoAlgo" src={algoLogo} />
                                 0.001</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={3} >
                         <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Type</span>
+                            <span className="detail__title">Type</span>
                             <span className="detail__value small">Tranfer</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={3} >
                         <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Status</span>
+                            <span className="detail__title">Status</span>
                             <span className="detail__value small green" style={{color: '#59d8a1'}}>Completed</span>
                         </Paper>
                     </Grid>
@@ -161,7 +161,7 @@ class TransactionOverview extends React.Component {
                         <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Sender Balance</span>
                             <span className="detail__value small">
-                                <img className="logoAlgo" src={algoLogo} width="25"/>
+                                <img className="logoAlgo" src={algoLogo}/>
                                 200.195</span>
                         </Paper>
                     </Grid>
@@ -177,7 +177,7 @@ class TransactionOverview extends React.Component {
                         <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Receiver Balance</span>
                             <span className="detail__value small">
-                                <img className="logoAlgo" src={algoLogo} width="25"/>
+                                <img className="logoAlgo" src={algoLogo} />
                                 20.195.234,00</span>
                         </Paper>
                     </Grid>
@@ -193,7 +193,7 @@ class TransactionOverview extends React.Component {
                         <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Receiver Rewards</span>
                             <span className="detail__value small">
-                                <img className="logoAlgo" src={algoLogo} width="25"/>
+                                <img className="logoAlgo" src={algoLogo} />
                                 20</span>
                         </Paper>
                     </Grid>

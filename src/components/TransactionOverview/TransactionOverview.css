@@ -57,9 +57,9 @@
   font-weight: 500; }
 
 .detail__title.gray-small {
-  color: #676767;
+  color: #676767 !important;
   font-size: .9rem;
-  font-weight: 400; }
+  font-weight: 500 !important; }
 
 .detail__title.blue {
   font-weight: 600;
@@ -112,8 +112,11 @@
 
 .logoAlgo {
   display: inline-block;
-  vertical-align: top;
-  margin-top: -2px; }
+  vertical-align: middle;
+  width: 12px;
+  margin-top: 0;
+  margin-right: 5px;
+  margin-left: 0px; }
 
 .option__container {
   position: relative;

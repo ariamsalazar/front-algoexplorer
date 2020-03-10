@@ -86,15 +86,15 @@ class Overview extends React.Component {
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Circulating</span>
-                        <div className="box-value"> <img className="logoAlgo" src={algoLogo} width="38"/> 605,978,371 </div>
+                        <div className="box-value"> <img className="logoAlgo" src={algoLogo} /> 605,978,371 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Tradable</span>
-                        <div className="box-value"><img className="logoAlgo" src={algoLogo} width="38"/>2,605,978,371 </div>
+                        <div className="box-value"><img className="logoAlgo" src={algoLogo}/> 2,605,978,371 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title with-icon">Online Stake</span>
-                        <div className="box-value "><img className="logoAlgo" src={algoLogo} width="38"/> 1,622,972,252 </div>
+                        <div className="box-value "><img className="logoAlgo" src={algoLogo}/> 1,622,972,252 </div>
                     </div>
                     <div className="box-container">
                         <span className="box-title">Lastest Blocks</span>

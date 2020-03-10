@@ -32,7 +32,7 @@ class TransactionItem extends React.Component {
                         <span className="field">Amount: </span>
                         <span className="value import"><img className="logoAlgo white" src={algoLogoWhite} width="10"/> 8,445,455</span><br/>
                         <span className="field">Fee: </span>
-                        <span className="value black"><img className="logoAlgo" src={algoLogo} width="25"/> 000.2</span>
+                        <span className="value black"><img className="logoAlgo" src={algoLogo}/> 000.2</span>
                     </Grid>
                 </Grid>
             </div>

@@ -46,11 +46,12 @@
       text-transform: none; }
       .main__wrapper .box-container .box-value .logoAlgo {
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         margin-top: 0px;
-        margin-left: -15px;
-        width: 38px;
-        margin-right: -8px; }
+        margin-left: 0;
+        width: 16px;
+        margin-top: -2px;
+        margin-right: 5px; }
     .main__wrapper .box-container .box-value.with-algo {
       background-image: url("../../assets/images/algo.png");
       background-position: 4%;

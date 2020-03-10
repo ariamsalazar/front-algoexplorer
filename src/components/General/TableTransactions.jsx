@@ -88,7 +88,7 @@ class TableTransactions extends React.Component {
                                 </TableCell>
                                 <TableCell align="left" className="font-active">{row.to}</TableCell>
                                 <TableCell align="left">
-                                    <img className="logoAlgo" src={algoLogo} width="25"/> 
+                                    <img className="logoAlgo" src={algoLogo}/> 
                                     {row.txfee}
                                 </TableCell>
                                 <TableCell align="left">{row.type}</TableCell>

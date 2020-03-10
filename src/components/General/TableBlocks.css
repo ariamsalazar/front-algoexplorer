@@ -37,9 +37,9 @@
   letter-spacing: normal; }
   .MuiTableCell-body .logoAlgo {
     display: inline-block;
-    vertical-align: top;
-    margin-top: -2px;
-    margin-left: -2px; }
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 0; }
   .MuiTableCell-body .logoTx {
     display: inline-block;
     vertical-align: top;

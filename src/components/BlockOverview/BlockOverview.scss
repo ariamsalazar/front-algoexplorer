@@ -2,6 +2,13 @@
 /*Styles Block Overview*/
 /***********************************************/
 $font-main: 'Lato';
+$blue-gray-dark:#324964;
+$blue-dark-font: #042753;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+$gray-dark: #676767;
 
 .box__overview{
     width: 100%;
@@ -46,10 +53,15 @@ $font-main: 'Lato';
             transition: 0.6s;
         }
 
-            .copy-link:hover{
-                transition: 0.6s;
-                opacity: 0.7;
-            }
+        .copy-link:hover{
+            transition: 0.6s;
+            opacity: 0.7;
+        }
+        .copy-link.blue{
+            border: 1px solid $blue-dark-font;
+            background-image: url('../../assets/images/copy-blue.png');
+            color: $blue-dark-font !important;
+        }
 }
     .detail__title.white{
         color: rgba(255,255,255,1);
@@ -59,6 +71,10 @@ $font-main: 'Lato';
         color: #b6b6b6;        ;
         font-weight: 500;
     }
+    .detail__title.blue{
+        font-weight: 600;
+        color: $blue-gray-dark !important;
+    }
 
 .detail__value{
     width: 100%;
@@ -66,9 +82,9 @@ $font-main: 'Lato';
     vertical-align: top;
     height: auto;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.2rem !important;
     letter-spacing: normal;
-    text-align: center;
+    text-align: center !important;
     font-weight: 600;
 }
     .detail__value.small-white{
@@ -78,6 +94,25 @@ $font-main: 'Lato';
         text-align: left;
         letter-spacing: 0;
     }
+    .detail__value.small-blue{
+        font-size: 0.92rem !important;
+        font-weight: 500 !important;
+        color: $blue-dark-font;
+        text-decoration: underline;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .detail__value.small-black{
+        font-size: .92rem !important;
+        font-weight: 500 !important;
+        color: #000;
+        text-align: left;
+        text-decoration: underline;
+        letter-spacing: 0;
+    }
+    .detail__value.with-underline{
+        text-decoration: none !important;
+    }
     .detail__value.small{
         font-size: .9rem;
         font-weight: 500;
@@ -85,9 +120,15 @@ $font-main: 'Lato';
         text-align: left;
         letter-spacing: 0;
     }
+    .detail__title.center{
+        text-align: center !important;
+    }
 
-.logoAlgo{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0px;
-}
+    .logoAlgo{
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        margin-top: -2px;
+        margin-right: 5px;
+        margin-left: 0px;
+    }

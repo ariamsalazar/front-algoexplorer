@@ -76,9 +76,11 @@
         font-size: 0.8rem; }
         .list__container .list__scroll .list__item .value .logoAlgo {
           display: inline-block;
-          vertical-align: top;
-          margin-top: -2px;
-          margin-left: -2px; }
+          vertical-align: middle;
+          width: 12px;
+          margin-top: 0;
+          margin-right: 2px;
+          margin-left: 2px; }
         .list__container .list__scroll .list__item .value .logoAlgo.white {
           margin-top: 0 !important;
           margin-right: 2px;

@@ -98,9 +98,11 @@ $blue-middle: #005cc0;
 
                 .logoAlgo{
                     display: inline-block;
-                    vertical-align: top;
-                    margin-top: -2px;
-                    margin-left: -2px;
+                    vertical-align: middle;
+                    width: 12px;
+                    margin-top: 0;
+                    margin-right: 2px;
+                    margin-left: 2px;
                 }
                 .logoAlgo.white{
                     margin-top: 0 !important;

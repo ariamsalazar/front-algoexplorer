@@ -76,7 +76,7 @@
         font-size: 0.8rem; }
         .list__container .list__scroll .list__item .value .logoAlgo {
           display: inline-block;
-          vertical-align: top;
+          vertical-align: middle;
           margin-top: 0px; }
       .list__container .list__scroll .list__item .value.blue {
         color: #197ce8;

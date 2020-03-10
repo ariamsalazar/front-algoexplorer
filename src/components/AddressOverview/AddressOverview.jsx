@@ -36,7 +36,7 @@ const styles = theme => ({
         padding: "15px "+theme.spacing(3)+"px",
         border: 'none',
         borderRadius: '4px',
-        backgroundColor: '#838181',
+        backgroundColor: '#d6e0eb',
         color: '#fff',
         boxSizing: 'border-box',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)',
@@ -84,8 +84,8 @@ class AddressOverview extends React.Component {
                 <Grid container spacing={3}>
                     <Grid item xs={8} >
                         <Paper className={classes.paperInternActive}>
-                            <span className="detail__title white">Address <Link className="copy-link">Copy</Link></span>
-                            <span className="detail__value small-white">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
+                            <span className="detail__title blue">Address <Link className="copy-link blue">Copy</Link></span>
+                            <span className="detail__value small-blue">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4} >
@@ -96,21 +96,21 @@ class AddressOverview extends React.Component {
                     </Grid>
                     <Grid item xs={4} >
                         <Paper className={classes.paperIntern}>
-                            <span className="detail__title gray">Balance</span>
-                            <span className="detail__value"><img className="logoAlgo" src={algoLogo} width="36"/> 
+                            <span className="detail__title">Balance</span>
+                            <span className="detail__value"><img className="logoAlgo" src={algoLogo} /> 
                             8,937,464.931354</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4} >
                         <Paper className={classes.paperIntern}>
-                            <span className="detail__title gray">Rewards</span>
-                            <span className="detail__value"><img className="logoAlgo" src={algoLogo} width="36"/> 
+                            <span className="detail__title">Rewards</span>
+                            <span className="detail__value"><img className="logoAlgo" src={algoLogo}/> 
                             1,131.254.53387 </span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4} >
                         <Paper className={classes.paperIntern}>
-                            <span className="detail__title gray">Total Transactions</span>
+                            <span className="detail__title">Total Transactions</span>
                             <span className="detail__value">3420</span>
                         </Paper>
                     </Grid>

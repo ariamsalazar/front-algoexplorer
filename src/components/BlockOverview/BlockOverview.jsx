@@ -35,7 +35,7 @@ const styles = theme => ({
         padding: "15px "+theme.spacing(3)+"px",
         border: 'none',
         borderRadius: '4px',
-        backgroundColor: '#838181',
+        backgroundColor: '#d6e0eb',
         color: '#fff',
         boxSizing: 'border-box',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)',
@@ -78,19 +78,19 @@ class BlockOverview extends React.Component {
                     <Grid item xs={4} >
                         <Paper className={classes.paperIntern}>
                             <span className="detail__title">Round</span>
-                            <span className="detail__value">#511188</span>
+                            <span className="detail__value center">#511188</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4} >
                         <Paper className={classes.paperIntern}>
                             <span className="detail__title">Rewards</span>
-                            <span className="detail__value"><img className="logoAlgo" src={algoLogo} width="36"/> 25</span>
+                            <span className="detail__value center"><img className="logoAlgo" src={algoLogo}/> 25</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={4} >
                         <Paper className={classes.paperIntern}>
                             <span className="detail__title">Total Transactions</span>
-                            <span className="detail__value">26</span>
+                            <span className="detail__value center">26</span>
                         </Paper>
                     </Grid>
                     {/* Component Title */}
@@ -101,28 +101,28 @@ class BlockOverview extends React.Component {
                     </Grid>
                     {/* Block Details Overview 2 components*/}
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternActive}>
-                            <span className="detail__title white">Proposer <Link className="copy-link">Copy</Link></span>
-                            <span className="detail__value small-white">CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4</span>
+                        <Paper className={classes.paperIntern}>
+                            <span className="detail__title white">Proposer <Link className="copy-link blue">Copy</Link></span>
+                            <span className="detail__value small-black">CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Created at:</span>
-                            <span className="detail__value small">Thu Feb 27 2020 12:06:56 GMT-0500 (Colombia Standard Time)</span>
+                        <Paper className={classes.paperIntern}>
+                            <span className="detail__title">Created at:</span>
+                            <span className="detail__value small-blue with-underline">Thu Feb 27 2020 12:06:56 GMT-0500 (Colombia Standard Time)</span>
                         </Paper>
                     </Grid>
                     {/* Block Details Overview 2 components */}
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Block Hash:</span>
-                            <span className="detail__value small">IM72I4LZFCKSQG4UVUPKKFGP6SJS6N4ANLCXONP5HVNMKBYMJHEA</span>
+                        <Paper className={classes.paperInternActive}>
+                            <span className="detail__title blue">Block Hash:</span>
+                            <span className="detail__value small-blue">CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
-                            <span className="detail__title gray">Previous Block Hash:</span>
-                            <span className="detail__value small">DCSXZKLU4AKWIAVJMCRTBPFL5YUMAA7QWJ7DEBGHSYG5X73VGXHA</span>
+                        <Paper className={classes.paperInternActive}>
+                            <span className="detail__title blue">Previous Block Hash:</span>
+                            <span className="detail__value small-blue">CRLADAHJZEW2GFY2UPEHENLOGCUOU74WYSTUXQLVLJUJFHEUZOHYZNWYR4</span>
                         </Paper>
                     </Grid>
                 </Grid>
