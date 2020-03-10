@@ -25,13 +25,14 @@ const styles = theme => ({
         boxShadow: 'none',
         borderRadius: '0px',
         margin: '2% 0 2% 0',
-        borderTop: '1px solid #000'
+        height: 'auto',
+        borderTop: '1px solid #324964'
     },
     paperMini: {
         padding: "15px "+theme.spacing(3)+"px",
         boxShadow: 'none',
         borderRadius: '4px',
-        border: '1px solid #c3c3c3',
+        border: '1px solid #707070',
     },
     paperList: {
         padding: 0,
@@ -48,7 +49,8 @@ class Assets extends React.Component {
             <div>
                 {/* Title Asset */}
                 <div className="title__asset">
-                    <span className="title__main">Assets</span>
+                    <span className="title__main">Assets: Tether USDt <span className="title-blue">tether.to</span></span>
+                    <div className="subtitle__main">1.00 USD <span className="down-value">0,15%</span></div>
                 </div>
                 <div className={classes.root}>
                     {/* Component Asset Tab */}
@@ -62,49 +64,49 @@ class Assets extends React.Component {
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Circulating Supply</span>
-                                                    <span className="detail__value">0</span>
+                                                    <span className="detail__value center">0</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Total Supply</span>
-                                                    <span className="detail__value">18,446,744.07371</span>
+                                                    <span className="detail__value center">18,446,744.07371</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Unit name</span>
-                                                    <span className="detail__value">USDt</span>
+                                                    <span className="detail__value center">USDt</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">ID</span>
-                                                    <span className="detail__value">345345</span>
+                                                    <span className="detail__value center">345345</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Reserve Address</span>
-                                                    <span className="detail__value">XIU7HGGAJ3QOTATP….</span>
+                                                    <span className="detail__value underline">XIU7HGGAJ3QOTATP….</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Creator Address</span>
-                                                    <span className="detail__value">XIU7HGGAJ3QOTATP….</span>
+                                                    <span className="detail__value underline">XIU7HGGAJ3QOTATP….</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Opt-In Required</span>
-                                                    <span className="detail__value">Yes (Frozen/Not Frozen)</span>
+                                                    <span className="detail__value center">No</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={3}>
                                                 <Paper className={classes.paperMini}>
                                                     <span className="detail__title">Number of Transfers</span>
-                                                    <span className="detail__value">344454</span>
+                                                    <span className="detail__value center">344454</span>
                                                 </Paper>
                                             </Grid>
                                             <Grid item xs={12}>
@@ -152,6 +154,7 @@ class Assets extends React.Component {
                                             </Grid>
                                             <Grid item xs={12}>
                                                 <Paper className={classes.paperFull}>
+                                                    <div className="date-input">Date of creation</div><div className="date-value">10/07/2017</div> <br/>
                                                     <div className="title__main">Description
                                                         <span className="mini-title">Tether USDt</span>
                                                     </div>
