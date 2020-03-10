@@ -8,8 +8,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import './TableBlocks.css';
-import algoLogo from '../../assets/images/algo.png';
-import txLogo from '../../assets/images/tx.png';
 
 const styles = theme => ({
     root: {

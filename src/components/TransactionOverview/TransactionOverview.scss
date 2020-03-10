@@ -2,6 +2,14 @@
 /*Styles Transaction Overview*/
 /***********************************************/
 $font-main: 'Lato';
+$font-main: 'Lato';
+$blue-gray-dark:#324964;
+$blue-dark-font: #042753;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+$gray-dark: #676767;
 
 .container__box{
     width: 100%;
@@ -17,11 +25,11 @@ $font-main: 'Lato';
     display: inline-block;
     vertical-align: top;
     height: auto;
-    color: #676767;
+    color: #000 !important;
     font-size: .95rem;
     letter-spacing: normal;
     text-align: left;
-    font-weight: 400;
+    font-weight: 600;
     padding: 5px 0;
     position: relative;
 
@@ -31,7 +39,7 @@ $font-main: 'Lato';
             border:1px solid rgba(255,255,255,0.85);
             text-align: center;
             font-size: .85rem;
-            color: #fff;
+            color: #fff !important;
             font-weight: 400;
             letter-spacing: normal;
             right: 0;
@@ -45,11 +53,15 @@ $font-main: 'Lato';
             background-image: url('../../assets/images/copy-white.png');
             transition: 0.6s;
         }
-
-            .copy-link:hover{
-                transition: 0.6s;
-                opacity: 0.7;
-            }
+        .copy-link:hover{
+            transition: 0.6s;
+            opacity: 0.7;
+        }
+        .copy-link.blue{
+            border: 1px solid $blue-dark-font;
+            background-image: url('../../assets/images/copy-blue.png');
+            color: $blue-dark-font !important;
+        }
 }
     .detail__title.white{
         color: rgba(255,255,255,1);
@@ -60,10 +72,16 @@ $font-main: 'Lato';
         font-weight: 500;
     }
     .detail__title.gray-small{
-        color: #676767;
+        color: $gray-dark;
         font-size: .9rem;
         font-weight: 400;
-
+    }
+    .detail__title.blue{
+        font-weight: 600;
+        color: $blue-gray-dark !important;
+    }
+    .detail__title.green{
+        color: $green-light !important;
     }
 .detail__value{
     width: 100%;
@@ -83,12 +101,22 @@ $font-main: 'Lato';
         text-align: left;
         letter-spacing: 0;
     }
-    .detail__value.small{
-        font-size: 1rem;
-        font-weight: 600;
-        color: #000;
+    .detail__value.small-blue{
+        font-size: .95rem;
+        font-weight: 500;
+        color: $blue-dark-font;
         text-align: left;
         letter-spacing: 0;
+    }
+    .detail__value.small{
+        font-size: 1rem;
+        font-weight: 500;
+        color: $blue-gray-dark;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .detail__title.green{
+        color: $green-light !important;
     }
     .detail__value.center{
         font-size: 1rem;
@@ -108,25 +136,32 @@ $font-main: 'Lato';
     display: inline-block;
     vertical-align: top;
     height: auto;
-    background-color: red;
+    // background-color: red;
     top: 0;
-    border-radius: 4px !important;
+    border-radius: 6px !important;
     left: 2%;
 
     .option-link{
-        background-color: #000;
+        background-color: #d8d8d8;
         padding: 2px 15px !important;
         display: inline-block;
         vertical-align: top;
         font-size: .85rem;
-        color: #fff !important;
+        color: $blue-gray-dark !important;
         letter-spacing: normal;
-        font-weight: 400;
+        font-weight: 500;
         text-align: center;
         cursor: pointer;
+        transition: 0.6s;
+        margin-bottom: 20px;
     }
     .option-link.active{
-        background-color: #bbb;
-        color:#000 !important;
+        background-color: $blue-gray-dark;
+        color: $white !important;
+    }
+    .option-link:hover{
+        background-color: $blue-gray-dark;
+        color: $white !important;
+        transition: 0.6s;
     }
 }

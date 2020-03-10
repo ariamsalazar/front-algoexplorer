@@ -169,12 +169,14 @@
     .app__bar .container__link__header #drop__link:hover {
       transition: 0.6s;
       color: #008ff9; }
+    .app__bar .container__link__header #drop__link:last-child {
+      margin-right: 0; }
     .app__bar .container__link__header .wallet-list {
       background-image: url("../../assets/images/wallet-blue.png"), url("../../assets/images/down-blue.png") !important;
       background-position: left, right !important;
       background-repeat: no-repeat, no-repeat !important;
       background-size: 16px, 8px !important;
-      padding-left: 4.5%;
+      padding-left: 4.5% !important;
       padding-right: 3% !important; }
     .app__bar .container__link__header .dropdown-toggle::after {
       display: none !important; }

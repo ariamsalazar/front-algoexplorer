@@ -26,7 +26,6 @@ const styles = theme => ({
     paperIntern: {
         padding: "15px "+theme.spacing(3)+"px",
         border: '1px solid rgba(0,0,0,0.85)',
-        boxShadow: 'none',
         borderRadius: '4px',
         backgroundColor: '#fff',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)',

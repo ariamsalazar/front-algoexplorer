@@ -34,7 +34,7 @@ const styles = theme => ({
         padding: "15px "+theme.spacing(3)+"px",
         border: 'none',
         borderRadius: '4px',
-        backgroundColor: '#838181',
+        backgroundColor: '#042753',
         color: '#fff',
         boxSizing: 'border-box',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)',
@@ -45,8 +45,8 @@ const styles = theme => ({
         padding: "15px "+theme.spacing(3)+"px",
         border: 'none',
         borderRadius: '4px',
-        backgroundColor: '#3c3c3c',
-        color: '#fff',
+        backgroundColor: '#d6e0eb',
+        color: '#042753',
         boxSizing: 'border-box',
         boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)',
         position: 'relative',
@@ -58,7 +58,15 @@ const styles = theme => ({
         backgroundColor: '#fff',
         color: '#000',
         boxSizing: 'border-box',
-        boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)'
+        border: '1px solid #000'
+    },
+    paperInternWhiteShadow: {
+        padding: "10px "+theme.spacing(3)+"px",
+        borderRadius: '4px',
+        backgroundColor: '#fff',
+        color: '#000',
+        boxSizing: 'border-box',
+        boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)',
     },
 });
 
@@ -71,7 +79,7 @@ class TransactionOverview extends React.Component {
                 <Grid container>
                     <Grid item xs={12}>
                         <Paper className={classes.paper}>
-                            <span className="title__main">Transaction</span>
+                            <span className="title__main">Transaction Overview</span>
                         </Paper>
                     </Grid>
                 </Grid>
@@ -80,8 +88,8 @@ class TransactionOverview extends React.Component {
                     <Grid item xs={6} >
                         <Paper className={classes.paperInternActiveDarker}>
                             <div>
-                                <span className="detail__title white">Transaction ID <Link className="copy-link">Copy</Link></span>
-                                <span className="detail__value small-white">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
+                                <span className="detail__title blue">Transaction ID <Link className="copy-link blue">Copy</Link></span>
+                                <span className="detail__value small-blue">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
                             </div>
                         </Paper>
                     </Grid>
@@ -93,13 +101,13 @@ class TransactionOverview extends React.Component {
                     </Grid>
                     <Grid item xs={6} >
                         <Paper className={classes.paperInternActive}>
-                            <span className="detail__title white">Sender <Link className="copy-link">Copy</Link></span>
+                            <span className="detail__title green">Sender <Link className="copy-link">Copy</Link></span>
                             <span className="detail__value small-white">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
                         <Paper className={classes.paperInternActive}>
-                            <span className="detail__title white">Receiver <Link className="copy-link">Copy</Link></span>
+                            <span className="detail__title green">Receiver <Link className="copy-link">Copy</Link></span>
                             <span className="detail__value small-white">IZAKWFQL2I3N4AWRKZ4A6DTYNKGDCL4SPILCTLDFROWPJAAX5TBFODPA64</span>
                         </Paper>
                     </Grid>
@@ -129,7 +137,7 @@ class TransactionOverview extends React.Component {
                     <Grid item xs={3} >
                         <Paper className={classes.paperInternWhite}>
                             <span className="detail__title gray">Status</span>
-                            <span className="detail__value small">Completed</span>
+                            <span className="detail__value small green" style={{color: '#59d8a1'}}>Completed</span>
                         </Paper>
                     </Grid>
                 </Grid>
@@ -144,13 +152,13 @@ class TransactionOverview extends React.Component {
                 {/* Transactions Details */}
                 <Grid container spacing={8}>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
+                        <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Block</span>
                             <span className="detail__value small">511178</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
+                        <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Sender Balance</span>
                             <span className="detail__value small">
                                 <img className="logoAlgo" src={algoLogo} width="25"/>
@@ -160,13 +168,13 @@ class TransactionOverview extends React.Component {
                 </Grid>
                 <Grid container spacing={8}>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
+                        <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">First Round</span>
                             <span className="detail__value small">511178</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
+                        <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Receiver Balance</span>
                             <span className="detail__value small">
                                 <img className="logoAlgo" src={algoLogo} width="25"/>
@@ -176,13 +184,13 @@ class TransactionOverview extends React.Component {
                 </Grid>
                 <Grid container spacing={8}>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
+                        <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Last Round</span>
                             <span className="detail__value small">511178</span>
                         </Paper>
                     </Grid>
                     <Grid item xs={6} >
-                        <Paper className={classes.paperInternWhite}>
+                        <Paper className={classes.paperInternWhiteShadow}>
                             <span className="detail__title gray-small">Receiver Rewards</span>
                             <span className="detail__value small">
                                 <img className="logoAlgo" src={algoLogo} width="25"/>
@@ -192,7 +200,7 @@ class TransactionOverview extends React.Component {
                 </Grid>
                 <Grid container spacing={8}>
                     <Grid item xs={12} >
-                        <Paper className={classes.paperInternWhite} style={{height:'25vh'}}>
+                        <Paper className={classes.paperInternWhiteShadow} style={{height:'30vh'}}>
                             <span className="detail__title gray-small">Note
                                 <div className="option__container">
                                     <Link className="option-link active">Base 64</Link>

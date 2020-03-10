@@ -2,7 +2,6 @@ import React from 'react';
 import './LastestBlocks.css';
 import Grid from '@material-ui/core/Grid';
 import './../../App.css';
-import algoLogo from '../../assets/images/algo.png';
 
 class BlockItem extends React.Component {
     render(){

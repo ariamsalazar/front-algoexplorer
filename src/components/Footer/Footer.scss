@@ -59,13 +59,13 @@ $font-main: 'Lato';
         font-weight: 300 !important;
         display: inline-block;
         vertical-align: middle;
-        border-right: 1px solid rgba(255,255,255,0.7);
+        border-right: 1px solid rgba(255,255,255,0.8);
         padding: 0 10px;
         transition: 0.6s;
     }
         .link:hover{
             transition: 0.6s;
-            text-decoration: underline;
+            text-decoration: underline !important;
         }
         .link.icon{
             border-right: none;
