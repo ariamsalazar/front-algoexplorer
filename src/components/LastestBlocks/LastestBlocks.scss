@@ -61,6 +61,7 @@ $blue-middle: #005cc0;
                 width: 100%;
                 text-align: center;
                 height: 100%;
+                // background-color: pink;
                 display: inline-block;
 
                 .picture_circular{
@@ -69,9 +70,10 @@ $blue-middle: #005cc0;
                     // border-radius: 100%;
                     display: inline-block;
                     background-image: url('../../assets/images/bllogo-green.png');
-                    background-position: left center;
+                    background-position: center;
                     background-repeat: no-repeat;
                     background-size: 70%;
+                    // background-color: red;
                 }
                 .picture_circular.purple{
                     background-image: url('../../assets/images/bllogo-purple.png');
@@ -79,7 +81,10 @@ $blue-middle: #005cc0;
                 .time{
                     font-size: .7rem;
                     font-weight: 700;
+                    // background-color: blue;
                     color: $blue-light;
+                    vertical-align: top;
+                    margin-top: 0;
                     width: 100%;
                     display: inline-block;
                 }

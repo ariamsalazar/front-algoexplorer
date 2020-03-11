@@ -55,7 +55,7 @@
           width: 40px;
           display: inline-block;
           background-image: url("../../assets/images/bllogo-green.png");
-          background-position: left center;
+          background-position: center;
           background-repeat: no-repeat;
           background-size: 70%; }
         .list__container .list__scroll .list__item .picture__container .picture_circular.purple {
@@ -64,6 +64,8 @@
           font-size: .7rem;
           font-weight: 700;
           color: #197ce8;
+          vertical-align: top;
+          margin-top: 0;
           width: 100%;
           display: inline-block; }
       .list__container .list__scroll .list__item .field {

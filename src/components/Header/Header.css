@@ -83,7 +83,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: space-between; }
     .app__bar .container__link__header .link__main {
       height: auto;
       color: #fff;
@@ -112,8 +112,8 @@
       cursor: pointer;
       background-image: none;
       background-image: url("../../assets/images/down-blue.png");
-      background-size: 7px;
-      background-position: 100% 9px;
+      background-size: 5px;
+      background-position: 95% 9px;
       background-repeat: no-repeat;
       padding-right: .8rem;
       letter-spacing: normal;
@@ -121,7 +121,7 @@
       border-radius: 0;
       border: none;
       text-decoration: none !important;
-      font-size: .9rem;
+      font-size: .85rem;
       letter-spacing: 1px;
       list-style: none;
       position: relative;
@@ -167,18 +167,16 @@
           cursor: pointer; }
         .app__bar .container__link__header #drop__link .dropdown__items .dropdown-item:hover {
           text-decoration: underline; }
+      .app__bar .container__link__header #drop__link .search-wallet {
+        margin-right: 5px;
+        width: 15px;
+        display: inline-block;
+        vertical-align: middle; }
     .app__bar .container__link__header #drop__link:hover {
       transition: 0.6s;
       color: #008ff9; }
     .app__bar .container__link__header #drop__link:last-child {
       margin-right: 0; }
-    .app__bar .container__link__header .wallet-list {
-      background-image: url("../../assets/images/wallet-blue.png"), url("../../assets/images/down-blue.png") !important;
-      background-position: left, right !important;
-      background-repeat: no-repeat, no-repeat !important;
-      background-size: 16px, 8px !important;
-      padding-left: 4.5% !important;
-      padding-right: 3% !important; }
     .app__bar .container__link__header .dropdown-toggle::after {
       display: none !important; }
     .app__bar .container__link__header .dropdown-menu {

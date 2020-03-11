@@ -105,7 +105,8 @@ $blue-middle: #005cc0;
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        // background-color: pink;
+        justify-content: space-between;
 
         .link__main{
             height: auto;
@@ -137,8 +138,8 @@ $blue-middle: #005cc0;
             cursor: pointer;
             background-image: none;
             background-image: url('../../assets/images/down-blue.png');
-            background-size: 7px;
-            background-position: 100% 9px;
+            background-size: 5px;
+            background-position: 95% 9px;
             background-repeat: no-repeat;
             padding-right: .8rem;
             letter-spacing: normal;
@@ -146,7 +147,7 @@ $blue-middle: #005cc0;
             border-radius: 0;
             border:none;
             text-decoration: none !important;
-            font-size: .9rem;
+            font-size: .85rem;
             letter-spacing: 1px;
             // background-color: red;
             list-style: none;
@@ -201,6 +202,12 @@ $blue-middle: #005cc0;
                     text-decoration: underline;
                 }
             }
+            .search-wallet{
+                margin-right: 5px;
+                width: 15px;
+                display: inline-block;
+                vertical-align: middle;
+            }
         }
         #drop__link:hover{
             transition: 0.6s;
@@ -208,15 +215,6 @@ $blue-middle: #005cc0;
         }
         #drop__link:last-child{
             margin-right: 0;
-        }
-        .wallet-list{
-            background-image: url('../../assets/images/wallet-blue.png'), url('../../assets/images/down-blue.png') !important;
-            background-position: left, right !important;
-            background-repeat: no-repeat, no-repeat !important;
-            background-size: 16px, 8px !important;
-            padding-left: 4.5% !important;
-            padding-right: 3% !important;
-            // background-color: red !important;
         }
         .dropdown-toggle::after{
             display: none !important;

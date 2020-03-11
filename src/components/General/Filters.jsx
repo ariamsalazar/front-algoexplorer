@@ -4,25 +4,7 @@ import Link from '@material-ui/core/Button';
 import Select, { components } from "react-select";
 import createClass from "create-react-class";
 
-import { colourOptions, groupedOptions } from "./options";
-const groupStyles = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between"
-};
-const groupBadgeStyles = {
-    backgroundColor: "#EBECF0",
-    borderRadius: "2em",
-    color: 'red',
-    display: "inline-block",
-    fontSize: 10,
-    fontWeight: "normal",
-    lineHeight: "1",
-    minWidth: 1,
-    padding: "0.16666666666667em 0.5em",
-    textAlign: "left"
-};
-
+import { colourOptions } from "./options";
 
 const Option = createClass({
     render() {
@@ -64,11 +46,6 @@ class Filters extends React.Component {
                         backspaceRemovesValue={false}
                         placeholder="Type of transactions"
                     />
-                    {/* <select className="select__filter">
-                        <option value="grapefruit">Type of transactions</option>
-                        <option value="grapefruit">Tranfer</option>
-                    </select>
-                    <div class="arrow"></div> */}
                 </form>
                 <div className="container__pagination">
                     1-25 of 9,912

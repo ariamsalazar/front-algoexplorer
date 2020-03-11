@@ -19,6 +19,18 @@ const styles = theme => ({
         border: 'none',
         boxShadow: 'none',
         borderRadius: '4px'
+    },
+    paperMiddleLeft: {
+        padding: '40px 20px 40px 40px',
+        border: 'none',
+        boxShadow: 'none',
+        borderRadius: '4px'
+    },
+    paperMiddleRight: {
+        padding: '40px 40px 40px 20px',
+        border: 'none',
+        boxShadow: 'none',
+        borderRadius: '4px'
     }
 });
   
@@ -26,31 +38,36 @@ class Home extends React.Component {
     render(){
         const {classes} = this.props;
         return (
-            <div className={classes.root}>
-                {/* Overview component */}
-                <Grid container spacing={2}>
-                    <Grid item xs={12}>
-                        <Paper className={classes.paper}>
-                            <span className="title__main">Overview</span>
-                            <Button className="float__btn">Stats</Button>
-                            <Overeview />
-                        </Paper>
+           
+                <div className={classes.root}>
+                    {/* Overview component */}
+                    <Grid container spacing={2}>
+                        <Grid item xs={12}>
+                            <Paper className={classes.paper}>
+                                <span className="title__main">Overview</span>
+                                <Button className="float__btn">Stats</Button>
+                                <Overeview />
+                            </Paper>
+                        </Grid>
                     </Grid>
-                </Grid>
-                 {/* Lastest Blocks / Transactions component */}
-                 <Grid container spacing={0}>
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}>
-                            <LastestTransactions/>
-                        </Paper>
+                    {/* Lastest Blocks / Transactions component */}
+                
+            
+                    <Grid container spacing={0}>
+                        <Grid item xs={6}>
+                            <Paper className={classes.paperMiddleLeft}>
+                                <LastestTransactions/>
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Paper className={classes.paperMiddleRight}>
+                                <LastestBlocks/>
+                            </Paper>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}>
-                            <LastestBlocks/>
-                        </Paper>
-                    </Grid>
-                </Grid>
-            </div>
+                </div>
+                
+            
         ); 
     }
 }

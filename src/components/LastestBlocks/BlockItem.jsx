@@ -8,7 +8,7 @@ class BlockItem extends React.Component {
         console.log(this.props.iconColorB);
         return (
             <div className="list__item">
-                <Grid container spacing={1}>
+                <Grid container justify='space-between'>
                     <Grid item xs={2}>
                         <div className="picture__container">
                             <div className={ "picture_circular " + ( this.props.iconColorB || "")}></div>
@@ -21,7 +21,7 @@ class BlockItem extends React.Component {
                     </Grid>
                     <Grid item xs={4}>
                         <span className="field">Proposer: </span>
-                        <span className="value">R3483573H8IHUe...</span><br/>
+                        <span className="value blue">R3483573H8IHUe...</span><br/>
                     </Grid>
                     <Grid item xs={2}>
                         <span className="field">Txs: </span>

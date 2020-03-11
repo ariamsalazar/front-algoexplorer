@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import { withStyles } from "@material-ui/core/styles";
 import iconSearch from '../../assets/images/search.png';
+import iconWallet from '../../assets/images/wallet-blue.png';
 const styles = theme => ({
     root: {
         flexGrow: 1,
@@ -109,8 +110,8 @@ class Header extends React.Component {
                                             </ul>
                                         }
                                     </li>
-                                    <a id="drop__link" href="/">Developer API </a>
-                                    <li className="wallet-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Wallets
+                                    <a id="drop__link" href="/">Dev API </a>
+                                    <li id="drop__link" className="wallet-list" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} ><img className="search-wallet" src={iconWallet}/>Wallets
                                         {this.state.hoveredEl === "wallet-list" &&
                                             <ul className="dropdown__items">
                                                 <div className="triangulo-equilatero-bottom"></div>
