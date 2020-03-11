@@ -62,7 +62,6 @@ class Filters extends React.Component {
                         defaultValue={false}
                         options={colourOptions}               
                         backspaceRemovesValue={false}
-                        menuIsOpen
                         placeholder="Type of transactions"
                     />
                     {/* <select className="select__filter">

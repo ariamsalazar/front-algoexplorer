@@ -120,6 +120,7 @@
       background-color: transparent;
       border-radius: 0;
       border: none;
+      text-decoration: none !important;
       font-size: .9rem;
       letter-spacing: 1px;
       list-style: none;

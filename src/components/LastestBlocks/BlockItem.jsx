@@ -23,7 +23,7 @@ class BlockItem extends React.Component {
                         <span className="field">Proposer: </span>
                         <span className="value">R3483573H8IHUe...</span><br/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={2}>
                         <span className="field">Txs: </span>
                         <span className="value">757575</span><br/>
                     </Grid>

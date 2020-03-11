@@ -261,11 +261,11 @@ $blue-gray-dark:#324964;
             }
             .filter-c:hover{
                 transition: 0.6s;
-                background-color: #197ce8;
+                background-color: $blue-light;
                 color: #fff;
             }
             .filter-c.active{
-                background-color: #197ce8;
+                background-color: $blue-light;
                 color: #fff;
             }
         }

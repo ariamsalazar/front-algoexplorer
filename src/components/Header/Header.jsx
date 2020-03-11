@@ -109,6 +109,7 @@ class Header extends React.Component {
                                             </ul>
                                         }
                                     </li>
+                                    <a id="drop__link" href="/">Developer API </a>
                                     <li className="wallet-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Wallets
                                         {this.state.hoveredEl === "wallet-list" &&
                                             <ul className="dropdown__items">

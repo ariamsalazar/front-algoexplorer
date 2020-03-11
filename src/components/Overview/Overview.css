@@ -212,10 +212,10 @@
         border-right: none; }
       .main__wrapper__second .box-container .filters__container .filter-c:hover {
         transition: 0.6s;
-        background-color: #197ce8;
+        background-color: #008ff9;
         color: #fff; }
       .main__wrapper__second .box-container .filters__container .filter-c.active {
-        background-color: #197ce8;
+        background-color: #008ff9;
         color: #fff; }
   .main__wrapper__second .box-container:last-child {
     border-right: none; }
