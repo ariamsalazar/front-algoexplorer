@@ -83,3 +83,7 @@
       .list__container .list__scroll .list__item .value.blue {
         color: #197ce8;
         font-weight: 700; }
+
+.MuiTableContainer-root {
+  width: 100%;
+  overflow-x: auto; }
