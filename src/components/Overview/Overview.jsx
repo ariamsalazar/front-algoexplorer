@@ -1,20 +1,26 @@
 import React from 'react';
 import './Overview.css';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import ReactSpeedometer from "react-d3-speedometer";
+import algoLogo from '../../assets/images/algo.png';
+import RangeDate from '../General/RangeDate';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
-      flexGrow: 1
+      flexGrow: 1,
+      borderRadius: '4px',
     },
     paper: {
-        marginTop: '2rem',
-        height: '2vh',
-        padding: theme.spacing(5),
+        padding: '0px 8px',
+        backgroundColor: '#f7f7f7',
+        borderRadius: '4px',
+        border: ' 1px solid #e0dfdf'
     }
-}));
+});
 
 /*DATA TEST*/
 const data = [
@@ -33,107 +39,92 @@ const data = [
     {
       date: 'Feb 30', uv: 990.000, pv: 4800, amt: 2181,
     }
-  ];
+];
   
-  export default function Overview() {  
-        const classes = useStyles();
+class Overview extends React.Component {  
+    render(){
+        const {classes} = this.props;
 
         /*Line Chart*/ 
         const renderLineChart = (
-            <ResponsiveContainer width="100%" height={180}>
-                <LineChart width={600} height="100%" data={data} margin={{ top: 15, right: 20, bottom: 5, left: 20 }}>
-                    <Line type="monotone" dataKey="uv" dot={false} stroke="#999"  strokeWidth="2"/>
+            <ResponsiveContainer width="100%" height={120}>
+                <LineChart width={500} height="90%" data={data} margin={{ top: 10, right: 15, bottom: 5, left: 0 }}>
+                    <Line type="monotone" dataKey="uv" dot={false} stroke="#324964"  strokeWidth="2"/>
                     <CartesianGrid stroke={false} strokeDasharray="5 5" />
-                    <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#333' }} padding={{ left: 40, right: 40 }}/>
-                    <YAxis stroke="transparent" tick={{ fill: '#333' }} />
+                    <XAxis dataKey="date" stroke="transparent" tick={{ fill: '#676767' }} padding={{ left: 40, right: 40 }}/>
+                    <YAxis stroke="transparent" tick={{ fill: '#676767' }} />
                     <Tooltip />
                 </LineChart>
             </ResponsiveContainer>
         );
         const renderSpeedChart = (
-            <ReactSpeedometer
-                maxSegmentLabels={0}
-                segments={30}
-                maxValue={10}
-                minValue={0}
-                value={2.5}
-                startColor="#999"
-                endColor="#999"
-                needleColor="#333"
-                height={180}
-                width={300}
-                needleHeightRatio={0.6}
-                needleTransitionDuration={4000} 
-                needleTransition="easeElastic"
-                currentValueText="${value} Sec"
-                valueTextFontSize="25px"
-                textColor="#000"
-                ringWidth={15}
-            />
+            <ResponsiveContainer width="100%" height={120}>
+                <ReactSpeedometer
+                    maxSegmentLabels={0}
+                    segments={30}
+                    maxValue={10}
+                    minValue={0}
+                    value={2.5}
+                    startColor="#999"
+                    endColor="#999"
+                    needleColor="#333"
+                    width={600} 
+                    height="100%"
+                    needleHeightRatio={0.6}
+                    needleTransitionDuration={4000} 
+                    needleTransition="easeElastic"
+                    currentValueText="${value} Sec"
+                    valueTextFontSize="20px"
+                    textColor="#000"
+                    ringWidth={15}
+                />
+            </ResponsiveContainer>
         );
         return (
-            <div className={classes.root}>
-               {/* First component */}
-               <div className="main__wrapper">
-                    <div className="box-container">
-                        <span className="box-title">Algo price</span>
-                        <div className="box-value">$ 0.76 <span className="rating-value">0.7 %</span></div>
-                    </div>
-                    <div className="box-container">
-                        <span className="box-title with-icon">Circulating supply</span>
-                        <div className="box-value with-algo">605,978,371 </div>
-                    </div>
-                    <div className="box-container">
-                        <span className="box-title with-icon">Tradable supply</span>
-                        <div className="box-value with-algo">2,605,978,371 </div>
-                    </div>
-                    <div className="box-container">
-                        <span className="box-title with-icon">Online Stake</span>
-                        <div className="box-value with-algo">1,622,972,252 </div>
-                    </div>
-                    <div className="box-container">
-                        <span className="box-title with-icon">Rewards per Block per Algo</span>
-                        <div className="box-value">0,002 Algos </div>
-                        <div className="calculator-icon"></div>
-                    </div>
-               </div>
-               {/* Second component */}
-               <div className="main__wrapper__second">
-                    <div className="box-container">
-                        <div className="box-inside">
-                            <span className="box-title">Total transactions</span>
-                            <div className="box-value">$2,245,564</div>
-                        </div>
-                        <div className="box-inside">
-                            <span className="box-title">Lastest blocks</span>
-                            <div className="box-value">3345454</div>
-                        </div>
-                    </div>
-                    <div className="box-container with-padding">
-                        <span className="box-title">Block transaction speed</span>
-                        <div className="chart__container">
-                           {renderSpeedChart}
-                        </div>
-                    </div>
-                    <div className="box-container with-padding">
-                        <   span className="box-title side">Daily transactions</span>
-                            <Link className="link__open">Open Chart</Link>
-                            <div className="filters__container">
-                                <Link className="filter-c">1H</Link>
-                                <Link className="filter-c">2D</Link>
-                                <Link className="filter-c">3D</Link>
-                                <Link className="filter-c">1W</Link>
-                                <Link className="filter-c">3M</Link>
-                                <Link className="filter-c">6M</Link>
-                                <Link className="filter-c">1Y</Link>
-                                <Link className="filter-c">All</Link>
-                            </div>
-                            <div className="chart__container">
-                                {renderLineChart}
-                            </div>
-                    </div>
-               </div>
+            <div>
+                <div className={classes.root}>
+                    {/* First component */}
+                    <Grid container spacing={1}>
+                            <Grid item xs={2}>
+                                <Paper className={classes.paper}>
+                                    <span className="box-title">Algo</span>
+                                    <div className="box-value">$ 0.76 <span className="rating-value">0.7 %</span></div>
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={2}>
+                                <Paper className={classes.paper}>
+                                    <span className="box-title with-icon">Circulating</span>
+                                    <div className="box-value"> <img className="logoAlgo" src={algoLogo} /> 605,978,371 </div>
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={2}>
+                                <Paper className={classes.paper}>
+                                    <span className="box-title with-icon">Tradable</span>
+                                    <div className="box-value"><img className="logoAlgo" src={algoLogo}/> 2,605,978,371 </div>
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={2}>
+                                <Paper className={classes.paper}>
+                                    <span className="box-title with-icon">Online Stake</span>
+                                    <div className="box-value "><img className="logoAlgo" src={algoLogo}/> 1,622,972,252 </div>
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={2}>
+                                <Paper className={classes.paper}>
+                                    <span className="box-title">Lastest Blocks</span>
+                                    <div className="box-value">233533</div>
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={2}>
+                                <Paper className={classes.paper}>
+                                    <span className="box-title">Title </span>
+                                    <div className="box-value">00000</div>
+                                </Paper>
+                            </Grid>
+                        </Grid>
+                </div>
             </div>
         ); 
+    }
 }
-
+export default withStyles(styles)(Overview);

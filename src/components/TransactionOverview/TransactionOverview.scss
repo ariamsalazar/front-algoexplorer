@@ -1,0 +1,170 @@
+/***********************************************/
+/*Styles Transaction Overview*/
+/***********************************************/
+$font-main: 'Lato';
+$font-main: 'Lato';
+$blue-gray-dark:#324964;
+$blue-dark-font: #042753;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+$gray-dark: #676767;
+
+.container__box{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: #C3c3c3;
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+
+.detail__title{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    color: #000 !important;
+    font-size: .95rem;
+    letter-spacing: normal;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+
+        .copy-link{
+            position: absolute;
+            cursor: pointer;
+            border:1px solid rgba(255,255,255,0.85);
+            text-align: center;
+            font-size: .85rem;
+            color: #fff !important;
+            font-weight: 400;
+            letter-spacing: normal;
+            right: 0;
+            top: 0;
+            border-radius: 4px;
+            padding-left: 2%;
+            padding: 2px 15px 2px 25px;
+            background-size: 12px;
+            background-repeat: no-repeat;
+            background-position: 8px 5px;
+            background-image: url('../../assets/images/copy-white.png');
+            transition: 0.6s;
+        }
+        .copy-link:hover{
+            transition: 0.6s;
+            opacity: 0.7;
+        }
+        .copy-link.blue{
+            border: 1px solid $blue-dark-font;
+            background-image: url('../../assets/images/copy-blue.png');
+            color: $blue-dark-font !important;
+        }
+}
+    .detail__title.white{
+        color: rgba(255,255,255,1);
+        font-weight: 500;
+    }
+    .detail__title.gray{
+        color: #b6b6b6;        ;
+        font-weight: 500;
+    }
+    .detail__title.gray-small{
+        color: $gray-dark !important;
+        font-size: .9rem;
+        font-weight: 500 !important;
+    }
+    .detail__title.blue{
+        font-weight: 600;
+        color: $blue-gray-dark !important;
+    }
+    .detail__title.green{
+        color: $green-light !important;
+    }
+.detail__value{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    color: #000;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: 600;
+}
+    .detail__value.small-white{
+        font-size: .95rem !important;
+        font-weight: 400;
+        color: #fff;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .detail__value.small-blue{
+        font-size: .95rem;
+        font-weight: 500;
+        color: $blue-dark-font;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .detail__value.small{
+        font-size: .95rem !important;
+        font-weight: 500;
+        color: $blue-gray-dark;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .detail__title.green{
+        color: $green-light !important;
+    }
+    .detail__value.center{
+        font-size: 1rem;
+        font-weight: 600 !important;
+        color: #000;
+        text-align: center !important;
+        letter-spacing: 0;
+    }
+
+.logoAlgo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-left: 0px;
+}
+.option__container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    // background-color: red;
+    top: 0;
+    border-radius: 6px !important;
+    left: 2%;
+
+    .option-link{
+        background-color: #d8d8d8;
+        padding: 2px 15px !important;
+        display: inline-block;
+        vertical-align: top;
+        font-size: .85rem;
+        color: $blue-gray-dark !important;
+        letter-spacing: normal;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.6s;
+        margin-bottom: 20px;
+    }
+    .option-link.active{
+        background-color: $blue-gray-dark;
+        color: $white !important;
+    }
+    .option-link:hover{
+        background-color: $blue-gray-dark;
+        color: $white !important;
+        transition: 0.6s;
+    }
+}

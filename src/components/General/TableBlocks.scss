@@ -1,0 +1,63 @@
+/***********************************************/
+/*Styles Table Blocks*/
+/***********************************************/
+$font-main: 'Lato';
+$blue-gray-dark:#324964;
+$green-light: #59d8a1;
+$white: #fff;
+$blue-light: #008ff9;
+$blue-middle: #005cc0;
+.table__head{
+    background-color:$blue-gray-dark;
+    padding: 2px 0;
+    
+    .row_head{
+        padding: 2px 16px !important;
+    }
+}
+.MuiTableContainer-root {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 0 !important;
+}
+.MuiTableCell-head {
+    color: $white !important;
+    font-weight: 500 !important;
+    line-height: 1.5rem !important;
+    padding: 3px 20px !important;
+    letter-spacing: normal;
+}
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: $font-main !important;
+    font-weight: 600 !important;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+}
+.MuiTableCell-body {
+    color: #000 !important;
+    font-weight: 600;
+    letter-spacing: normal;
+
+    .logoAlgo{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .logoTx{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}
+.font-active{
+    color: #2196F3 !important;
+    font-weight: 500 !important;
+}
