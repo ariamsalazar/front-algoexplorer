@@ -18,7 +18,7 @@ const styles = theme => ({
         padding: '0px 8px',
         backgroundColor: '#f7f7f7',
         borderRadius: '4px',
-        border: ' 1px solid #e0dfdf',
+        border: 'none',
         position:'relative'
     }
 });
@@ -59,23 +59,22 @@ class OverviewSecond extends React.Component {
             </ResponsiveContainer>
         );
         const renderSpeedChart = (
-            <ResponsiveContainer width="100%" height={120}>
+            <ResponsiveContainer width="70%" className="top-c">
                 <ReactSpeedometer
                     maxSegmentLabels={0}
+                    margin={{top:0}}
                     segments={30}
                     maxValue={10}
                     minValue={0}
-                    value={2.5}
+                    value={6.5}
                     startColor="#999"
                     endColor="#999"
                     needleColor="#333"
-                    width={600} 
-                    height={120}
                     needleHeightRatio={0.6}
                     needleTransitionDuration={4000} 
                     needleTransition="easeElastic"
                     currentValueText="${value} Sec"
-                    valueTextFontSize="20px"
+                    valueTextFontSize="15px"
                     textColor="#000"
                     ringWidth={15}
                 />

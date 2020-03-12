@@ -157,7 +157,7 @@ $blue-middle: #005cc0;
 
             .dropdown__items{
                 width: auto;
-                top: 24px;
+                top: 20px;
                 position: absolute;
                 left: 0;
                 background-color: $white;
@@ -169,8 +169,8 @@ $blue-middle: #005cc0;
 
                 .triangulo-equilatero-bottom {
                     position: absolute;
-                    bottom: 100%;
-                    left: 38%;
+                    bottom: 95%;
+                    left: 10%;
                     width: 0;
                     height: 0;
                     border-right: 10px solid transparent;

@@ -100,7 +100,17 @@ class Header extends React.Component {
                                             </ul>
                                         }
                                     </li>
-                                    <li className="tools-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Tools
+                                    {/* <li className="tools-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} >Tools
+                                        {this.state.hoveredEl === "tools-list" &&
+                                            <ul className="dropdown__items" style={{backgroundColor: 'red'}}>
+                                                <div className="triangulo-equilatero-bottom"></div>
+                                                <li className="dropdown-item">Rewards Calculator</li>
+                                                <li className="dropdown-item">2019 Staking Rewards</li>
+                                                <li className="dropdown-item">Algorand Tester Dispenser</li>
+                                            </ul>
+                                        }
+                                    </li> */}
+                                    <li className="tools-list" id="drop__link" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} > Tools
                                         {this.state.hoveredEl === "tools-list" &&
                                             <ul className="dropdown__items">
                                                 <div className="triangulo-equilatero-bottom"></div>
@@ -110,7 +120,7 @@ class Header extends React.Component {
                                             </ul>
                                         }
                                     </li>
-                                    <a id="drop__link" href="/">Dev API </a>
+                                    {/* <a id="drop__link" href="/" class="dev-list">Dev API </a> */}
                                     <li id="drop__link" className="wallet-list" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} ><img className="search-wallet" src={iconWallet}/>Wallets
                                         {this.state.hoveredEl === "wallet-list" &&
                                             <ul className="dropdown__items">

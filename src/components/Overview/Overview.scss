@@ -260,7 +260,7 @@ $blue-gray-dark:#324964;
 }
 .filters__container{
     position: absolute;
-    top: 15px !important;
+    top: 5px !important;
     right: 15% !important;
     height: auto;
     border-radius: 4px;
@@ -301,11 +301,39 @@ $blue-gray-dark:#324964;
     text-align: center;
     display: inline-block;
     // background-color: pink;
+
+    .recharts-text tspan{
+        color: $gray-dark !important;
+        font-size: 0.9rem !important;
+    }
+    .speedo-segment {
+        fill: transparent;
+        stroke: $blue-middle !important;
+        stroke-dasharray: 1,56,50,0;
+        stroke-width: 6.5px;
+        border: none;
+    }
+    .current-value{
+        font-weight: 400 !important;
+
+    }
+    .recharts-responsive-container{
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        // background-color: pink;
+        text-align: center;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .recharts-responsive-container.top-c{
+        top: 10% !important;
+    }
 }
 .link__open{
     position: absolute;
-    top: 15px;
-    right: 1rem;
+    top: 5px;
+    right: 5px;
     font-size: 0.9rem;
     cursor: pointer;
     text-decoration: underline;
