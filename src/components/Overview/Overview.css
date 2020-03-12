@@ -178,7 +178,6 @@
     .main__wrapper__second .box-container .chart__container {
       width: 100%;
       margin-top: 10px;
-      background-color: yellow;
       height: auto;
       text-align: center;
       display: inline-block; }
@@ -242,7 +241,6 @@
 .chart__container {
   width: 100%;
   margin-top: 10px !important;
-  background-color: yellow;
   height: 120px !important;
   text-align: center;
   display: inline-block; }
