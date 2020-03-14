@@ -21,20 +21,9 @@ const styles = theme => ({
         boxShadow: 'none',
         borderRadius: '4px',
         border: 'none',
-        position: 'relative'
+        position: 'relative',
+        textAlign: 'left'
     }
-    // paperMiddleLeft: {
-    //     padding: '40px 20px 40px 40px',
-    //     border: 'none',
-    //     boxShadow: 'none',
-    //     borderRadius: '4px'
-    // },
-    // paperMiddleRight: {
-    //     padding: '40px 40px 40px 20px',
-    //     border: 'none',
-    //     boxShadow: 'none',
-    //     borderRadius: '4px'
-    // }
 });
   
 class Home extends React.Component {
@@ -51,9 +40,7 @@ class Home extends React.Component {
                             </Paper>
                         </Grid>
                         <Grid item xs={6}>
-                            <Paper className={classes.paper} style={{textAlign:'right'}}> 
-                                <Button className="float__btn">Stats</Button>
-                            </Paper>
+                            <Button className="float__btn av">Stats</Button>
                         </Grid>
                     </Grid>
                     <Grid container spacing={2}>

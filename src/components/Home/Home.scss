@@ -17,7 +17,7 @@ $blue-middle: #005cc0;
 }
 .float__btn {
     font-size: .8rem !important;
-    right: 0px !important;
+    right: 16px !important;
     position: relative;
     text-transform: none !important;
     border-radius: 4px !important;
@@ -25,4 +25,5 @@ $blue-middle: #005cc0;
     /* background-color: red !important; */
     color: $blue-light !important;
     border: 1px solid $blue-light !important;
+    float: right;
 }

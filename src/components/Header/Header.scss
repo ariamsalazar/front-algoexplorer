@@ -37,7 +37,7 @@ $blue-middle: #005cc0;
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
             background-color: rgba(216, 216, 216, 0.3);
-            padding: 0;
+            padding: 10px 0;
             padding-left: 10px;
             color: $blue-gray-dark;
             font-weight: 400;
@@ -290,6 +290,6 @@ $blue-middle: #005cc0;
     transform: translateZ(0);
 }
 .MuiToolbar-gutters {
-    // padding-left: 40px !important;
-    // padding-right: 40px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
 }

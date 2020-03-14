@@ -10,11 +10,12 @@
 
 .float__btn {
   font-size: .8rem !important;
-  right: 0px !important;
+  right: 16px !important;
   position: relative;
   text-transform: none !important;
   border-radius: 4px !important;
   padding: 2px 40px !important;
   /* background-color: red !important; */
   color: #008ff9 !important;
-  border: 1px solid #008ff9 !important; }
+  border: 1px solid #008ff9 !important;
+  float: right; }

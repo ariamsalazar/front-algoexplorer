@@ -6,6 +6,7 @@ $font-main : 'Lato';
 }
 body {
     width: 100%;
+    margin: 0 auto;
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -54,4 +55,19 @@ margin-right: 10px;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background:$color-gray; 
+}
+
+.master__container{
+    width: 100%;
+    position: relative;
+    // background-color: yellow;
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+.master{
+    // background-color: red;
+    display: inline-block;
+    max-width: 1300px;
+    width: 100%;
 }

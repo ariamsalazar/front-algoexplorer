@@ -27,36 +27,40 @@ class App extends React.Component {
         <Header />
         {/* Switch */}
         <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/transactions">
-              <Transactions />
-            </Route>
-            <Route path="/blocks">
-              <Blocks />
-            </Route>
-            <Route path="/transactionOverview">
-              <TransactionOverview />
-            </Route>
-            <Route path="/blockOverview">
-              <BlockOverview />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/addressOverview">
-              <AddressOverview />
-            </Route>
-            <Route path="/assets">
-              <Assets />
-            </Route>
-            <Route path="/balanceHistory">
-              <BalanceHistory />
-            </Route>
-            <Route path="/circulatingSupply">
-              <CirculatingSupply />
-            </Route>
+          <div className="master__container">
+            <div className="master">
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/transactions">
+                <Transactions />
+              </Route>
+              <Route path="/blocks">
+                <Blocks />
+              </Route>
+              <Route path="/transactionOverview">
+                <TransactionOverview />
+              </Route>
+              <Route path="/blockOverview">
+                <BlockOverview />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/addressOverview">
+                <AddressOverview />
+              </Route>
+              <Route path="/assets">
+                <Assets />
+              </Route>
+              <Route path="/balanceHistory">
+                <BalanceHistory />
+              </Route>
+              <Route path="/circulatingSupply">
+                <CirculatingSupply />
+              </Route>
+            </div>
+          </div>
         </Switch>
         {/* Footer */}
         <Footer/>
