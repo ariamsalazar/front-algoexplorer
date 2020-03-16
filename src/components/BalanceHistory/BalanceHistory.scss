@@ -19,11 +19,13 @@ $blue-middle: #005cc0;
 .chart__container {
     width: 100%;
     margin-top: 60px;
-    height: 100%;
+    height: auto;
     text-align: center;
     display: inline-block;
 }
-
+    .chart__container.auto{
+        height: auto !important;
+    }
 .filters__container{
     position: absolute;
     top: 1rem;
@@ -97,4 +99,7 @@ $blue-middle: #005cc0;
 
 .recharts-default-legend{
     text-align: left !important;
+}
+.chart__container .recharts-responsive-container{
+    // position: relative !important;
 }

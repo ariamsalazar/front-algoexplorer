@@ -17,7 +17,8 @@ input[type=checkbox], input[type=radio] {
   font-weight: 600;
   display: inline-block;
   vertical-align: middle;
-  position: relative; }
+  position: relative;
+  text-align: left; }
   .header__list .select__style {
     position: relative;
     display: inline-block;

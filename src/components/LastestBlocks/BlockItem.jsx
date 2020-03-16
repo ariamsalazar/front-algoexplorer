@@ -5,7 +5,6 @@ import './../../App.css';
 
 class BlockItem extends React.Component {
     render(){
-        console.log(this.props.iconColorB);
         return (
             <div className="list__item">
                 <Grid container justify='space-between'>

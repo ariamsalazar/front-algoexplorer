@@ -1,0 +1,86 @@
+/***********************************************/
+/*Styles Calculator*/
+/***********************************************/
+.container__calculator {
+  width: 100%;
+  background-color: #324964;
+  height: auto;
+  border-radius: 4px;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top; }
+  .container__calculator .title__calculator {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    height: auto;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative; }
+    .container__calculator .title__calculator .btn__white {
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 5px 50px;
+      text-transform: none;
+      font-weight: 700; }
+  .container__calculator .container__flex {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 20px;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between; }
+    .container__calculator .container__flex .c-calc {
+      width: 60%;
+      height: 50px;
+      border-radius: 4px;
+      background-color: yellow; }
+    .container__calculator .container__flex .b-calc {
+      width: 30%;
+      height: 50px;
+      border-radius: 4px;
+      background-color: #005cc0; }
+
+.filter__calculator {
+  background-color: #c3c3c3;
+  margin-top: 10px;
+  height: 100px;
+  display: inline-block;
+  width: 100%; }
+
+.calc__values {
+  width: 100%;
+  background-color: turquoise;
+  height: auto;
+  padding: 5px 0;
+  font-size: .9rem;
+  text-align: left;
+  font-weight: 700;
+  color: #000;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 25px; }
+  .calc__values .calc-active {
+    background-color: #324964;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    border-radius: 4px;
+    padding: 5px 10px;
+    text-align: right;
+    color: #fff; }
+
+.calc__values:first-child {
+  margin-top: 0; }
+
+.faq__container {
+  background-color: red;
+  height: auto;
+  margin-top: 50px;
+  width: 100%; }

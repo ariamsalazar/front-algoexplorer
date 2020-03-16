@@ -76,4 +76,6 @@ $font-main: 'Lato';
             background-size: contain;
         }
 }
-    
+.MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 10px 0 !important;
+}

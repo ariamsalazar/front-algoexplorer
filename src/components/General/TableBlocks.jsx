@@ -1,5 +1,4 @@
 import React from 'react';
-import { withStyles } from "@material-ui/core/styles";
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -9,30 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import './TableBlocks.css';
 
-const styles = theme => ({
-    root: {
-      flexGrow: 1,
-      position: 'relative',
-      marginTop: '64px',
-      padding: theme.spacing(5),
-      borderRadius: '4px'
-    },
-    paper: {
-        padding: '0px',
-        border: 'none',
-        boxShadow: 'none',
-    },
-    paperIntern: {
-        padding: "0px",
-        border: 'none',
-        margin: '2% 0', 
-        backgroundColor: 'transparent',
-        boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)'
-    },
-    table: {
-        minWidth: 650,
-    }
-});
+
 // Data get function
 function createData(block, proposer, transactions, age, block_reward) {
     return { block, proposer, transactions, age, block_reward };
@@ -45,10 +21,9 @@ const rows = [
 ];
 class TableBlocks extends React.Component {
     render(){
-        const {classes} = this.props;
         return (
             <TableContainer component={Paper}>
-                <Table className={classes.table} aria-label="simple table">
+                <Table aria-label="simple table">
                     <TableHead className="table__head">
                         <TableRow>
                             <TableCell align="left" className="row__head">Block</TableCell>
@@ -76,4 +51,4 @@ class TableBlocks extends React.Component {
         ); 
     }
 }
-export default withStyles(styles)(TableBlocks);
+export default TableBlocks;

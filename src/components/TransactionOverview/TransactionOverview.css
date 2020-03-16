@@ -80,21 +80,21 @@
   font-weight: 600; }
 
 .detail__value.small-white {
-  font-size: .95rem !important;
+  font-size: .92rem !important;
   font-weight: 400;
   color: #fff;
   text-align: left;
   letter-spacing: 0; }
 
 .detail__value.small-blue {
-  font-size: .95rem;
+  font-size: .92rem;
   font-weight: 500;
   color: #042753;
   text-align: left;
   letter-spacing: 0; }
 
 .detail__value.small {
-  font-size: .95rem !important;
+  font-size: .92rem !important;
   font-weight: 500;
   color: #324964;
   text-align: left;

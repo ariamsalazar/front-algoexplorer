@@ -1,6 +1,5 @@
 import React from 'react';
 import './Overview.css';
-import { withStyles } from "@material-ui/core/styles";
 import Link from '@material-ui/core/Link';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import ReactSpeedometer from "react-d3-speedometer";
@@ -9,19 +8,6 @@ import RangeDate from '../General/RangeDate';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
-const styles = theme => ({
-    root: {
-      flexGrow: 1,
-      borderRadius: '4px',
-    },
-    paper: {
-        padding: '0px 8px',
-        backgroundColor: '#f7f7f7',
-        borderRadius: '4px',
-        border: 'none',
-        position:'relative'
-    }
-});
 
 /*DATA TEST*/
 const data = [
@@ -59,7 +45,7 @@ class OverviewSecond extends React.Component {
             </ResponsiveContainer>
         );
         const renderSpeedChart = (
-            <ResponsiveContainer width="70%" className="top-c">
+            <ResponsiveContainer width="65%" className="top-c">
                 <ReactSpeedometer
                     maxSegmentLabels={0}
                     margin={{top:0}}
@@ -81,10 +67,10 @@ class OverviewSecond extends React.Component {
             </ResponsiveContainer>
         );
         return (
-            <div className={classes.root}>
+            <div className="root">
                 <Grid container spacing={1}>
                     <Grid item xs={3}>
-                        <Paper className={classes.paper}>
+                        <Paper className="paper little">
                             <span className="box-title with-icon">Block transaction speed</span>
                             <div className="chart__container">
                                 {renderSpeedChart}
@@ -92,7 +78,7 @@ class OverviewSecond extends React.Component {
                         </Paper>
                     </Grid> 
                     <Grid item xs={6}>
-                        <Paper className={classes.paper}>
+                        <Paper className="paper little">
                             <span className="box-title side">Algo Daily transactions: <span className="t-blue">24535</span></span>
                             <Link className="link__open">Open Chart</Link>
                             <div className="filters__container">
@@ -111,7 +97,7 @@ class OverviewSecond extends React.Component {
                         </Paper>
                     </Grid> 
                     <Grid item xs={3}>
-                        <Paper className={classes.paper}>
+                        <Paper className="paper little">
                             <span className="box-title with-icon">Stacking Rewards Calculator</span>
                             <div className="chart__container">
                                 C
@@ -123,4 +109,4 @@ class OverviewSecond extends React.Component {
         ); 
     }
 }
-export default withStyles(styles)(OverviewSecond);
+export default OverviewSecond;

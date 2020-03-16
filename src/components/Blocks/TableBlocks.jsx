@@ -11,30 +11,6 @@ import './Blocks.css';
 import algoLogo from '../../assets/images/algo.png';
 import txLogo from '../../assets/images/tx.png';
 
-const styles = theme => ({
-    root: {
-      flexGrow: 1,
-      position: 'relative',
-      marginTop: '64px',
-      padding: theme.spacing(5),
-      borderRadius: '4px'
-    },
-    paper: {
-        padding: '0px',
-        border: 'none',
-        boxShadow: 'none',
-    },
-    paperIntern: {
-        padding: "0px",
-        border: 'none',
-        margin: '2% 0', 
-        backgroundColor: 'transparent',
-        boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)'
-    },
-    table: {
-        minWidth: 650,
-    }
-});
 // Data get function
 function createData(block, proposer, transactions, age, block_reward) {
     return { block, proposer, transactions, age, block_reward };
@@ -76,4 +52,4 @@ class TableBlocks extends React.Component {
         ); 
     }
 }
-export default withStyles(styles)(TableBlocks);
+export default TableBlocks;

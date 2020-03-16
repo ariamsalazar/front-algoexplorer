@@ -10,22 +10,8 @@ const styles = theme => ({
     root: {
       flexGrow: 1,
       position: 'relative',
-      marginTop: '64px',
-      padding: theme.spacing(5),
-      borderRadius: '4px'
-    },
-    paper: {
-        padding: '0px',
-        border: 'none',
-        boxShadow: 'none',
-    },
-    paperIntern: {
-        padding: "30px "+theme.spacing(3)+"px",
-        border: 'none',
-        margin: '2% 0', 
-        backgroundColor: 'transparent',
-        boxShadow: 'none',
-        position: 'relative'
+      padding: '0 16px',
+      marginTop: '64px'
     }
 });
 
@@ -89,13 +75,13 @@ class CirculatingSupply extends React.Component {
                 {/* Component Title */}
                 <Grid container>
                     <Grid item xs={12}>
-                        <Paper className={classes.paper}>
+                        <Paper className="paper">
                             <span className="title__main">Circulating, Tradeable and Participating Supply</span>
                         </Paper>
                     </Grid>
                     {/* Transactions List */}
                     <Grid item xs={12}>
-                        <Paper className={classes.paperIntern}>
+                        <Paper className="paper">
                             <div className="filter__main">
                                 <span className="name-filter">From</span><input className="input-filter" placeholder="Jun 01, 2020"></input>
                                 <span className="name-filter">To</span><input className="input-filter" placeholder="Jun 01, 2020"></input>
@@ -110,7 +96,7 @@ class CirculatingSupply extends React.Component {
                                     <Link className="filter-c">1Y</Link>
                                     <Link className="filter-c">All</Link>
                             </div>
-                            <div className="chart__container">
+                            <div className="chart__container auto">
                                 {renderLineChart}
                             </div>
                         </Paper>

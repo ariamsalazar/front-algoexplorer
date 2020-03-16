@@ -211,7 +211,7 @@
 .filters__container {
   position: absolute;
   top: 5px !important;
-  right: 15% !important;
+  right: 14% !important;
   height: auto;
   border-radius: 4px; }
   .filters__container .filter-c {
@@ -289,3 +289,6 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: 8px; }
+
+.chart__container .recharts-responsive-container {
+  position: absolute !important; }

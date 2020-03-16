@@ -1,6 +1,5 @@
 import React from 'react';
 import './TableTransactions.css';
-import { withStyles } from "@material-ui/core/styles";
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -11,30 +10,6 @@ import TableRow from '@material-ui/core/TableRow';
 import algoLogo from '../../assets/images/algo.png';
 import txLogo from '../../assets/images/tx.png';
 
-const styles = theme => ({
-    root: {
-      flexGrow: 1,
-      position: 'relative',
-      marginTop: '64px',
-      padding: theme.spacing(5),
-      borderRadius: '4px'
-    },
-    paper: {
-        padding: '0px',
-        border: 'none',
-        boxShadow: 'none',
-    },
-    paperIntern: {
-        padding: "0px",
-        border: 'none',
-        margin: '2% 0', 
-        backgroundColor: 'transparent',
-        boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.16)'
-    },
-    table: {
-        minWidth: 650,
-    }
-});
 // Data get function
 function createData(txid, block, age, amount, from, to, txfee, type) {
     return { txid, block, age, amount, from, to, txfee, type };
@@ -54,10 +29,9 @@ const rows = [
 
 class TableTransactions extends React.Component {
     render() {
-        const {classes} = this.props;
         return (
             <TableContainer component={Paper}>
-                <Table className={classes.table} aria-label="simple table">
+                <Table aria-label="simple table">
                     <TableHead className="table__head">
                         <TableRow>
                             <TableCell align="left" className="row__head">TxID</TableCell>
@@ -100,6 +74,6 @@ class TableTransactions extends React.Component {
         ); 
     }
 }
-export default withStyles(styles)(TableTransactions);
+export default TableTransactions;
 
 

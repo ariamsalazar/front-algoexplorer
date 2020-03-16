@@ -70,3 +70,6 @@
     background-position: center right;
     background-repeat: no-repeat;
     background-size: contain; }
+
+.MuiGrid-spacing-xs-5 > .MuiGrid-item {
+  padding: 10px 0 !important; }

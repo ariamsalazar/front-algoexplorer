@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import { withStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Overeview from './../Overview/Overview';
@@ -9,33 +8,14 @@ import LastestTransactions from './../LastestTransactions/LastestTransactions';
 import LastestBlocks from './../LastestBlocks/LastestBlocks';
 import Button from '@material-ui/core/Button';
 
-const styles = theme => ({
-    root: {
-      flexGrow: 1,
-      position: 'relative',
-      marginTop: '64px',
-    },
-    paper: {
-        padding: '8px 16px',
-        backgroundColor: 'transparent',
-        boxShadow: 'none',
-        borderRadius: '4px',
-        border: 'none',
-        position: 'relative',
-        textAlign: 'left'
-    }
-});
-  
 class Home extends React.Component {
     render(){
-        const {classes} = this.props;
         return (
-           
-                <div className={classes.root}>
+                <div className="root home">
                     {/* Overview component */}
                     <Grid container spacing={0}>
                         <Grid item xs={6}>
-                            <Paper className={classes.paper} > 
+                            <Paper className="paper"> 
                                 <span className="title__main">Overview</span>
                             </Paper>
                         </Grid>
@@ -45,31 +25,29 @@ class Home extends React.Component {
                     </Grid>
                     <Grid container spacing={2}>
                         <Grid item xs={12}>
-                            <Paper className={classes.paper} > 
+                            <Paper className="paper less-padding" > 
                                 <Overeview />
                             </Paper>
-                            <Paper className={classes.paper} > 
+                            <Paper className="paper less-padding" > 
                                 <OvereviewSecond />
                             </Paper>
                         </Grid>
                     </Grid>
                     {/* Lastest Blocks / Transactions component */}
-                    <Grid container spacing={0}>
+                    <Grid container spacing={6}>
                         <Grid item xs={6}>
-                            <Paper className={classes.paper}>
+                            <Paper className="paper less-padding">
                                 <LastestTransactions/>
                             </Paper>
                         </Grid>
                         <Grid item xs={6}>
-                            <Paper className={classes.paper}>
+                            <Paper className="paper less-padding">
                                 <LastestBlocks/>
                             </Paper>
                         </Grid>
                     </Grid>
-                </div>
-                
-            
+            </div>
         ); 
     }
 }
-export default withStyles(styles)(Home);
+export default Home;

@@ -12,6 +12,8 @@ import Assets from './components/Assets/Assets';
 import BalanceHistory from './components/BalanceHistory/BalanceHistory';
 import CirculatingSupply from './components/CirculatingSupply/CirculatingSupply';
 import Contact from './components/Contact/Contact';
+import Calculator from './components/RewardCalculator/RewardCalculator';
+
 import {
   Switch,
   Route
@@ -28,38 +30,55 @@ class App extends React.Component {
         {/* Switch */}
         <Switch>
           <div className="master__container">
-            <div className="master">
               <Route exact path="/">
-                <Home />
+                <div className="master">
+                  <Home />
+                </div>
               </Route>
               <Route path="/transactions">
-                <Transactions />
+                <div className="master">
+                  <Transactions />
+                </div>
               </Route>
               <Route path="/blocks">
-                <Blocks />
+                <div className="master">
+                  <Blocks />
+                </div>
               </Route>
               <Route path="/transactionOverview">
-                <TransactionOverview />
+                <div className="master">
+                  <TransactionOverview />
+                </div>
               </Route>
               <Route path="/blockOverview">
-                <BlockOverview />
+                <div className="master">
+                  <BlockOverview />
+                </div>
               </Route>
               <Route path="/contact">
                 <Contact />
               </Route>
               <Route path="/addressOverview">
-                <AddressOverview />
+                <div className="master">
+                 <AddressOverview />
+                </div>
               </Route>
               <Route path="/assets">
                 <Assets />
               </Route>
               <Route path="/balanceHistory">
-                <BalanceHistory />
+                <div className="master">
+                  <BalanceHistory />
+                </div>
               </Route>
               <Route path="/circulatingSupply">
-                <CirculatingSupply />
+                <div className="master">
+                  <CirculatingSupply />
+                </div>
               </Route>
-            </div>
+              <Route path="/calculator">
+                 <Calculator />
+              </Route>
           </div>
         </Switch>
         {/* Footer */}
