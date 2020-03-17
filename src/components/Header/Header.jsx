@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 import iconSearch from '../../assets/images/search.png';
 import iconWallet from '../../assets/images/wallet-blue.png';
 
@@ -50,7 +51,7 @@ class Header extends React.Component {
                     <Toolbar>
                         <Grid container spacing={2}>
                             <Grid item xs={2} >
-                                <div className="logo__main"></div>
+                                <Link className="logo__main" href="/" />
                             </Grid>
                             <Grid item xs={5}>
                                 <form className="form__search">

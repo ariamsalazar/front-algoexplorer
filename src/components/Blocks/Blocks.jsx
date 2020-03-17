@@ -5,7 +5,6 @@ import './Blocks.css';
 import TableBlocks from './../General/TableBlocks';
 import Filters from './../General/Filters';
 
-
 class Blocks extends React.Component {
     render(){
         return (
@@ -19,7 +18,7 @@ class Blocks extends React.Component {
                     </Grid>
                     {/* Blocks List */}
                     <Grid item xs={12}>
-                        <Paper>
+                        <Paper className="paper intern-with-shadow">
                             <Filters/>
                             {/* Blocks Table */}
                             <TableBlocks />

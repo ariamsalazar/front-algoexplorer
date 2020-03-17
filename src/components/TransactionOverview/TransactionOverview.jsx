@@ -4,23 +4,12 @@ import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 import './TransactionOverview.css';
 import algoLogo from '../../assets/images/algo.png';
-import { withStyles } from "@material-ui/core/styles";
-
-
-const styles = theme => ({
-    root: {
-      flexGrow: 1,
-      position: 'relative',
-      padding: '0 16px',
-      marginTop: '64px'
-    }
-});
 
 class TransactionOverview extends React.Component {
     render(){
-        const {classes} = this.props;
+       
         return (
-            <div className={classes.root}>
+            <div className="root home">
                 {/* Component Title */}
                 <Grid container>
                     <Grid item xs={12}>
@@ -162,4 +151,4 @@ class TransactionOverview extends React.Component {
         ); 
     }
 }
-export default withStyles(styles)(TransactionOverview);
+export default TransactionOverview;

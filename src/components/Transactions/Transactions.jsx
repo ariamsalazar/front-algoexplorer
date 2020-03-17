@@ -17,7 +17,7 @@ class Transactions extends React.Component {
                     </Grid>
                     {/* Transactions List */}
                     <Grid item xs={12}>
-                        <Paper >
+                        <Paper className="paper intern-with-shadow">
                             <Filters/>
                             {/* Transactions Table */}
                             <TableTransactions />

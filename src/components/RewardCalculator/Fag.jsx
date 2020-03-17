@@ -13,26 +13,26 @@ class Fag extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          expanded: -1
+          expanded: -1,
+          flag: false
         };
         this.onChangePanel = this.onChangePanel.bind(this);
     }
     onChangePanel(e){
-        // this.setState(prevState => ({
-        //     expanded: !prevState.expanded
-        // }));
-        this.setState({ expanded: e.currentTarget.id });
-        // console.log(this.state.expanded);
+        if(this.state.flag===false){
+            this.setState({ expanded: e.currentTarget.id, flag:true});
+        }else{
+            this.setState({expanded: -1, flag:false});
+        }
     }
     render(){
-        console.log('Expanded : '+this.state.expanded);
         return (
             <div className="faq__list">
                 <span className="title-faq">Participation Rewards FAQ:</span>
                 <ExpansionPanel>
-                        <ExpansionPanelSummary
+                    <ExpansionPanelSummary
                         expandIcon={
-                            this.state.expanded === "panel1a-header" 
+                            this.state.expanded === "panel1a-header" && this.state.flag===true
                             ? <RemoveIcon />
                             : <AddIcon />  
                         }
@@ -50,10 +50,14 @@ class Fag extends React.Component {
                 </ExpansionPanel>
                 <ExpansionPanel>
                     <ExpansionPanelSummary
-                        className="second-faq"
-                        expandIcon={<AddIcon />}
+                        expandIcon={
+                            this.state.expanded === "panel2a-header" && this.state.flag===true
+                            ? <RemoveIcon />
+                            : <AddIcon />  
+                        }
                         aria-controls="panel2a-content"
                         id="panel2a-header"
+                        onClick={this.onChangePanel}
                         >
                         <Typography >Does every address receive rewards?</Typography>
                     </ExpansionPanelSummary>

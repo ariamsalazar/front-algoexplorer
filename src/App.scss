@@ -32,12 +32,21 @@ body {
         padding: 0 16px !important;
         display: inline-block !important;
     }
+    .root.contact{
+        position: relative !important;
+        margin-top: 50px !important;
+        flex-grow: 1 !important;
+        padding: 0 !important;
+        display: inline-block !important;
+        margin-bottom: 50px;
+        width: 100%;
+    }
     .root.footer{
         position: relative !important;
         background-image: linear-gradient(to bottom, #324964, #1e2a38);
         bottom: 0;
         width: 100%;
-        margin-top: 50px;
+        // margin-top: 50px;
         margin-bottom: 0 !important;
     }
     .root.intern{
@@ -75,7 +84,7 @@ body {
     position: relative;
     box-shadow: none !important;
     word-wrap: break-word !important;
-    // background-color: pink !important;
+    background-color: transparent !important;
 }
     .paper.less-padding{
         padding: 8px 0px !important;
@@ -102,12 +111,16 @@ body {
         background-color: $white !important;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
     }
+    .paper.intern-with-shadow{
+        padding: 0 !important;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+    }
     .paper.without-border{
         border: none !important;
     }
     .paper.little{
         padding: 2px 8px !important;
-        background-color: #f7f7f7 !important;
+        background-color: $white !important;
         box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important;
     }
     
@@ -166,7 +179,7 @@ background:$color-gray;
 .master__container{
     width: 100%;
     position: relative;
-    // background-color: yellow;
+    background-color: #fafafa;
     margin: 0 auto !important;
     text-align: center;
 }
@@ -174,6 +187,7 @@ background:$color-gray;
 .master{
     // background-color: red;
     display: inline-block;
-    max-width: 1300px;
+    max-width: 1200px;
     width: 100%;
+    margin-bottom: 50px;
 }

@@ -9,6 +9,7 @@
   .app__bar .logo__main {
     width: 100%;
     height: 100%;
+    display: inline-block;
     background-image: url("../../assets/images/logo-black.png");
     background-size: contain;
     background-position: left;

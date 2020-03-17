@@ -6,22 +6,11 @@ import Paper from '@material-ui/core/Paper';
 import algoLogo from '../../assets/images/algo.png';
 import Filters from './../General/Filters';
 import TableTransactions from './../General/TableTransactions';
-import { withStyles } from "@material-ui/core/styles";
-
-const styles = theme => ({
-    root: {
-        flexGrow: 1,
-        position: 'relative',
-        padding: '0 16px',
-        marginTop: '64px'
-    }
-}); 
 
 class AddressOverview extends React.Component {
     render(){
-        const { classes } = this.props;
         return (
-            <div className={classes.root}>
+            <div className="root home">
                 {/* Component Title */}
                 <Grid container>
                     <Grid item xs={12}>
@@ -77,7 +66,7 @@ class AddressOverview extends React.Component {
                         </Paper>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper>
+                        <Paper className="paper intern-with-shadow">
                             <Filters/>
                             <TableTransactions/>
                             <Filters/>
@@ -88,4 +77,4 @@ class AddressOverview extends React.Component {
         ); 
     }
 }
-export default withStyles(styles)(AddressOverview);
+export default AddressOverview;

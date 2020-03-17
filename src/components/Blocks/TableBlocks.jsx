@@ -9,7 +9,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import './Blocks.css';
 import algoLogo from '../../assets/images/algo.png';
-import txLogo from '../../assets/images/tx.png';
 
 // Data get function
 function createData(block, proposer, transactions, age, block_reward) {
@@ -20,10 +19,9 @@ const rows = [
 ];
 class TableBlocks extends React.Component {
     render(){
-        const {classes} = this.props;
         return (
             <TableContainer component={Paper}>
-                <Table className={classes.table} aria-label="simple table">
+                <Table aria-label="simple table">
                     <TableHead className="table__head">
                         <TableRow>
                             <TableCell align="left" className="row__head">Block</TableCell>

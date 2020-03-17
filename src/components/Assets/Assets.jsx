@@ -17,11 +17,11 @@ class Assets extends React.Component {
                     <span className="title__main">Assets: Tether USDt <span className="title-blue">tether.to</span></span>
                     <div className="subtitle__main">1.00 USD <span className="down-value">0,15%</span></div>
                 </div>
-                <div className="root home">
+                <div className="root home master">
                     {/* Component Asset Tab */}
                     <Grid container justify="center">
                         <Grid item xs={12}>
-                            <Paper className="paper">
+                            <Paper className="paper less-padding">
                                 <Tabs defaultActiveKey="general" id="uncontrolled-tab-example">
                                     {/* General Tab */}
                                     <Tab eventKey="general" title="General" className="container__tab">
@@ -147,7 +147,7 @@ class Assets extends React.Component {
                             </Paper>
                         </Grid>
                         <Grid item xs={12}>
-                            <Paper>
+                            <Paper className="paper intern-with-shadow">
                                 <Filters/>
                                 <TableTransactions/>
                                 <Filters/>

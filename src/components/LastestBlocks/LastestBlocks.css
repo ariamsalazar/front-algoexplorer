@@ -4,7 +4,7 @@
 .title__container {
   width: 100%;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 8px 10px !important;
   position: relative;
   border-top-left-radius: 4px;
@@ -34,7 +34,8 @@
   width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff; }
   .list__container .list__scroll {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -43,7 +44,7 @@
       width: 100%;
       height: auto;
       padding: 0;
-      background-color: #f7f7f7;
+      background-color: #fff;
       border-bottom: 1px solid #c3c3c3; }
       .list__container .list__scroll .list__item .picture__container {
         width: 100%;

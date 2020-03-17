@@ -15,7 +15,7 @@ class RewardCalculator extends React.Component {
                     {/* Component Title */}
                     <Grid container spacing={4}>
                         <Grid item xs={12}>
-                            <Paper className="paper">
+                            <Paper className="paper less-padding">
                                 <span className="title__main">Reward Calculator</span>
                             </Paper>
                         </Grid>
