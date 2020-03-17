@@ -9,12 +9,72 @@ body {
   overflow-y: scroll;
   font-family: "Lato" !important; }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 2px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px !important;
+  padding: 10px;
+  margin-right: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cecece; }
+
 .MuiGrid-container {
   width: 100%;
   display: flex !important;
   flex-wrap: wrap;
   text-align: left;
   box-sizing: border-box; }
+
+.ah {
+  position: relative;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%);
+  transform: translatex(-50%); }
+
+.av {
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.App {
+  font-family: "Lato" !important; }
+
+.app {
+  position: relative;
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto; }
+
+.MuiGrid-spacing-xs-5 {
+  width: calc(100% + 40px);
+  margin: 0px !important; }
+
+.master__container {
+  width: 100%;
+  position: relative;
+  background-color: #fafafa;
+  margin: 0 auto !important;
+  text-align: center; }
+
+.master {
+  display: inline-block;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 40px; }
 
 .root {
   flex-grow: 1 !important;
@@ -41,7 +101,14 @@ body {
   background-image: linear-gradient(to bottom, #324964, #1e2a38);
   bottom: 0;
   width: 100%;
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  justify-content: center;
+  text-align: center; }
+
+.root.header {
+  width: 100%;
+  justify-content: center;
+  text-align: center; }
 
 .root.intern {
   position: relative !important;
@@ -62,12 +129,6 @@ body {
   background-color: rgba(103, 119, 139, 0.3);
   margin-top: 50px; }
 
-.paper__footer {
-  padding: 0;
-  border: none;
-  box-shadow: none !important;
-  background-color: transparent !important; }
-
 .paper {
   padding: 15px 0;
   border: none;
@@ -80,6 +141,9 @@ body {
 
 .paper.less-padding {
   padding: 8px 0px !important; }
+
+.paper.no-padding {
+  padding: 0px !important; }
 
 .paper.normal {
   padding: 15px;
@@ -115,62 +179,11 @@ body {
   background-color: #fff !important;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important; }
 
+.paper__footer {
+  padding: 0;
+  border: none;
+  box-shadow: none !important;
+  background-color: transparent !important; }
+
 .align-right {
   text-align: right !important; }
-
-.ah {
-  position: relative;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%);
-  transform: translatex(-50%); }
-
-.av {
-  position: relative;
-  top: 50% !important;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.App {
-  font-family: "Lato" !important; }
-
-.app {
-  position: relative; }
-
-.MuiGrid-spacing-xs-5 {
-  width: calc(100% + 40px);
-  margin: 0px !important; }
-
-::-webkit-scrollbar {
-  width: 4px;
-  height: 2px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 10px !important;
-  padding: 10px;
-  margin-right: 10px; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #cecece;
-  border-radius: 10px;
-  padding: 10px;
-  margin-right: 10px; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #cecece; }
-
-.master__container {
-  width: 100%;
-  position: relative;
-  background-color: #fafafa;
-  margin: 0 auto !important;
-  text-align: center; }
-
-.master {
-  display: inline-block;
-  max-width: 1200px;
-  width: 100%;
-  margin-bottom: 50px; }

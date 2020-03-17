@@ -8,7 +8,7 @@ class Footer extends React.Component {
     render(){
         return (
             <div className="root footer">
-                 <Grid container spacing={5}>
+                 <Grid container spacing={5} className="master">
                     <Grid item xs={4}>
                         <Paper className="paper__footer">
                             <div className="logo__footer"><Link className="icon-moon"></Link></div>

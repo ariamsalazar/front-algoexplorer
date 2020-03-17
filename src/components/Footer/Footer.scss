@@ -15,7 +15,7 @@ $font-main: 'Lato';
     background-image: url('../../assets/images/logo.png');
     background-repeat: no-repeat;
     background-size: 40%;
-    background-position: 45px center;
+    background-position: left;
 }
 .logo__footer .icon-moon{
     display: inline-block;
@@ -49,9 +49,8 @@ $font-main: 'Lato';
 .link__footer{
     width: 100%;
     height: auto;
-    text-align: center;
+    text-align: right;
     padding: 20px 0;
-
     .link{
         color: #fff !important;
         font-size: 1rem;
@@ -71,9 +70,9 @@ $font-main: 'Lato';
             border-right: none;
             padding-right: 40px;
             background-image: url('../../assets/images/twitter-white.png');
-            background-position: center right;
+            background-position: 90%;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 20px;
         }
 }
 .MuiGrid-spacing-xs-5 > .MuiGrid-item {

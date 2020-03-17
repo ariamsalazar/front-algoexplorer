@@ -34,7 +34,7 @@ class Home extends React.Component {
                         </Grid>
                     </Grid>
                     {/* Lastest Blocks / Transactions component */}
-                    <Grid container spacing={6}>
+                    <Grid container spacing={3}>
                         <Grid item xs={6}>
                             <Paper className="paper less-padding">
                                 <LastestTransactions/>

@@ -24,7 +24,8 @@ $blue-middle: #005cc0;
     display: inline-block;
 }
     .chart__container.auto{
-        height: auto !important;
+        height: 500px !important;
+        margin-top: 40px !important;
     }
 .filters__container{
     position: absolute;

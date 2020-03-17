@@ -46,10 +46,10 @@ class Header extends React.Component {
     }
     render(){
         return (
-            <div className="root">
+            <div className="root header">
                 <AppBar position="static" className="app__bar">
-                    <Toolbar>
-                        <Grid container spacing={2}>
+                    <Toolbar  >
+                        <Grid container spacing={2} style={{bakgroundColor: 'green'}} className="master">
                             <Grid item xs={2} >
                                 <Link className="logo__main" href="/" />
                             </Grid>

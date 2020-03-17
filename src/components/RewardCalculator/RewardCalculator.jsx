@@ -20,7 +20,7 @@ class RewardCalculator extends React.Component {
                             </Paper>
                         </Grid>
                         <Grid item xs={7}>
-                            <Paper className="paper less-padding">
+                            <Paper className="paper no-padding">
                                 <div className="container__calculator">
                                     <div className="title__calculator">Enter your ALGO Amount
                                         <div className="btn__white av">Component Daily <input type="checkbox" className="check-i"></input> </div>
