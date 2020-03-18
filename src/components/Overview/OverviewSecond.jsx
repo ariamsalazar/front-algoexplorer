@@ -30,8 +30,6 @@ const data = [
   
 class OverviewSecond extends React.Component {  
     render(){
-        const {classes} = this.props;
-
         /*Line Chart*/ 
         const renderLineChart = (
             <ResponsiveContainer width="100%" height={120}>

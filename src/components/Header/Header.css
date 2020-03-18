@@ -19,8 +19,8 @@
     width: 100%;
     height: 100%;
     display: inline-block;
-    background-image: url("../../assets/images/logo-black.png");
-    background-size: contain;
+    background-image: url("../../assets/images/logo-new.png");
+    background-size: 90%;
     background-position: left;
     background-repeat: no-repeat; }
   .app__bar .form__search {
@@ -32,11 +32,11 @@
       height: 100%;
       border: none;
       border-radius: 0;
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
       background-color: rgba(216, 216, 216, 0.3);
       padding: 10px 0;
-      padding-left: 10px;
+      padding-left: 15px;
       color: #324964;
       font-weight: 400;
       font-size: .85rem;
@@ -49,8 +49,8 @@
       height: 100% !important;
       border: none !important;
       border-radius: 0;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
       padding-left: 0rem !important;
       color: #fff !important;
       font-family: "Lato" !important;

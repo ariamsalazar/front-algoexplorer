@@ -49,8 +49,8 @@ class Header extends React.Component {
             <div className="root header">
                 <AppBar position="static" className="app__bar">
                     <Toolbar  >
-                        <Grid container spacing={2} style={{bakgroundColor: 'green'}} className="master">
-                            <Grid item xs={2} >
+                        <Grid container spacing={2} className="master">
+                            <Grid item xs={2} className="paper no-padding">
                                 <Link className="logo__main" href="/" />
                             </Grid>
                             <Grid item xs={5}>
@@ -90,7 +90,7 @@ class Header extends React.Component {
                                             </ul>
                                         }
                                     </li>
-                                    <a id="drop__link" href="/" class="dev-list">Dev API </a>
+                                    {/* <a id="drop__link" href="/" class="dev-list">Dev API </a> */}
                                     <li id="drop__link" className="wallet-list" onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} ><img className="search-wallet" src={iconWallet}/>Wallets
                                         {this.state.hoveredEl === "wallet-list" &&
                                             <ul className="dropdown__items">

@@ -6,7 +6,6 @@ import Overeview from './../Overview/Overview';
 import OvereviewSecond from './../Overview/OverviewSecond';
 import LastestTransactions from './../LastestTransactions/LastestTransactions';
 import LastestBlocks from './../LastestBlocks/LastestBlocks';
-import Button from '@material-ui/core/Button';
 
 class Home extends React.Component {
     render(){
@@ -19,18 +18,18 @@ class Home extends React.Component {
                                 <span className="title__main">Overview</span>
                             </Paper>
                         </Grid>
-                        <Grid item xs={6}>
+                        {/* <Grid item xs={6}>
                             <Button className="float__btn av">Stats</Button>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                     <Grid container spacing={2}>
                         <Grid item xs={12}>
                             <Paper className="paper less-padding" > 
                                 <Overeview />
                             </Paper>
-                            <Paper className="paper less-padding" > 
+                            {/* <Paper className="paper less-padding" > 
                                 <OvereviewSecond />
-                            </Paper>
+                            </Paper> */}
                         </Grid>
                     </Grid>
                     {/* Lastest Blocks / Transactions component */}

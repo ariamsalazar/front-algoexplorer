@@ -40,21 +40,37 @@ $blue-gray-dark:#324964;
     display: inline-block;
     height: auto;
     text-align: center;
-    font-size: .75rem;
+    font-size: .78rem;
     color: $gray-dark;
     text-align: left;
     font-weight: 500;
     letter-spacing: normal;
     text-transform: uppercase;
+    // background-color: red;
 
     .t-blue{
         color: $blue-light;
-        font-weight: 600;
+        font-weight: 700;
+        font-size: .8rem;
+        background-color: rgba(25, 124, 232, 0.1);
+        border: 1px solid $blue-light;
+        padding: 2px 20px;
+        border-radius: 4px;
+        margin-left: 5px;
+    }
+
+    .iconInfo{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+        opacity: 0.8;
+        margin-left: 8px;
+        width: 12px;
     }
 }
     .box-title.with-icon{
         background-image: url('../../assets/images/info-icon.png');
-        background-position: 95%;
+        background-position: 70%;
         background-size: 12px;
         background-repeat: no-repeat;
     }
@@ -64,22 +80,28 @@ $blue-gray-dark:#324964;
     width: 100%;
     display: inline-block;
     height: auto;
-    margin-top: 5px;
+    // margin-top: 5px;
     text-align: center;
     font-size: 1.3rem;
     color: #000;
     font-weight: 500;
     text-transform: none;
+    // background-color: blue;
 
     .logoAlgo{
         display: inline-block;
         vertical-align: middle;
         margin-top: 0px;
         margin-left: 0;
-        width: 16px;
+        width: 15px;
         margin-top: -2px;
         margin-right: 5px;
     }
+}
+.box-value.big-font{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10%;
 }
     .box-value.with-algo {
         background-image: url('../../assets/images/algo.png');
@@ -88,15 +110,6 @@ $blue-gray-dark:#324964;
         background-size: 15%;
         padding-left: 2%;
     }
-
-.link__open{
-    position: absolute;
-    top: 10px;
-    cursor: pointer !important;
-    right: 1rem;
-    font-size: 1.2rem;
-    color: #777;
-}
 
 .calculator-icon {
     position: absolute;
@@ -135,115 +148,13 @@ $blue-gray-dark:#324964;
         padding: 0;
         border-right: 1px solid #e0dfdf;
         position: relative;
-
-        .box-inside {
-            border-bottom: 1px solid #e0dfdf;
-            padding: 1rem;
-            height: 125px;
-        }
-            
-        .box-title{
-            width: 100%;
-            display: inline-block;
-            height: auto;
-            text-align: center;
-            font-size: .8rem;
-            color: $gray-dark;
-            font-weight: 500;
-            text-align: left;
-            letter-spacing: normal;
-            text-transform: uppercase;
-            
-            .t-blue{
-                color: $blue-light;
-                font-weight: 600;
-            }
-        }
-        .box-title.side{
-            text-align: left;
-        }
-        .box-title.with-icon{
-            background-image: url('../../assets/images/info-icon.png');
-            background-position: right;
-            background-size: 12px;
-            background-repeat: no-repeat;
-        }
-        .box-value{
-            width: 100%;
-            display: inline-block;
-            height: auto;
-            margin-top: 12px;
-            text-align: center;
-            font-size: 1.5rem;
-            color: #000;
-            font-weight: 500;
-            text-transform: none;
-        }
-        .container__filter__main{
-            height: auto;
-            width: 100%;
-            // background-color: yellow;
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 15px;
-            margin-bottom: 15px;
-
-            .input-filter{
-                border: 1px solid #324964;
-                font-size: 1.5rem;
-                color: $black;
-                outline: none;
-                background-color: transparent;
-                font-weight: 500;
-                width: 65%;
-                text-align: center;
-                padding: 0px;
-                display: inline-block;
-                vertical-align: middle;
-                border-radius: 4px;
-            }
-            .span-filter{
-                display: inline-block;
-                vertical-align: middle;
-                height: auto;
-                font-size: 1.2rem;
-                font-weight: 500;
-                width: 35%;
-                text-align: center;
-                text-transform: uppercase;
-            }
-        }
-        .chart__container {
-            width: 100%;
-            margin-top: 10px;
-            // background-color: yellow;
-            height: auto;
-            text-align: center;
-            display: inline-block;
-            // background-color: pink;
-        }
-        .recharts-text tspan{
-            color: $gray-dark !important;
-            font-size: 0.9rem !important;
-        }
-        .speedo-segment {
-            fill: transparent;
-            stroke: $blue-middle !important;
-            stroke-dasharray: 1,53,50,0;
-            stroke-width: 6.5px;
-            border: none;
-        }
-        .current-value{
-            font-weight: 400 !important;
-
-        }
     }
-        .box-container:last-child{
-            border-right: none;
-        }
-        .box-container.with-padding{
-            padding: 1rem;
-        }
+    .box-container:last-child{
+        border-right: none;
+    }
+    .box-container.with-padding{
+        padding: 1rem;
+    }
 
         .mark-input{
             display: inline-block;
@@ -260,23 +171,23 @@ $blue-gray-dark:#324964;
 }
 .filters__container{
     position: absolute;
-    top: 5px !important;
-    right: 14% !important;
+    top: 8px !important;
+    right: 15% !important;
     height: auto;
     border-radius: 4px;
 
     .filter-c {
         height: auto;
-        padding: 5px 10px;
-        font-weight: 400 !important;
+        padding: 2px 5px !important;
+        font-weight: 400 ;
         border-right: 1px solid #d8d8d8;
         background-color: #e4e4e4;
         text-align: center;
         display: inline-block;
         vertical-align: top;
-        font-size: .75rem;
+        font-size: .7rem !important;
         cursor: pointer;
-        color: #777;
+        color: #999 !important;
         transition: 0.6s;
         text-decoration: none !important
     }
@@ -295,9 +206,8 @@ $blue-gray-dark:#324964;
 }
 .chart__container {
     width: 100%;
-    margin-top: 10px !important;
-    // background-color: yellow;
-    height: 120px !important;
+    margin-top: 0px !important;
+    height: 130px !important;
     text-align: center;
     display: inline-block;
     // background-color: pink;
@@ -318,25 +228,48 @@ $blue-gray-dark:#324964;
 
     }
     .recharts-responsive-container{
-        width: 70%;
-        height: 70%;
-        position: absolute;
+        position: absolute !important;
         // background-color: pink;
         text-align: center;
         left: 50% !important;
         transform: translateX(-50%) !important;
     }
     .recharts-responsive-container.top-c{
-        top: 10% !important;
+        top: 15% !important;
+    }
+}
+.center__container{
+    width: 100%;
+    height: 136px;
+    padding: 10px;
+    // background-color: yellow;
+    background-image: url('../../assets/images/algo-transparent.png');
+    background-position: 45% 30%;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    display: inline-block !important;
+
+    .market__container{
+        background-color: rgba(0, 92, 192, 0.2);
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        text-align: center;
+        font-size: .9rem;
+        color: $blue-light;
+        font-weight: 500;
+        padding: 5px 0;
+        z-index: 999;
+        left: 0;
     }
 }
 .link__open{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 0.9rem;
+    top: 8px;
+    right: 10px;
+    font-size: 0.8rem;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: $blue-light !important;
 }
 .pointer{
@@ -345,7 +278,7 @@ $blue-gray-dark:#324964;
 
 .rating-value{
     display: inline-block;
-    font-size: .8rem;
+    font-size: .85rem;
     font-weight: bold;
     letter-spacing: normal;
     text-align: right;
