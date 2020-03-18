@@ -194,3 +194,34 @@ body {
 
 .align-right {
   text-align: right !important; }
+
+/*BIG SCREEN > LAPTOPS / DESKTOPS */
+/* MEDIUM SCREEN > TABLETS */
+/*BIG SCREEN > LAPTOPS / DESKTOPS */
+/* SMALL SCREEN > MOBILE */
+@media (max-width: 760px) {
+  .body {
+    width: 100%;
+    margin: auto 0; }
+  .app {
+    background-color: #eaeff5;
+    width: 100%; }
+  .root {
+    background-color: transparent; }
+  .master__container {
+    width: 100%;
+    position: relative;
+    padding: 8px;
+    margin: 0 auto !important;
+    text-align: center !important; }
+  .master {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px; }
+  .root.home {
+    position: relative !important;
+    margin-top: 60px !important;
+    padding: 0 !important;
+    width: 100%;
+    display: inline-block !important; } }

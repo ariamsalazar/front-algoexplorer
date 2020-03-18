@@ -13,7 +13,7 @@ class Home extends React.Component {
                 <div className="root home">
                     {/* Overview component */}
                     <Grid container spacing={0}>
-                        <Grid item xs={6}>
+                        <Grid item xs={6} sm={6} md={6}>
                             <Paper className="paper"> 
                                 <span className="title__main">Overview</span>
                             </Paper>
@@ -23,7 +23,7 @@ class Home extends React.Component {
                         </Grid> */}
                     </Grid>
                     <Grid container spacing={2}>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} sm={12} md={12}>
                             <Paper className="paper less-padding" > 
                                 <Overeview />
                             </Paper>
@@ -34,12 +34,12 @@ class Home extends React.Component {
                     </Grid>
                     {/* Lastest Blocks / Transactions component */}
                     <Grid container spacing={3}>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={6} md={6}>
                             <Paper className="paper less-padding">
                                 <LastestTransactions/>
                             </Paper>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={6} md={6}>
                             <Paper className="paper less-padding">
                                 <LastestBlocks/>
                             </Paper>

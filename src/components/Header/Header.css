@@ -8,6 +8,10 @@
   justify-content: center !important;
   text-align: center !important; }
 
+.app__bar__mobile {
+  display: none;
+  opacity: 0; }
+
 .app__bar {
   background-color: #fff !important;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;
@@ -254,3 +258,27 @@
 .MuiToolbar-gutters {
   padding-left: 16px !important;
   padding-right: 16px !important; }
+
+/*BIG SCREEN > LAPTOPS / DESKTOPS */
+/* MEDIUM SCREEN > TABLETS */
+/*BIG SCREEN > LAPTOPS / DESKTOPS */
+/* SMALL SCREEN > MOBILE */
+@media (max-width: 760px) {
+  .app__bar {
+    opacity: 0; }
+  .app__bar__mobile {
+    top: 'auto';
+    top: 0;
+    opacity: 1;
+    background-color: #c3c3c3 !important;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important; }
+    .app__bar__mobile .logo__main.mobile {
+      width: 100%;
+      height: 40px;
+      background-image: url("../../assets/images/logo-new.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      display: inline-block;
+      cursor: pointer;
+      background-color: #59d8a1; } }

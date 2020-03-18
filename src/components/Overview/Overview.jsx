@@ -68,25 +68,25 @@ class Overview extends React.Component {
                 <div className="root">
                     {/* First component */}
                     <Grid container spacing={0}>
-                            <Grid item xs={3}>
+                            <Grid item sm={3} xs={6} md={3}>
                                 <Paper className="paper little">
                                     <span className="box-title">Latest Blocks</span>
                                     <div className="box-value">353533</div>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={3}>
+                            <Grid item sm={3} xs={6} md={3}>
                                 <Paper className="paper little">
                                     <span className="box-title">Circulating Supply <img className="iconInfo" src={infoIcon} /></span>
                                     <div className="box-value"> 605,978,371 <img className="logoAlgo" src={algoLogo} /></div>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={3}>
+                            <Grid item sm={3} xs={6} md={3}>
                                 <Paper className="paper little">
                                     <span className="box-title">Tradable Supply <img className="iconInfo" src={infoIcon} /></span>
                                     <div className="box-value"> 2,605,978,371 <img className="logoAlgo" src={algoLogo}/></div>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={3}>
+                            <Grid item sm={3} xs={6} md={3}>
                                 <Paper className="paper little">
                                     <span className="box-title">Online Stake <img className="iconInfo" src={infoIcon} /></span>
                                     <div className="box-value "> 1,622,972,252 <img className="logoAlgo" src={algoLogo}/></div>
@@ -97,7 +97,7 @@ class Overview extends React.Component {
                 <div className="root with-margin-top">
                      {/* Second Component  */}
                      <Grid container spacing={0}>
-                        <Grid item xs={3}>
+                        <Grid item md={3} sm={3} xs={6}>
                             <Paper className="paper little">
                                 <span className="box-title">Algo price</span>
                                 <div className="center__container">
@@ -106,7 +106,7 @@ class Overview extends React.Component {
                                 </div>
                             </Paper>
                         </Grid>
-                        <Grid item xs={3}>
+                        <Grid item md={3} sm={3} xs={6}>
                             <Paper className="paper little">
                                 <span className="box-title">Block transaction speed <img className="iconInfo" src={infoIcon} /></span>
                                 <div className="chart__container">
@@ -114,7 +114,7 @@ class Overview extends React.Component {
                                 </div>
                             </Paper>
                         </Grid> 
-                        <Grid item xs={6}>
+                        <Grid item md={6} sm={6} xs={12}>
                             <Paper className="paper little">
                                 <span className="box-title side">Algo Daily transactions: <span className="t-blue">2535</span></span>
                                 <Link className="link__open">Open Chart</Link>

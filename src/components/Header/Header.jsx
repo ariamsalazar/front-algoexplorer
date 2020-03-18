@@ -2,12 +2,15 @@ import React from 'react';
 import './Header.css';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import iconSearch from '../../assets/images/search.png';
 import iconWallet from '../../assets/images/wallet-blue.png';
-
+import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
+import MoreIcon from '@material-ui/icons/MoreVert';
 class Header extends React.Component {
     
     constructor(props) {
@@ -47,6 +50,7 @@ class Header extends React.Component {
     render(){
         return (
             <div className="root header">
+                {/* NavBar Desktop */}
                 <AppBar position="static" className="app__bar">
                     <Toolbar  >
                         <Grid container spacing={2} className="master">
@@ -108,6 +112,29 @@ class Header extends React.Component {
                                         <option selected value="coconut">Mainnet</option>
                                     </select>
                             </div>
+                            </Grid>
+                        </Grid>
+                    </Toolbar>
+                </AppBar>
+                {/* NavBar Mobile */}
+                <AppBar position="fixed" className="app__bar__mobile">
+                    <Toolbar>
+                        {/* <div className="grow" />
+                        <IconButton color="inherit">
+                            <SearchIcon />
+                        </IconButton>
+                        <IconButton edge="start" color="inherit" aria-label="open drawer">
+                            <MenuIcon />
+                        </IconButton> */}
+                        <Grid container spacing={2} >
+                            <Grid item xs={8} className="paper no-padding">
+                                <Link href="/" className="logo__main mobile av" />
+                            </Grid>
+                            <Grid item xs={2} className="paper no-padding">
+                                A
+                            </Grid>
+                            <Grid item xs={2} className="paper no-padding">
+                                A
                             </Grid>
                         </Grid>
                     </Toolbar>
